@@ -11,6 +11,7 @@ function renderLinks(filtro) {
   const prefeiturasFiltradas = filtrarPorNome(filtro)(prefeituras);
   const camarasFiltradas = filtrarPorNome(filtro)(camaras);
   const outrosFiltrados = filtrarPorNome(filtro)(outros);
+  const contabilFiltrados = filtrarPorNome(filtro)(contabil);
 
   // Renderizar prefeituras
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
@@ -47,6 +48,19 @@ function renderLinks(filtro) {
             <p>GESTÂO PUBLICA</p>
           </div>
           <p class="name">${outros.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("contabil").innerHTML = contabilFiltrados
+    .map((contabil) => {
+      return `
+        <a class="card" href="${contabil.url}" target="_blank">
+          <div class="card-header">
+            <p>GESTÂO PUBLICA</p>
+          </div>
+          <p class="name">${contabil.nome}</p>
         </a>
       `;
     })
