@@ -76,7 +76,7 @@ a:visited {
 }
 
 .card:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: all ease-in 400ms;
 }
 
@@ -85,7 +85,7 @@ a:visited {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	height: 50%;
+	height: 40%;
 	background-color: #074979;
 	border-radius: 10px 10px 0 0;
 	color: #ffffff;
