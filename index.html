@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gestão Publica Folha</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="folhaW.css" />
+    <link rel="icon" href="images\favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+        <p>SIGEP</p>
+      </div>
+
+      <div class="tabs">
+        <button id="tab-prefeituras" class="btn">Prefeituras</button>
+        <button id="tab-camaras" class="btn">Câmaras</button>
+        <button id="tab-outros" class="btn">Previdências</button>
+      </div>
+    </nav>
+
+    <div id="h-prefeituras">
+      <h1>Prefeituras</h1>
+      <div id="prefeituras" class="main"></div>
+    </div>
+
+    <div id="h-camaras" class="hidden">
+      <h1>Camaras</h1>
+      <div id="camaras" class="main"></div>
+    </div>
+
+    <div id="h-outros">
+      <h1>Previdencias e Outros</h1>
+      <div id="outros" class="main"></div>
+    </div>
+  </body>
+
+  <script src="./src/js/Prefeituras.js"></script>
+  <script src="./src/js/Camaras.js"></script>
+  <script src="./src/js/Outros.js"></script>
+  <script src="./src/js/index.js"></script>
+  <script src="./src/js/hidden.js"></script>
+</html>

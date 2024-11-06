@@ -1,0 +1,111 @@
+.navigation {
+	width: 100%;
+	display: flex;
+	background-color: #074979;
+	color: #ffffff;
+	font-weight: 600;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding: 0 20px;
+}
+
+.navigation .logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 12px;
+	left: 20px;
+}
+
+.navigation .logo img {
+	width: 60px;
+}
+
+.tabs {
+	display: flex;
+	gap: 30px;
+	font-family: "Poppins", sans-serif;
+}
+
+.tabs .btn {
+	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.tabs .btn:hover {
+	transform: scale(1.2);
+}
+
+h1 {
+	text-align: center;
+	background-color: #074979;
+	color: #FFF;
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a:visited {
+	color: #000000;
+}
+
+.card {
+	width: 250px;
+	height: 140px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	transition: all ease-in 400ms;
+}
+
+.card .card-header {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 50%;
+	background-color: #074979;
+	border-radius: 10px 10px 0 0;
+	color: #ffffff;
+	font-weight: 700;
+	gap: 10px;
+}
+
+.card .card-header img {
+	width: 60px;
+}
+
+.card .name {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+	height: 50%;
+	font-size: 15px;
+	font-weight: 700;
+	color: #000000;
+}
