@@ -100,7 +100,7 @@ h1 {
 	background: linear-gradient(to right, #1655c4, #7164d7);
 	color: #fff;
 	font-size: 20px;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .hidden {
@@ -121,6 +121,31 @@ a:visited {
 	color: #000000;
 }
 
+@keyframes flux {
+	0% {
+		transform: translateX(300px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+
+@keyframes fluxo {
+	0% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+h1 {
+	animation: fluxo 400ms;
+}
+
 .card {
 	display: flex;
 	justify-content: space-between;
@@ -130,7 +155,9 @@ a:visited {
 	padding: 0 10px 0 0;
 	background-color: #ffffff;
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
+	border-radius: 5px;
+	animation: flux 400ms;
+
 }
 
 .card:hover {
@@ -145,7 +172,7 @@ a:visited {
 	width: 30%;
 	background: linear-gradient(to right, #1655c4, #7164d7);
 	height: 100%;
-	border-radius: 10px 0px 0 10px;
+	border-radius: 5px 0px 0 5px;
 }
 
 .card .card-header img {
@@ -177,6 +204,7 @@ a:visited {
 
 .bxs-moon {
 	font-size: 20px;
+	color: #ffffff;
 }
 
 .dark-theme {
@@ -187,8 +215,9 @@ a:visited {
 	background-color: #7164d7;
 	width: 40px;
 	height: 40px;
-	border-radius: 500px;
+	border-radius: 0 0 5px 5px;
 	right: 30px;
-	top: 60px;
+	top: 105px;
 	cursor: pointer;
+	animation: fluxo 400ms;
 }
