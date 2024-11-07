@@ -48,11 +48,11 @@
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	right: 0px;
+	right: 10px;
 	background-color: #7164d7;
 	width: 240px;
 	height: 350px;
-	top: 0px;
+	top: 30px;
 	border-radius: 8px;
 }
 
@@ -61,6 +61,7 @@
 }
 
 .tabs .btn {
+	display: flex;
 	width: 100%;
 	font-weight: 700;
 	color: #ffffff;
@@ -69,7 +70,8 @@
 	cursor: pointer;
 	font-size: 18px;
 	height: 40px;
-	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .tabs .btn:hover {
@@ -217,7 +219,7 @@ h1 {
 	height: 40px;
 	border-radius: 0 0 5px 5px;
 	right: 30px;
-	top: 105px;
+	top: 60px;
 	cursor: pointer;
 	animation: fluxo 400ms;
 }
