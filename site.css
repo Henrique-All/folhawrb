@@ -1,7 +1,7 @@
 .navigation {
 	width: 100%;
 	display: flex;
-	background-color: #074979;
+	background: linear-gradient(to right, #1655c4, #7164d7);
 	color: #ffffff;
 	font-weight: 600;
 	justify-content: space-between;
@@ -22,7 +22,6 @@
 	width: 60px;
 }
 
-
 .tabs {
 	display: flex;
 	gap: 30px;
@@ -39,21 +38,21 @@
 }
 
 .tabs .btn:hover {
-	transform: scale(1.2);
+	transition: all ease 400ms;
+	transform: scale(1.1);
 }
 
 .search {
 	display: flex;
-	padding: 0 20px;
-	width: 100%;
-	background-color: #074979;
+	width: 600px;
+	padding: 10px 20px;
 }
 
 .search input {
 	width: 100%;
 	padding: 5px;
 	border: none;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .search input:focus {
@@ -62,8 +61,8 @@
 
 h1 {
 	text-align: center;
-	background-color: #074979;
-	color: #FFF;
+	background: linear-gradient(to right, #1655c4, #7164d7);
+	color: #fff;
 	font-size: 20px;
 	padding: 20px 0;
 }
@@ -87,10 +86,14 @@ a:visited {
 }
 
 .card {
-	width: 250px;
-	height: 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 280px;
+	height: 70px;
+	padding: 0 10px 0 0;
 	background-color: #ffffff;
-	box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 }
 
@@ -101,19 +104,16 @@ a:visited {
 
 .card .card-header {
 	display: flex;
-	width: 100%;
 	align-items: center;
 	justify-content: center;
-	height: 40%;
-	background-color: #074979;
-	border-radius: 10px 10px 0 0;
-	color: #ffffff;
-	font-weight: 700;
-	gap: 10px;
+	width: 30%;
+	background: linear-gradient(to right, #1655c4, #7164d7);
+	height: 100%;
+	border-radius: 10px 0px 0 10px;
 }
 
 .card .card-header img {
-	width: 60px;
+	width: 40px;
 }
 
 .card .name {
@@ -123,8 +123,35 @@ a:visited {
 	text-align: center;
 	justify-content: center;
 	font-family: "Poppins", sans-serif;
-	height: 50%;
+	height: 100%;
+	width: 90%;
 	font-size: 15px;
 	font-weight: 700;
 	color: #000000;
+}
+
+#on {
+	display: none;
+}
+
+.bxs-sun {
+	display: none;
+	font-size: 20px;
+}
+
+.bxs-moon {
+	font-size: 20px;
+}
+
+.dark-theme {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background-color: #7164d7;
+	width: 40px;
+	height: 40px;
+	border-radius: 500px;
+	right: 30px;
+	top: 60px;
 }
