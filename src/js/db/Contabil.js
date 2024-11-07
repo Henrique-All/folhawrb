@@ -1,119 +1,134 @@
 const contabil = [
   {
-    nome: "Arenópolis",
+    nome: "Contabil Web Arenópolis",
     url: "https://app03.bsit-br.com.br/contabilidade.arenopolis/",
   },
   {
-    nome: "Bom Jesus",
+    nome: "Contabil Web Bom Jesus",
     url: "https://app02.bsit-br.com.br/contabilidade.bomjesus/",
   },
   {
-    nome: "Buriti Alegre",
+    nome: "Contabil Web Buriti Alegre",
     url: "https://app02.bsit-br.com.br/contabilidade.buritidegoias/",
   },
   {
-    nome: "Cachoeira Dourada",
+    nome: "Contabil Web Cachoeira Dourada",
     url: "https://app01.bsit-br.com.br/contabilidade.cachoeiradourada/",
   },
   {
-    nome: "Campos Verdes",
+    nome: "Contabil Web Campos Verdes",
     url: "https://app02.bsit-br.com.br/contabilidade.camposverdes/",
   },
   {
-    nome: "Caturaí",
+    nome: "Contabil Web Caturaí",
     url: "https://app01.bsit-br.com.br/contabilidade.caturai/",
   },
   {
-    nome: "Córrego do Ouro",
+    nome: "Contabil Web Córrego do Ouro",
     url: "https://app02.bsit-br.com.br/contabilidade.corregodoouro/",
   },
   {
-    nome: "Cristalina",
+    nome: "Contabil Web Cristalina",
     url: "https://app03.bsit-br.com.br/contabilidade.cristalina/",
   },
-  { nome: "Cumari", url: "https://app04.bsit-br.com.br/contabilidade.cumari/" },
   {
-    nome: "Damolândia",
+    nome: "Contabil Web Cumari",
+    url: "https://app04.bsit-br.com.br/contabilidade.cumari/",
+  },
+  {
+    nome: "Contabil Web Damolândia",
     url: "https://app04.bsit-br.com.br/contabilidade.damolandia/",
   },
-  { nome: "Faina", url: "https://app03.bsit-br.com.br/contabilidade.faina/" },
   {
-    nome: "Goiandira",
+    nome: "Contabil Web Faina",
+    url: "https://app03.bsit-br.com.br/contabilidade.faina/",
+  },
+  {
+    nome: "Contabil Web Goiandira",
     url: "https://app03.bsit-br.com.br/contabilidade.goiandira/",
   },
   {
-    nome: "Goianira",
+    nome: "Contabil Web Goianira",
     url: "https://app01.bsit-br.com.br/contabilidade.goianira/",
   },
   {
-    nome: "Hidrolândia",
+    nome: "Contabil Web Hidrolândia",
     url: "https://app02.bsit-br.com.br/contabilidade.hidrolandia/",
   },
   {
-    nome: "Indiara",
+    nome: "Contabil Web Indiara",
     url: "https://app02.bsit-br.com.br/contabilidade.indiara/",
   },
   {
-    nome: "Inhumas",
+    nome: "Contabil Web Inhumas",
     url: "https://app04.bsit-br.com.br/contabilidade.inhumas/",
   },
-  { nome: "Jatai", url: "https://app04.bsit-br.com.br/contabilidade.jatai/" },
   {
-    nome: "Joviânia",
+    nome: "Contabil Web Jatai",
+    url: "https://app04.bsit-br.com.br/contabilidade.jatai/",
+  },
+  {
+    nome: "Contabil Web Joviânia",
     url: "https://app03.bsit-br.com.br/contabilidade.joviania/",
   },
   {
-    nome: "Mozarlândia",
+    nome: "Contabil Web Mozarlândia",
     url: "https://app02.bsit-br.com.br/contabilidade.mozarlandia/",
   },
   {
-    nome: "Orizona",
+    nome: "Contabil Web Orizona",
     url: "https://app03.bsit-br.com.br/contabilidade.orizona/",
   },
   {
-    nome: "Palminópolis",
+    nome: "Contabil Web Palminópolis",
     url: "https://app01.bsit-br.com.br/contabilidade.palminopolis/",
   },
   {
-    nome: "Planaltina",
+    nome: "Contabil Web Planaltina",
     url: "https://app03.bsit-br.com.br/contabilidade.planaltina/",
   },
   {
-    nome: "Santa Barbara",
+    nome: "Contabil Web Santa Barbara",
     url: "https://app04.bsit-br.com.br/contabilidade.santabarbara/",
   },
   {
-    nome: "Santa Rosa",
+    nome: "Contabil Web Santa Rosa",
     url: "https://app02.bsit-br.com.br/contabilidade.santarosa/",
   },
   {
-    nome: "Santa Tereza",
+    nome: "Contabil Web Santa Tereza",
     url: "https://app01.bsit-br.com.br/contabilidade.santatereza/",
   },
   {
-    nome: "São Francisco",
+    nome: "Contabil Web São Francisco",
     url: "https://app02.bsit-br.com.br/contabilidade.saofrancisco/",
   },
   {
-    nome: "São Luis dos Montes Belos",
+    nome: "Contabil Web São Luis dos Montes Belos",
     url: "https://app03.bsit-br.com.br/contabilidade.slmb/",
   },
   {
-    nome: "São Patrício",
+    nome: "Contabil Web São Patrício",
     url: "https://app03.bsit-br.com.br/contabilidade.saopatricio/",
   },
-  { nome: "Uruana", url: "https://app01.bsit-br.com.br/contabilidade.uruana/" },
-  { nome: "Varjão", url: "https://app01.bsit-br.com.br/contabilidade.varjao/" },
   {
-    nome: "Consórcio CISO II",
+    nome: "Contabil Web Uruana",
+    url: "https://app01.bsit-br.com.br/contabilidade.uruana/",
+  },
+  {
+    nome: "Contabil Web Varjão",
+    url: "https://app01.bsit-br.com.br/contabilidade.varjao/",
+  },
+  {
+    nome: "Contabil Web Consórcio CISO II",
     url: "https://app01.bsit-br.com.br/contabilidade.cisoii/",
   },
   {
-    nome: "Consórcio CISRIVA",
+    nome: "Contabil Web Consórcio CISRIVA",
     url: "https://app01.bsit-br.com.br/contabilidade.cisriva/",
   },
   {
-    nome: "Consórcio CIDERNORTE",
+    nome: "Contabil Web Consórcio CIDERNORTE",
     url: "https://app02.bsit-br.com.br/contabilidade.cidernorte/",
   },
 ];

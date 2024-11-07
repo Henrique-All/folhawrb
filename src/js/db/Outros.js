@@ -1,26 +1,26 @@
 const outros = [
   {
-    nome: "Aparecida Prev",
+    nome: "Previdencia de Aparecida",
     url: "http://gestaopublica.previdencia.Aparecida.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "BomJesus Prev",
+    nome: "Previdencia Bom Jesus de Goiás",
     url: "http://gestaopublica.previdencia.bomjesusdeGoias.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Cachoeira Prev",
+    nome: "Previdencia de Cachoeira Dourada",
     url: "http://gestaopublica.previdencia.CachoeiraDourada.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "FunCristal",
+    nome: "Previdencia de Cristalina",
     url: "http://gestaopublica.previdencia.cristalina.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Ipameri Prev",
+    nome: "Previdencia de Ipameri ",
     url: "http://gestaopublica.previdencia.ipameri.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Jatai Prev",
+    nome: "Previdencia de Jatai",
     url: "http://gestaopublica.previdencia.jatai.bsit-br.com.br/login.jsf",
   },
   {
