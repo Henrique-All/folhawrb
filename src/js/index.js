@@ -14,6 +14,7 @@ function renderLinks(filtro) {
   const contabilFiltrados = filtrarPorNome(filtro)(contabil);
   const patrimonioFiltrados = filtrarPorNome(filtro)(patrimonio);
   const saudeFiltrados = filtrarPorNome(filtro)(saude);
+  const painelFiltrados = filtrarPorNome(filtro)(painel);
 
   // Renderizar prefeituras
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
@@ -21,7 +22,7 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${prefeitura.url}" target="_blank">
           <div class="card-header">
-            <img src="../images/logo.png" />
+            <img src="./src/images/logo.png" />
           </div>
           <p class="name">${prefeitura.nome}</p>
         </a>`;
@@ -34,7 +35,7 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${camara.url}" target="_blank">
           <div class="card-header">
-            <img src="../images/logo.png" />
+            <img src="./src/images/logo.png" />
           </div>
           <p class="name">${camara.nome}</p>
         </a>`;
@@ -47,7 +48,7 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${outros.url}" target="_blank">
           <div class="card-header">
-            <img src="../images/logo.png" />
+            <img src="./src/images/logo.png" />
           </div>
           <p class="name">${outros.nome}</p>
         </a>
@@ -60,7 +61,7 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${contabil.url}" target="_blank">
           <div class="card-header">
-            <img src="../images/logo.png" />
+            <img src="./src/images/logo.png" />
           </div>
           <p class="name">${contabil.nome}</p>
         </a>
@@ -73,7 +74,7 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${patrimonio.url}" target="_blank">
           <div class="card-header">
-            <img src="../images/logo.png" />
+            <img src="./src/images/logo.png" />
           </div>
           <p class="name">${patrimonio.nome}</p>
         </a>
@@ -86,9 +87,22 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${saude.url}" target="_blank">
           <div class="card-header">
-            <img src="../images/logo.png" />
+            <img src="./src/images/logo.png" />
           </div>
           <p class="name">${saude.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("painel").innerHTML = painelFiltrados
+    .map((painel) => {
+      return `
+        <a class="card" href="${painel.url}" target="_blank">
+          <div class="card-header">
+            <img src="./src/images/logo.png" />
+          </div>
+          <p class="name">${painel.nome}</p>
         </a>
       `;
     })

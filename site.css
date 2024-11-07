@@ -47,14 +47,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 5px;
 	position: absolute;
 	right: 0px;
 	background-color: #7164d7;
-	width: 200px;
-	height: 280px;
+	width: 240px;
+	height: 350px;
 	top: 0px;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 .tabs {
@@ -69,12 +68,14 @@
 	border: none;
 	cursor: pointer;
 	font-size: 18px;
+	height: 40px;
 	text-align: center;
 }
 
 .tabs .btn:hover {
 	transition: all ease 400ms;
-	background-color: #8277d3;
+	background-color: #5e5697;
+	height: 40px;
 }
 
 .search {
