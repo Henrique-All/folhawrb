@@ -22,6 +22,7 @@ function showTab(tab) {
   divContabil.classList.add("hidden");
   divPatrimonio.classList.add("hidden");
   divSaude.classList.add("hidden");
+  divPainel.classList.add("hidden");
 
   if (tab === "h-prefeituras") {
     divPrefeituras.classList.remove("hidden");
