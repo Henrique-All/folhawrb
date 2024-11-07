@@ -2,11 +2,15 @@ const tabPrefeituras = document.getElementById("tab-prefeituras");
 const tabCamaras = document.getElementById("tab-camaras");
 const tabOutros = document.getElementById("tab-outros");
 const tabContabil = document.getElementById("tab-contabil");
+const tabPatrimonio = document.getElementById("tab-patrimonio");
+const tabSaude = document.getElementById("tab-saude");
 
 const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
 const divOutros = document.getElementById("h-outros");
 const divContabil = document.getElementById("h-contabil");
+const divPatrimonio = document.getElementById("h-patrimonio");
+const divSaude = document.getElementById("h-saude");
 
 // Função para esconder todas as divs e mostrar apenas a selecionada
 function showTab(tab) {
@@ -14,6 +18,8 @@ function showTab(tab) {
   divCamaras.classList.add("hidden");
   divOutros.classList.add("hidden");
   divContabil.classList.add("hidden");
+  divPatrimonio.classList.add("hidden");
+  divSaude.classList.add("hidden");
 
   if (tab === "h-prefeituras") {
     divPrefeituras.classList.remove("hidden");
@@ -23,6 +29,10 @@ function showTab(tab) {
     divOutros.classList.remove("hidden");
   } else if (tab === "h-contabil") {
     divContabil.classList.remove("hidden");
+  } else if (tab === "h-patrimonio") {
+    divPatrimonio.classList.remove("hidden");
+  } else if (tab === "h-saude") {
+    divSaude.classList.remove("hidden");
   }
 }
 
@@ -31,6 +41,8 @@ tabPrefeituras.addEventListener("click", () => showTab("h-prefeituras"));
 tabCamaras.addEventListener("click", () => showTab("h-camaras"));
 tabOutros.addEventListener("click", () => showTab("h-outros"));
 tabContabil.addEventListener("click", () => showTab("h-contabil"));
+tabPatrimonio.addEventListener("click", () => showTab("h-patrimonio"));
+tabSaude.addEventListener("click", () => showTab("h-saude"));
 
 // Exibe a primeira aba por padrão
 showTab("h-prefeituras");

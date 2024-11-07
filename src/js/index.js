@@ -12,6 +12,8 @@ function renderLinks(filtro) {
   const camarasFiltradas = filtrarPorNome(filtro)(camaras);
   const outrosFiltrados = filtrarPorNome(filtro)(outros);
   const contabilFiltrados = filtrarPorNome(filtro)(contabil);
+  const patrimonioFiltrados = filtrarPorNome(filtro)(patrimonio);
+  const saudeFiltrados = filtrarPorNome(filtro)(saude);
 
   // Renderizar prefeituras
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
@@ -61,6 +63,32 @@ function renderLinks(filtro) {
             <img src="../images/logo.png" />
           </div>
           <p class="name">${contabil.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("patrimonio").innerHTML = patrimonioFiltrados
+    .map((patrimonio) => {
+      return `
+        <a class="card" href="${patrimonio.url}" target="_blank">
+          <div class="card-header">
+            <img src="../images/logo.png" />
+          </div>
+          <p class="name">${patrimonio.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("saude").innerHTML = saudeFiltrados
+    .map((saude) => {
+      return `
+        <a class="card" href="${saude.url}" target="_blank">
+          <div class="card-header">
+            <img src="../images/logo.png" />
+          </div>
+          <p class="name">${saude.nome}</p>
         </a>
       `;
     })

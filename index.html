@@ -30,11 +30,23 @@
           placeholder="Pesquisar pelo nome..." />
       </div>
 
-      <div class="tabs">
-        <button id="tab-prefeituras" class="btn">Prefeituras</button>
-        <button id="tab-camaras" class="btn">Câmaras</button>
-        <button id="tab-outros" class="btn">Previdências</button>
-        <button id="tab-contabil" class="btn">Contabil</button>
+      <div class="menu">
+        <i class="bx bx-menu" style="color: #ffffff"></i>
+
+        <div class="tabs">
+          <button id="tab-prefeituras" class="btn">Prefeituras</button>
+          <button id="tab-camaras" class="btn">Câmaras</button>
+          <button id="tab-outros" class="btn">Previdências</button>
+          <button id="tab-contabil" class="btn">Contabil</button>
+          <button id="tab-patrimonio" class="btn">Patrimonio</button>
+          <button id="tab-saude" class="btn">Saúde</button>
+          <a
+            href="http://sistema.siasbrasil.com/portal-social/ "
+            target="_blank"
+            class="btn"
+            >Portal Social</a
+          >
+        </div>
       </div>
     </nav>
 
@@ -54,6 +66,14 @@
       <div id="contabil" class="main"></div>
     </div>
 
+    <div id="h-patrimonio">
+      <div id="patrimonio" class="main"></div>
+    </div>
+
+    <div id="h-saude">
+      <div id="saude" class="main"></div>
+    </div>
+
     <input type="checkbox" name="on" id="on" />
     <label for="on" class="dark-theme">
       <i class="bx bxs-sun"></i>
@@ -61,10 +81,12 @@
     </label>
   </body>
 
-  <script src="./src/js/Prefeituras.js"></script>
-  <script src="./src/js/Camaras.js"></script>
-  <script src="./src/js/Outros.js"></script>
-  <script src="./src/js/contabil.js"></script>
+  <script src="./src/js/db/Prefeituras.js"></script>
+  <script src="./src/js/db/Camaras.js"></script>
+  <script src="./src/js/db/Outros.js"></script>
+  <script src="./src/js/db/Contabil.js"></script>
+  <script src="./src/js/db/Patrimonio.js"></script>
+  <script src="./src/js/db/Saude.js"></script>
   <script src="./src/js/index.js"></script>
   <script src="./src/js/hidden.js"></script>
   <script src="./src/js/darkTheme.js"></script>
