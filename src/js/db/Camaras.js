@@ -4,10 +4,6 @@ const camaras = [
     url: "http://gestaopublica.camara.BuritiAlegre.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Buriti Alegre",
-    url: "http://gestaopublica.camara.BuritiAlegre.bsit-br.com.br/login.jsf",
-  },
-  {
     nome: "Camara Campos Verdes",
     url: "http://gestaopublica.camara.camposverdes.bsit-br.com.br/login.jsf",
   },
