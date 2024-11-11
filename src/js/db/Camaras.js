@@ -32,10 +32,6 @@ const camaras = [
     url: "http://gestaopublica.camara.Formosa.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Goianapolis",
-    url: "http://gestaopublica.camara.Goianapolis.bsit-br.com.br/login.jsf",
-  },
-  {
     nome: "Camara Indiara",
     url: "http://gestaopublica.camara.indiara.bsit-br.com.br/login.jsf",
   },
@@ -48,28 +44,12 @@ const camaras = [
     url: "http://gestaopublica.camara.ipameri.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Itaberai",
-    url: "http://gestaopublica.camara.itaberai.bsit-br.com.br/login.jsf",
-  },
-  {
-    nome: "Camara Itaucu",
-    url: "http://gestaopublica.camara.itaucu.bsit-br.com.br",
-  },
-  {
-    nome: "Camara Jaragua",
-    url: "http://gestaopublica.camara.Jaragua.bsit-br.com.br/login.jsf",
-  },
-  {
     nome: "Camara Jatai",
     url: "http://gestaopublica.camara.Jatai.bsit-br.com.br/login.jsf",
   },
   {
     nome: "Camara Joviania",
     url: "http://gestaopublica.camara.Joviania.bsit-br.com.br/login.jsf",
-  },
-  {
-    nome: "Camara NovoGama",
-    url: "http://gestaopublica.camara.NovoGama.bsit-br.com.br/login.jsf",
   },
   {
     nome: "Camara Orizona",
@@ -80,10 +60,6 @@ const camaras = [
     url: "http://gestaopublica.camara.Palminopolis.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Perolandia",
-    url: "http://gestaopublica.camara.Perolandia.bsit-br.com.br/login.jsf",
-  },
-  {
     nome: "Camara Planaltina",
     url: "http://gestaopublica.camara.Planaltina.bsit-br.com.br/login.jsf",
   },
@@ -92,11 +68,11 @@ const camaras = [
     url: "http://gestaopublica.camara.SantaBarbara.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara SantaRosa",
+    nome: "Camara Santa Rosa",
     url: "http://gestaopublica.camara.SantaRosa.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara SaoFrancisc",
+    nome: "Camara São Francisco",
     url: "http://gestaopublica.camara.SaoFrancisco.bsit-br.com.br/login.jsf",
   },
   {
