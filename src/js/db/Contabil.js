@@ -97,7 +97,7 @@ const contabil = [
   },
   {
     nome: "Contabil Web Santa Tereza",
-    url: "https://app01.bsit-br.com.br/contabilidade.santatereza/",
+    url: "https://app02.bsit-br.com.br/contabilidade.santatereza/",
   },
   {
     nome: "Contabil Web São Francisco",
