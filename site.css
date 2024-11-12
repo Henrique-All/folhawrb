@@ -120,12 +120,9 @@ a:visited {
 	color: #000000;
 }
 
-.suport {
-	position: absolute;
-	right: 10px;
-	bottom: 2px;
+.report {
 	border-radius: 500px;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .icon {

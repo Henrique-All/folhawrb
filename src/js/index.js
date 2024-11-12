@@ -15,6 +15,7 @@ function renderLinks(filtro) {
   const patrimonioFiltrados = filtrarPorNome(filtro)(patrimonio);
   const saudeFiltrados = filtrarPorNome(filtro)(saude);
   const painelFiltrados = filtrarPorNome(filtro)(painel);
+  const ferramentasFiltrados = filtrarPorNome(filtro)(ferramentas);
 
   // Renderizar prefeituras
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
@@ -103,6 +104,19 @@ function renderLinks(filtro) {
             <img src="./src/images/logo.png" />
           </div>
           <p class="name">${painel.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("ferramentas").innerHTML = ferramentasFiltrados
+    .map((ferramentas) => {
+      return `
+        <a class="card" href="${ferramentas.url}" target="_blank">
+          <div class="card-header">
+            <img src="./src/images/logo.png" />
+          </div>
+          <p class="name">${ferramentas.nome}</p>
         </a>
       `;
     })
