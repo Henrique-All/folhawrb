@@ -112,6 +112,10 @@
 	margin-bottom: 10px;
 }
 
+a .icon {
+	width: 25px;
+}
+
 a:visited {
 	color: #000000;
 }
