@@ -46,12 +46,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	position: absolute;
 	right: 10px;
 	background-color: #7164d7;
 	width: 240px;
-	height: 350px;
+
 	top: 30px;
 	border-radius: 8px;
 }
@@ -62,16 +61,18 @@
 
 .tabs .btn {
 	display: flex;
+	padding: 0 20px;
+	gap: 10px;
 	width: 100%;
 	font-weight: 700;
 	color: #ffffff;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 15px;
 	height: 40px;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .tabs .btn:hover {
@@ -97,14 +98,6 @@
 	outline: none;
 }
 
-h1 {
-	text-align: center;
-	background: linear-gradient(to right, #1655c4, #7164d7);
-	color: #fff;
-	font-size: 20px;
-	padding: 10px 0;
-}
-
 .hidden {
 	display: none;
 }
@@ -115,12 +108,26 @@ h1 {
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
-	margin-top: 10px;
+	margin-top: 50px;
 	margin-bottom: 10px;
 }
 
 a:visited {
 	color: #000000;
+}
+
+.suport {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 10px;
+	bottom: 2px;
+	border-radius: 500px;
+	font-size: 40px;
+}
+
+.icon {
+	font-size: 25px;
 }
 
 @keyframes flux {
