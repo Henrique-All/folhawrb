@@ -32,74 +32,82 @@
         <p>PORTAL DE CLIENTES SIGEP</p>
       </div>
 
-      <!-- Barra de pesquisa por nome -->
-      <div class="search">
-        <input
-          type="text"
-          id="buscar-nome"
-          placeholder="Pesquisar pelo nome..." />
-      </div>
+      <div class="selects">
+        <!-- Barra de pesquisa por nome -->
+        <div class="search">
+          <button type="button" class="btn-search">
+            <i class="bx bx-search-alt" style="color: #000000"></i>
+          </button>
+          <input type="text" id="buscar-nome" class="input-search" />
+        </div>
 
-      <!-- Icone de reportar -->
-      <a
-        style="color: #ffffff"
-        href="https://wa.link/ev3vrh"
-        class="report"
-        target="_blank"
-        ><i class="bx bxs-error-alt"></i
-      ></a>
+        <!-- Icone de reportar -->
+        <a
+          style="color: #ffffff"
+          href="https://wa.link/ev3vrh"
+          class="report"
+          target="_blank"
+          ><i class="bx bxs-error-alt"></i
+        ></a>
+        <!-- Checkbox para darkmode -->
+        <input type="checkbox" name="on" id="on" />
+        <label for="on" class="dark-theme">
+          <i class="bx bxs-sun"></i>
+          <i class="bx bxs-moon"></i>
+        </label>
 
-      <!-- Tabs -->
-      <div class="menu">
-        <i class="bx bx-menu" style="color: #ffffff"></i>
+        <!-- Tabs -->
+        <div class="menu">
+          <i class="bx bx-menu" style="color: #ffffff"></i>
 
-        <div class="tabs">
-          <button
-            id="tab-prefeituras"
-            class="btn"
-            style="border-radius: 8px 8px 0 0">
-            <i class="bx bxs-building-house icon"></i>Prefeituras
-          </button>
-          <button id="tab-camaras" class="btn">
-            <i class="bx bxs-buildings icon"></i>Câmaras
-          </button>
-          <button id="tab-outros" class="btn">
-            <i class="bx bxs-institution icon"></i>Previdências
-          </button>
-          <button id="tab-contabil" class="btn">
-            <i class="bx bxs-dollar-circle icon"></i>Contabil
-          </button>
-          <button id="tab-patrimonio" class="btn">
-            <i class="bx bxs-bank icon"></i>Patrimonio
-          </button>
-          <button id="tab-saude" class="btn">
-            <i class="bx bx-plus-medical icon"></i>Saúde
-          </button>
-          <button id="tab-painel" class="btn">
-            <i class="bx bxs-dashboard icon"></i>Dashboard Hospitalar
-          </button>
+          <div class="tabs">
+            <button
+              id="tab-prefeituras"
+              class="btn"
+              style="border-radius: 8px 8px 0 0">
+              <i class="bx bxs-building-house icon"></i>Prefeituras
+            </button>
+            <button id="tab-camaras" class="btn">
+              <i class="bx bxs-buildings icon"></i>Câmaras
+            </button>
+            <button id="tab-outros" class="btn">
+              <i class="bx bxs-institution icon"></i>Previdências
+            </button>
+            <button id="tab-contabil" class="btn">
+              <i class="bx bxs-dollar-circle icon"></i>Contabil
+            </button>
+            <button id="tab-patrimonio" class="btn">
+              <i class="bx bxs-bank icon"></i>Patrimonio
+            </button>
+            <button id="tab-saude" class="btn">
+              <i class="bx bx-plus-medical icon"></i>Saúde
+            </button>
+            <button id="tab-painel" class="btn">
+              <i class="bx bxs-dashboard icon"></i>Dashboard Hospitalar
+            </button>
 
-          <a
-            href="http://sistema.siasbrasil.com/portal-social/ "
-            target="_blank"
-            style="border-radius: 0 0 8px 8px"
-            class="btn"
-            ><i class="bx bxs-group icon"></i> Portal Social</a
-          >
-          <button
-            id="tab-ferramentas"
-            class="btn"
-            style="border-radius: 8px 8px 0 0">
-            <i class="bx bxs-cog icon"></i>Ferramentas
-          </button>
-          <a
-            href="https://sigep.swgp.com.br/"
-            target="_blank"
-            style="border-radius: 0 0 8px 8px"
-            class="btn"
-            ><img src="./src/images/favicon.ico" class="icon" />
-            InfraServices</a
-          >
+            <a
+              href="http://sistema.siasbrasil.com/portal-social/ "
+              target="_blank"
+              style="border-radius: 0 0 8px 8px"
+              class="btn"
+              ><i class="bx bxs-group icon"></i> Portal Social</a
+            >
+            <button
+              id="tab-ferramentas"
+              class="btn"
+              style="border-radius: 8px 8px 0 0">
+              <i class="bx bxs-cog icon"></i>Ferramentas
+            </button>
+            <a
+              href="https://sigep.swgp.com.br/"
+              target="_blank"
+              style="border-radius: 0 0 8px 8px"
+              class="btn"
+              ><img src="./src/images/favicon.ico" class="icon" />
+              InfraServices</a
+            >
+          </div>
         </div>
       </div>
     </nav>
@@ -144,13 +152,6 @@
     <div id="h-ferramentas">
       <div id="ferramentas" class="main"></div>
     </div>
-
-    <!-- Checkbox para darkmode -->
-    <input type="checkbox" name="on" id="on" />
-    <label for="on" class="dark-theme">
-      <i class="bx bxs-sun"></i>
-      <i class="bx bxs-moon"></i>
-    </label>
   </body>
   <!-- END HTML -->
 
