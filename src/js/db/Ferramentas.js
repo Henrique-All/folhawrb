@@ -8,6 +8,10 @@ const ferramentas = [
     url: "https://www.gov.br/esocial/pt-br",
   },
   {
+    nome: "json viewer",
+    url: "https://jsonviewer.stack.hu/ ",
+  },
+  {
     nome: "Calculadora IRRF GOV",
     url: "https://www27.receita.fazenda.gov.br/simulador-irpf/",
   },
