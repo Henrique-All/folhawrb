@@ -1,3 +1,5 @@
+//Dados como Nome e URl do sites.
+
 const painel = [
   {
     nome: "Painel de Chamado São Simão",

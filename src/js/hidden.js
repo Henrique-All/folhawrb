@@ -1,3 +1,4 @@
+// Variaveis para as tabs
 const tabPrefeituras = document.getElementById("tab-prefeituras");
 const tabCamaras = document.getElementById("tab-camaras");
 const tabOutros = document.getElementById("tab-outros");
@@ -7,6 +8,7 @@ const tabSaude = document.getElementById("tab-saude");
 const tabPainel = document.getElementById("tab-painel");
 const tabFerramentas = document.getElementById("tab-ferramentas");
 
+// Variaveis para as divs
 const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
 const divOutros = document.getElementById("h-outros");
@@ -27,6 +29,7 @@ function showTab(tab) {
   divPainel.classList.add("hidden");
   divFerramentas.classList.add("hidden");
 
+  // Função que remove a class
   if (tab === "h-prefeituras") {
     divPrefeituras.classList.remove("hidden");
   } else if (tab === "h-camaras") {

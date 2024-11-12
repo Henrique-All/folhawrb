@@ -3,31 +3,44 @@
   <head>
     <title>Portal de Clientes</title>
     <meta charset="utf-8" />
+
+    <!-- Favicon -->
     <link rel="icon" href="./src/images/favicon.ico" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
-    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="site.css" />
-    <link rel="stylesheet" href="reset.css" />
+
+    <!-- Icones -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="global.css" />
   </head>
 
   <body>
+    <!-- Navegação -->
     <nav class="navigation">
       <div class="logo">
         <img src="./src/images/logo.png" alt="" />
         <p>PORTAL DE CLIENTES SIGEP</p>
       </div>
+
+      <!-- Barra de pesquisa por nome -->
       <div class="search">
         <input
           type="text"
           id="buscar-nome"
           placeholder="Pesquisar pelo nome..." />
       </div>
+
+      <!-- Icone de reportar -->
       <a
         style="color: #ffffff"
         href="https://wa.link/ev3vrh"
@@ -36,6 +49,7 @@
         ><i class="bx bxs-error-alt"></i
       ></a>
 
+      <!-- Tabs -->
       <div class="menu">
         <i class="bx bx-menu" style="color: #ffffff"></i>
 
@@ -88,45 +102,58 @@
         </div>
       </div>
     </nav>
+    <!-- END Navegação -->
 
+    <!-- Card Prefeituras -->
     <div id="h-prefeituras">
       <div id="prefeituras" class="main"></div>
     </div>
 
+    <!-- Card Camaras -->
     <div id="h-camaras" class="hidden">
       <div id="camaras" class="main"></div>
     </div>
 
+    <!-- Card Previdencia e outros -->
     <div id="h-outros">
       <div id="outros" class="main"></div>
     </div>
 
+    <!-- Card Contabilidade -->
     <div id="h-contabil">
       <div id="contabil" class="main"></div>
     </div>
 
+    <!-- Card Patrimonio -->
     <div id="h-patrimonio">
       <div id="patrimonio" class="main"></div>
     </div>
 
+    <!-- Card Saúde -->
     <div id="h-saude">
       <div id="saude" class="main"></div>
     </div>
 
+    <!-- Card Dashboard Paciente -->
     <div id="h-painel">
       <div id="painel" class="main"></div>
     </div>
+
+    <!-- Card ferramentas -->
     <div id="h-ferramentas">
       <div id="ferramentas" class="main"></div>
     </div>
 
+    <!-- Checkbox para darkmode -->
     <input type="checkbox" name="on" id="on" />
     <label for="on" class="dark-theme">
       <i class="bx bxs-sun"></i>
       <i class="bx bxs-moon"></i>
     </label>
   </body>
+  <!-- END HTML -->
 
+  <!-- Dados  -->
   <script src="./src/js/db/Prefeituras.js"></script>
   <script src="./src/js/db/Camaras.js"></script>
   <script src="./src/js/db/Outros.js"></script>
@@ -135,7 +162,12 @@
   <script src="./src/js/db/Saude.js"></script>
   <script src="./src/js/db/SaudePainel.js"></script>
   <script src="./src/js/db/Ferramentas.js"></script>
+  <!-- END Dados Script -->
+
+  <!-- Scripts de darkmode, hidden e renderização -->
   <script src="./src/js/index.js"></script>
   <script src="./src/js/hidden.js"></script>
   <script src="./src/js/darkTheme.js"></script>
+  <!-- END Script -->
 </html>
+<!-- END Code -->

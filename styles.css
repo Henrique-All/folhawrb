@@ -1,3 +1,4 @@
+/* Navegação Css */
 .navigation {
 	width: 100%;
 	display: flex;
@@ -98,10 +99,14 @@
 	outline: none;
 }
 
+/* END Navegação Css */
+
+/* Hidden */
 .hidden {
 	display: none;
 }
 
+/* Cad css */
 .main {
 	display: flex;
 	flex-wrap: wrap;
@@ -201,6 +206,9 @@ h1 {
 	color: #000000;
 }
 
+/* End Card Css */
+
+/* Darkmode Css */
 #on {
 	display: none;
 }
@@ -229,3 +237,5 @@ h1 {
 	cursor: pointer;
 	animation: fluxo 400ms;
 }
+
+/* END Darkmode Css */

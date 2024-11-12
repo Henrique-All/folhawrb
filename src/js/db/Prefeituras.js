@@ -1,3 +1,5 @@
+//Dados como Nome e URl do sites.
+
 const prefeituras = [
   {
     nome: "Prefeitura Arenópolis",

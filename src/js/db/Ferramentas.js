@@ -1,3 +1,5 @@
+//Dados como Nome e URl do sites.
+
 const ferramentas = [
   {
     nome: "Colare DOC",
@@ -40,5 +42,4 @@ const ferramentas = [
     nome: "Calculadora IRRF Calcula Net",
     url: "https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/",
   },
-
 ];

@@ -57,6 +57,7 @@ function renderLinks(filtro) {
     })
     .join("");
 
+  // Renderizar Contabil
   document.getElementById("contabil").innerHTML = contabilFiltrados
     .map((contabil) => {
       return `
@@ -70,6 +71,7 @@ function renderLinks(filtro) {
     })
     .join("");
 
+  // Renderizar Patrimonio
   document.getElementById("patrimonio").innerHTML = patrimonioFiltrados
     .map((patrimonio) => {
       return `
@@ -83,6 +85,7 @@ function renderLinks(filtro) {
     })
     .join("");
 
+  // Renderizar Saúde
   document.getElementById("saude").innerHTML = saudeFiltrados
     .map((saude) => {
       return `
@@ -96,6 +99,7 @@ function renderLinks(filtro) {
     })
     .join("");
 
+  // Renderizar Dashboard de paciente
   document.getElementById("painel").innerHTML = painelFiltrados
     .map((painel) => {
       return `
@@ -109,6 +113,7 @@ function renderLinks(filtro) {
     })
     .join("");
 
+  // Renderizar ferramentas
   document.getElementById("ferramentas").innerHTML = ferramentasFiltrados
     .map((ferramentas) => {
       return `
