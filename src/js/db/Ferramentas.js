@@ -41,8 +41,4 @@ const ferramentas = [
     url: "https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/",
   },
 
-  {
-    nome: "Calculadora IRRF Calcula Net",
-    url: "https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/",
-  },
 ];
