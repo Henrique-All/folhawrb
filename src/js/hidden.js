@@ -7,6 +7,7 @@ const tabPatrimonio = document.getElementById("tab-patrimonio");
 const tabSaude = document.getElementById("tab-saude");
 const tabPainel = document.getElementById("tab-painel");
 const tabFerramentas = document.getElementById("tab-ferramentas");
+const tabTcm = document.getElementById("tab-tcm");
 
 // Variaveis para as divs
 const divPrefeituras = document.getElementById("h-prefeituras");
@@ -17,6 +18,7 @@ const divPatrimonio = document.getElementById("h-patrimonio");
 const divSaude = document.getElementById("h-saude");
 const divPainel = document.getElementById("h-painel");
 const divFerramentas = document.getElementById("h-ferramentas");
+const divTcm = document.getElementById("h-tcm");
 
 // Função para esconder todas as divs e mostrar apenas a selecionada
 function showTab(tab) {
@@ -28,6 +30,7 @@ function showTab(tab) {
   divSaude.classList.add("hidden");
   divPainel.classList.add("hidden");
   divFerramentas.classList.add("hidden");
+  divTcm.classList.add("hidden");
 
   // Função que remove a class
   if (tab === "h-prefeituras") {
@@ -46,6 +49,8 @@ function showTab(tab) {
     divPainel.classList.remove("hidden");
   } else if (tab === "h-ferramentas") {
     divFerramentas.classList.remove("hidden");
+  } else if (tab === "h-tcm") {
+    divTcm.classList.remove("hidden");
   }
 }
 
@@ -58,6 +63,7 @@ tabPatrimonio.addEventListener("click", () => showTab("h-patrimonio"));
 tabSaude.addEventListener("click", () => showTab("h-saude"));
 tabPainel.addEventListener("click", () => showTab("h-painel"));
 tabFerramentas.addEventListener("click", () => showTab("h-ferramentas"));
+tabTcm.addEventListener("click", () => showTab("h-tcm"));
 
 // Exibe a primeira aba por padrão
 showTab("h-prefeituras");
