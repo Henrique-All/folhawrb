@@ -30,6 +30,10 @@ const outros = [
     url: "http://gestaopublica.cisoii.bsit-br.com.br/manager/human-resources/register/employee.jsf",
   },
   {
+    nome: "CIGIRS",
+    url: "http://gestaopublica.cigirs.bsit-br.com.br/login.jsf?redir=/manager/shopping/register/request-product-service-purchase-initial.jsf ",
+  },
+  {
     nome: "Prestador Jatai",
     url: "http://gestaopublica.Prestador.Jatai.bsit-br.com.br/login.jsf",
   },
