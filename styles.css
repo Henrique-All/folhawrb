@@ -58,6 +58,7 @@
 
 .tabs {
 	display: none;
+	position: relative;
 }
 
 .tabs .btn {
@@ -347,4 +348,107 @@ h1 {
 	color: #ffffff;
 	padding: 2px;
 	border-radius: 2px;
+}
+
+@keyframes open {
+	0% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.municipios {
+	width: 100%;
+}
+
+#btn-municipios {
+	display: flex;
+	padding: 0 0px 0 20px;
+	gap: 10px;
+	width: 100%;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	height: 40px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#btn-municipios:hover {
+	font-size: 18px;
+	transition: all ease 400ms;
+}
+
+.municipios .acess {
+	display: none;
+	background-color: #41397e;
+	animation: open 400ms;
+}
+
+.contabil {
+	width: 100%;
+}
+
+#btn-contabil {
+	display: flex;
+	padding: 0 0px 0 20px;
+	gap: 10px;
+	width: 100%;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	height: 40px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#btn-contabil:hover {
+	font-size: 18px;
+	transition: all ease 400ms;
+}
+
+.tabscontabil {
+	display: none;
+	background-color: #41397e;
+	animation: open 400ms;
+}
+
+.saude {
+	width: 100%;
+}
+
+#btn-saude {
+	display: flex;
+	padding: 0 0px 0 20px;
+	gap: 10px;
+	width: 100%;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	height: 40px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#btn-saude:hover {
+	font-size: 18px;
+	transition: all ease 400ms;
+}
+
+.acess-saude {
+	display: none;
+	background-color: #41397e;
+	animation: open 400ms;
 }
