@@ -52,7 +52,7 @@
 	background-color: #7164d7;
 	width: 240px;
 
-	top: 30px;
+	top: 20px;
 	border-radius: 8px;
 }
 
@@ -112,6 +112,11 @@
 	background-color: #3a3a3a;
 	color: #ffffff;
 	font-family: "Poppins";
+	width: 400px;
+	border-radius: 0px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50px;
+	transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
 .input-search::placeholder {
@@ -148,13 +153,6 @@
 	pointer-events: painted;
 }
 
-.btn-search:focus~.input-search {
-	width: 400px;
-	border-radius: 0px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 50px;
-	transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-}
 
 /* END Navegação Css */
 
@@ -348,4 +346,108 @@ h1 {
 	color: #ffffff;
 	padding: 2px;
 	border-radius: 2px;
+}
+
+
+@keyframes open {
+	0% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.municipios {
+	width: 100%;
+}
+
+#btn-municipios {
+	display: flex;
+	padding: 0 0px 0 20px;
+	gap: 10px;
+	width: 100%;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	height: 40px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#btn-municipios:hover {
+	font-size: 18px;
+	transition: all ease 400ms;
+}
+
+.municipios .acess {
+	display: none;
+	background-color: #41397e;
+	animation: open 400ms;
+}
+
+.contabil {
+	width: 100%;
+}
+
+#btn-contabil {
+	display: flex;
+	padding: 0 0px 0 20px;
+	gap: 10px;
+	width: 100%;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	height: 40px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#btn-contabil:hover {
+	font-size: 18px;
+	transition: all ease 400ms;
+}
+
+.tabscontabil {
+	display: none;
+	background-color: #41397e;
+	animation: open 400ms;
+}
+
+.saude {
+	width: 100%;
+}
+
+#btn-saude {
+	display: flex;
+	padding: 0 0px 0 20px;
+	gap: 10px;
+	width: 100%;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	height: 40px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#btn-saude:hover {
+	font-size: 18px;
+	transition: all ease 400ms;
+}
+
+.acess-saude {
+	display: none;
+	background-color: #41397e;
+	animation: open 400ms;
 }
