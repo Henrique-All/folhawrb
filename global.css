@@ -50,19 +50,66 @@
   color: white;
 }
 
-.dark .search input {
-  width: 100%;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  background-color: #3a3a3a;
-  color: #ffffff;
-}
-
-.dark .search input::placeholder {
-  color: #ffffff;
-}
-
 html::-webkit-scrollbar {
   display: none;
+}
+
+.dark .input-search {
+  width: 30px;
+  height: 30px;
+  border-style: none;
+  font-size: 18px;
+  outline: none;
+  background-color: #3a3a3a;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50px;
+  color: #ffffff;
+  padding-right: 10px;
+  font-family: "Poppins";
+}
+
+.dark .input-search::placeholder {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.dark .input-search:focus {
+  width: 400px;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  border-radius: 50px;
+}
+
+.dark .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  background-color: #3a3a3a;
+  pointer-events: painted;
+}
+
+.dark .icon-search {
+  color: #ffffff;
+}
+
+.dark .btn-search:focus~.input-search {
+  width: 400px;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
