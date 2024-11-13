@@ -16,6 +16,7 @@ function renderLinks(filtro) {
   const saudeFiltrados = filtrarPorNome(filtro)(saude);
   const painelFiltrados = filtrarPorNome(filtro)(painel);
   const ferramentasFiltrados = filtrarPorNome(filtro)(ferramentas);
+  const testFiltrados = filtrarPorNome(filtro)(test);
 
   // Renderizar prefeituras
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
@@ -122,6 +123,28 @@ function renderLinks(filtro) {
             <img src="./src/images/logo.png" />
           </div>
           <p class="name">${ferramentas.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("test").innerHTML = testFiltrados
+    .map((test) => {
+      // Define as classes diretamente para tag1 e tag2
+      const tag1 = test.tag1; // tag1 sempre recebe 'on'
+      const tag2 = test.tag2; // tag2 sempre recebe 'off'
+
+      return `
+        <a class="card" href="${test.url}" target="_blank" style="width: 350px">
+          <div class="card-header">
+            <img src="./src/images/logo.png" />
+          </div>
+          <p class="name" style="margin: 0 0 0 10px">${test.nome}</p>
+          <div class="tags">
+            ${tag1 ? `<p class="tags-stts on">${tag1}</p>` : ""}
+            ${tag2 ? `<p class="tags-stts off">${tag2}</p>` : ""}
+            ${test.tag3 ? `<p class="tags-test">${test.tag3}</p>` : ""}
+          </div>
         </a>
       `;
     })

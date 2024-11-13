@@ -312,3 +312,37 @@ h1 {
 .tcm-pdf iframe {
 	width: 100%;
 }
+
+.tags {
+	display: flex;
+	flex-direction: column;
+	width: 180px;
+	align-items: end;
+	gap: 5px;
+	height: 80%;
+}
+
+.tags-stts.on {
+	font-size: 10px;
+	background-color: green;
+	color: #ffffff;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+.tags-stts.off {
+	font-size: 10px;
+	background-color: red;
+	color: #ffffff;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+
+.tags-test {
+	font-size: 8px;
+	background-color: #1655c4;
+	color: #ffffff;
+	padding: 2px;
+	border-radius: 2px;
+}
