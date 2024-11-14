@@ -10,7 +10,6 @@ const tabFerramentas = document.getElementById("tab-ferramentas");
 const tabTcm = document.getElementById("tab-tcm");
 const tabTest = document.getElementById("tab-test");
 const tabJson = document.getElementById("tab-json");
-const tabTcmDoc = document.getElementById("tab-tcmdoc");
 const tabTcmFiscaliza = document.getElementById("tab-tcmfiscaliza");
 
 // Variaveis para as divs
@@ -41,7 +40,6 @@ function showTab(tab) {
   divTcm.classList.add("hidden");
   divTest.classList.add("hidden");
   divJson.classList.add("hidden");
-  divTcmDoc.classList.add("hidden");
   divTcmFiscaliza.classList.add("hidden");
 
   // Função que remove a class
@@ -67,8 +65,6 @@ function showTab(tab) {
     divTest.classList.remove("hidden");
   } else if (tab === "h-json") {
     divJson.classList.remove("hidden");
-  } else if (tab === "h-tcmdoc") {
-    divTcmDoc.classList.remove("hidden");
   } else if (tab === "h-tcmfiscaliza") {
     divTcmFiscaliza.classList.remove("hidden");
   }
@@ -86,7 +82,6 @@ tabFerramentas.addEventListener("click", () => showTab("h-ferramentas"));
 tabTcm.addEventListener("click", () => showTab("h-tcm"));
 tabTest.addEventListener("click", () => showTab("h-test"));
 tabJson.addEventListener("click", () => showTab("h-json"));
-tabTcmDoc.addEventListener("click", () => showTab("h-tcmdoc"));
 tabTcmFiscaliza.addEventListener("click", () => showTab("h-tcmfiscaliza"));
 
 // Exibe a primeira aba por padrão
