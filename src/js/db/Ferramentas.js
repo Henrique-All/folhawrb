@@ -2,10 +2,6 @@
 
 const ferramentas = [
   {
-    nome: "Colare DOC",
-    url: "https://tcmgo.tc.br/colare-doc/faces/public/pagInicio.xhtml;jsessionid=sbArYysFbM6E8uwwoHvU1N1gLnDXaMjWL5UcMiQW.6b9ab1494729?dswid=-2905",
-  },
-  {
     nome: "E-Social",
     url: "https://www.gov.br/esocial/pt-br",
   },
@@ -18,16 +14,8 @@ const ferramentas = [
     url: "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-1-3-nt-02-2024-rev-29-10-2024",
   },
   {
-    nome: "json viewer",
-    url: "https://jsonviewer.stack.hu/ ",
-  },
-  {
     nome: "Calculadora IRRF GOV",
     url: "https://www27.receita.fazenda.gov.br/simulador-irpf/",
-  },
-  {
-    nome: "Colare Fiscalização e Controle",
-    url: "https://www.tcmgo.tc.br/site/fiscalizacao-e-controle/",
   },
   {
     nome: "Conversor PDFs e OCR Ilove",
