@@ -1,10 +1,18 @@
 function filtrarPorNome(criterio) {
   return (array) =>
     array.filter((item) =>
-      item.nome.toLowerCase().includes(criterio.toLowerCase())
+      item.nome
+        .normalize("NFD") // Normaliza para a forma decomposicional
+        .replace(/[\u0300-\u036f]/g, "") // Remove os acentos
+        .toLowerCase()
+        .includes(
+          criterio
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase()
+        )
     );
 }
-
 // Função para renderizar
 function renderLinks(filtro) {
   // Filtrar os dados
