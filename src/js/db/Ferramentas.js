@@ -2,6 +2,10 @@
 
 const ferramentas = [
   {
+    nome: "Colare Doc",
+    url: "https://tcmgo.tc.br/colare-doc",
+  },
+  {
     nome: "E-Social",
     url: "https://www.gov.br/esocial/pt-br",
   },
