@@ -10,6 +10,14 @@ const ferramentas = [
     url: "https://www.gov.br/esocial/pt-br",
   },
   {
+    nome: "E-Social Leiaute S-1.2",
+    url: "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-v-1-2-versao-s-1-2-nt-04-2024/index.html",
+  },
+  {
+    nome: "E-Social Leiaute S-1.3",
+    url: "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-1-3-nt-02-2024-rev-29-10-2024",
+  },
+  {
     nome: "json viewer",
     url: "https://jsonviewer.stack.hu/ ",
   },
