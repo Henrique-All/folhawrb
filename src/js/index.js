@@ -160,19 +160,17 @@ document.getElementById("buscar-nome").addEventListener("input", (e) => {
 });
 
 // menu script
-document
-  .getElementById("btn-municipios")
-  .addEventListener("click", function () {
-    var acessDiv = document.querySelector(".acess");
-    // Alterna a visibilidade do div com a classe 'acess'
-    if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
-      acessDiv.style.display = "block"; // Exibe a div
-    } else {
-      acessDiv.style.display = "none"; // Esconde a div
-    }
-  });
+document.getElementById("bt-municipios").addEventListener("click", function () {
+  var acessDiv = document.querySelector(".acess");
+  // Alterna a visibilidade do div com a classe 'acess'
+  if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
+    acessDiv.style.display = "block"; // Exibe a div
+  } else {
+    acessDiv.style.display = "none"; // Esconde a div
+  }
+});
 
-document.getElementById("btn-contabil").addEventListener("click", function () {
+document.getElementById("bt-contabil").addEventListener("click", function () {
   var acessDiv = document.querySelector(".tabscontabil");
   // Alterna a visibilidade do div com a classe 'acess'
   if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
@@ -181,7 +179,7 @@ document.getElementById("btn-contabil").addEventListener("click", function () {
     acessDiv.style.display = "none"; // Esconde a div
   }
 });
-document.getElementById("btn-saude").addEventListener("click", function () {
+document.getElementById("bt-saude").addEventListener("click", function () {
   var acessDiv = document.querySelector(".acess-saude");
   // Alterna a visibilidade do div com a classe 'acess'
   if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
@@ -190,3 +188,15 @@ document.getElementById("btn-saude").addEventListener("click", function () {
     acessDiv.style.display = "none"; // Esconde a div
   }
 });
+
+document
+  .getElementById("bt-ferramentas")
+  .addEventListener("click", function () {
+    var acessDiv = document.querySelector(".acess-ferramentas");
+    // Alterna a visibilidade do div com a classe 'acess'
+    if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
+      acessDiv.style.display = "block"; // Exibe a div
+    } else {
+      acessDiv.style.display = "none"; // Esconde a div
+    }
+  });

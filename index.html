@@ -35,7 +35,7 @@
           href="./path.html"
           title="path notes da versão"
           style="color: #ffffff; font-size: 10px"
-          >v1.2.4</a
+          >v1.2.5</a
         >
       </div>
 
@@ -69,7 +69,7 @@
 
           <div class="tabs">
             <div class="municipios">
-              <button id="btn-municipios">
+              <button id="bt-municipios">
                 <i class="bx bxs-buildings icon"></i> Municipios
                 <i class="bx bx-chevron-down"></i>
               </button>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="contabil">
-              <button id="btn-contabil">
+              <button id="bt-contabil">
                 <i class="bx bxs-dollar-circle icon"></i> Gestão Contabil
                 <i class="bx bx-chevron-down"></i>
               </button>
@@ -102,7 +102,7 @@
             </div>
 
             <div class="saude">
-              <button id="btn-saude">
+              <button id="bt-saude">
                 <i class="bx bx-plus-medical icon"></i> Gestão de Saúde<i
                   class="bx bx-chevron-down"></i>
               </button>
@@ -117,21 +117,41 @@
               </div>
             </div>
 
+            <div class="ferramentas">
+              <button id="bt-ferramentas">
+                <i class="bx bxs-cog icon"></i> Ferramentas<i
+                  class="bx bx-chevron-down"></i>
+              </button>
+
+              <div class="acess-ferramentas">
+                <button id="tab-ferramentas" class="btn">
+                  <i class="bx bxs-cog icon-dp"></i>Geral
+                </button>
+                <button id="tab-test" class="btn">
+                  <i class="bx bx-code-block icon-dp"></i>Ambiente de Teste
+                </button>
+                <button id="tab-tcm" class="btn">
+                  <i class="bx bxs-dashboard icon-dp"></i>Validador de PDF
+                </button>
+                <button id="tab-json" class="btn">
+                  <i class="bx bxs-dashboard icon-dp"></i>Json Viewer
+                </button>
+                <button id="tab-tcmdoc" class="btn">
+                  <i class="bx bxs-dashboard icon-dp"></i>Colare Doc
+                </button>
+                <button id="tab-tcmfiscaliza" class="btn">
+                  <i class="bx bxs-dashboard icon-dp"></i>Colare Fiscalização
+                </button>
+              </div>
+            </div>
+
             <a
               href="http://sistema.siasbrasil.com/portal-social/ "
               target="_blank"
               class="btn"
               ><i class="bx bxs-group icon"></i> Portal Social</a
             >
-            <button id="tab-test" class="btn">
-              <i class="bx bx-code-block icon"></i>Ambiente de Teste
-            </button>
-            <button id="tab-tcm" class="btn">
-              <i class="bx bxs-dashboard icon"></i>Validador de PDF
-            </button>
-            <button id="tab-ferramentas" class="btn">
-              <i class="bx bxs-cog icon"></i>Ferramentas
-            </button>
+
             <a
               href="https://sigep.swgp.com.br/"
               target="_blank"
@@ -194,6 +214,28 @@
       <div class="tcm-pdf">
         <iframe
           src="https://virtual.tcm.go.gov.br/pdfa-web-validator"
+          frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <div id="h-json">
+      <div class="tcm-pdf">
+        <iframe src="https://jsonviewer.stack.hu/" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <div id="h-tcmfiscaliza">
+      <div class="tcm-pdf">
+        <iframe
+          src="https://www.tcmgo.tc.br/site/fiscalizacao-e-controle/"
+          frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <div id="h-tcmdoc">
+      <div class="tcm-pdf">
+        <iframe
+          src="https://tcmgo.tc.br/colare-doc/faces/public/pagInicio.xhtml;jsessionid=sbArYysFbM6E8uwwoHvU1N1gLnDXaMjWL5UcMiQW.6b9ab1494729?dswid=-2905"
           frameborder="0"></iframe>
       </div>
     </div>

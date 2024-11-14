@@ -9,6 +9,9 @@ const tabPainel = document.getElementById("tab-painel");
 const tabFerramentas = document.getElementById("tab-ferramentas");
 const tabTcm = document.getElementById("tab-tcm");
 const tabTest = document.getElementById("tab-test");
+const tabJson = document.getElementById("tab-json");
+const tabTcmDoc = document.getElementById("tab-tcmdoc");
+const tabTcmFiscaliza = document.getElementById("tab-tcmfiscaliza");
 
 // Variaveis para as divs
 const divPrefeituras = document.getElementById("h-prefeituras");
@@ -21,6 +24,9 @@ const divPainel = document.getElementById("h-painel");
 const divFerramentas = document.getElementById("h-ferramentas");
 const divTcm = document.getElementById("h-tcm");
 const divTest = document.getElementById("h-test");
+const divJson = document.getElementById("h-json");
+const divTcmDoc = document.getElementById("h-tcmdoc");
+const divTcmFiscaliza = document.getElementById("h-tcmfiscaliza");
 
 // Função para esconder todas as divs e mostrar apenas a selecionada
 function showTab(tab) {
@@ -34,6 +40,9 @@ function showTab(tab) {
   divFerramentas.classList.add("hidden");
   divTcm.classList.add("hidden");
   divTest.classList.add("hidden");
+  divJson.classList.add("hidden");
+  divTcmDoc.classList.add("hidden");
+  divTcmFiscaliza.classList.add("hidden");
 
   // Função que remove a class
   if (tab === "h-prefeituras") {
@@ -56,6 +65,12 @@ function showTab(tab) {
     divTcm.classList.remove("hidden");
   } else if (tab === "h-test") {
     divTest.classList.remove("hidden");
+  } else if (tab === "h-json") {
+    divJson.classList.remove("hidden");
+  } else if (tab === "h-tcmdoc") {
+    divTcmDoc.classList.remove("hidden");
+  } else if (tab === "h-tcmfiscaliza") {
+    divTcmFiscaliza.classList.remove("hidden");
   }
 }
 
@@ -70,6 +85,9 @@ tabPainel.addEventListener("click", () => showTab("h-painel"));
 tabFerramentas.addEventListener("click", () => showTab("h-ferramentas"));
 tabTcm.addEventListener("click", () => showTab("h-tcm"));
 tabTest.addEventListener("click", () => showTab("h-test"));
+tabJson.addEventListener("click", () => showTab("h-json"));
+tabTcmDoc.addEventListener("click", () => showTab("h-tcmdoc"));
+tabTcmFiscaliza.addEventListener("click", () => showTab("h-tcmfiscaliza"));
 
 // Exibe a primeira aba por padrão
 showTab("h-prefeituras");
