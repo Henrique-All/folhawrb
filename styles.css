@@ -11,6 +11,7 @@
 	padding: 0 20px;
 }
 
+
 .navigation .logo {
 	display: flex;
 	align-items: center;
@@ -33,16 +34,16 @@
 
 @keyframes slide {
 	0% {
-		transform: translateY(-100px);
+		transform: translateX(200px);
 	}
 
 	100% {
-		transform: translateY(0px);
+		transform: translateX(0px);
 	}
 }
 
 .menu:hover>.tabs {
-	animation: slide 400ms;
+	animation: slide 800ms;
 	z-index: 2000;
 	display: flex;
 	flex-direction: column;
@@ -115,7 +116,7 @@
 	width: 400px;
 	border-radius: 0px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 50px;
+	border-radius: 8px;
 	transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
@@ -145,7 +146,7 @@
 	font-weight: bold;
 	outline: none;
 	cursor: pointer;
-	border-radius: 50%;
+	border-radius: 8px;
 	position: absolute;
 	right: 0px;
 	color: #ffffff;
@@ -194,10 +195,12 @@ a:visited {
 
 @keyframes flux {
 	0% {
-		transform: translateX(300px);
+		opacity: 0;
+		transform: translateX(50px);
 	}
 
 	100% {
+		opacity: 1;
 		transform: translateX(0px);
 	}
 }
@@ -234,8 +237,9 @@ ul, li {
 }
 
 .card:hover {
-	transform: scale(1.05);
-	transition: all ease-in 400ms;
+	background-color: #5d5c5c;
+	transform: scale(1.01);
+	transition: all ease-in 200ms;
 }
 
 .card .card-header {
@@ -269,6 +273,7 @@ ul, li {
 /* End Card Css */
 
 /* Darkmode Css */
+
 #on {
 	display: none;
 }
@@ -291,7 +296,6 @@ ul, li {
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
-	animation: fluxo 400ms;
 }
 
 /* END Darkmode Css */
@@ -355,10 +359,12 @@ ul, li {
 
 @keyframes open {
 	0% {
-		transform: translateY(-10px);
+		transform: translateY(-30px);
+		opacity: 0;
 	}
 
 	100% {
+		opacity: 1;
 		transform: translateY(0);
 	}
 }
