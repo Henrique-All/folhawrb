@@ -216,6 +216,10 @@ h1 {
 	animation: fluxo 400ms;
 }
 
+ul, li {
+	animation: fluxo 400ms;
+}
+
 .card {
 	display: flex;
 	justify-content: space-between;
