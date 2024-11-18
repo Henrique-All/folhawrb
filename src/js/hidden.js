@@ -11,6 +11,8 @@ const tabTcm = document.getElementById("tab-tcm");
 const tabTest = document.getElementById("tab-test");
 const tabJson = document.getElementById("tab-json");
 const tabTcmFiscaliza = document.getElementById("tab-tcmfiscaliza");
+const tabVoip = document.getElementById("tab-voip");
+const tabEmail = document.getElementById("tab-email");
 
 // Variaveis para as divs
 const divHome = document.getElementById("home");
@@ -27,6 +29,8 @@ const divTest = document.getElementById("h-test");
 const divJson = document.getElementById("h-json");
 const divTcmDoc = document.getElementById("h-tcmdoc");
 const divTcmFiscaliza = document.getElementById("h-tcmfiscaliza");
+const divVoip = document.getElementById("h-voip");
+const divEmail = document.getElementById("h-Email");
 
 // Função para esconder todas as divs e mostrar apenas a selecionada
 function showTab(tab) {
@@ -43,6 +47,8 @@ function showTab(tab) {
   divJson.classList.add("hidden");
   divTcmFiscaliza.classList.add("hidden");
   divHome.classList.add("hidden");
+  divVoip.classList.add("hidden");
+  divEmail.classList.add("hidden");
 
   // Função que remove a class
   if (tab === "h-prefeituras") {
@@ -71,6 +77,10 @@ function showTab(tab) {
     divTcmFiscaliza.classList.remove("hidden");
   } else if (tab === "home") {
     divHome.classList.remove("hidden");
+  } else if (tab === "h-voip") {
+    divVoip.classList.remove("hidden");
+  } else if (tab === "h-email") {
+    divEmail.classList.remove("hidden");
   }
 }
 
@@ -87,6 +97,8 @@ tabTcm.addEventListener("click", () => showTab("h-tcm"));
 tabTest.addEventListener("click", () => showTab("h-test"));
 tabJson.addEventListener("click", () => showTab("h-json"));
 tabTcmFiscaliza.addEventListener("click", () => showTab("h-tcmfiscaliza"));
+tabVoip.addEventListener("click", () => showTab("h-voip"));
+tabEmail.addEventListener("click", () => showTab("h-email"));
 
 // Exibe a primeira aba por padrão
 showTab("home");
