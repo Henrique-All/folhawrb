@@ -28,24 +28,26 @@
     <!-- Navegação -->
     <nav class="navigation">
       <div class="logo">
-        <img src="./src/images/logo.png" alt="" />
-        <p>PORTAL DE CLIENTES SIGEP</p>
-
+        <a href="/" class="logo" style="color: #ffffff"
+          ><img src="./src/images/logo.png" alt="" />
+          <p>PORTAL DE CLIENTES SIGEP</p>
+        </a>
         <a
           href="./path.html"
           title="path notes da versão"
           style="color: #ffffff; font-size: 10px"
-          >v1.2.5</a
+          >v1.3.0a</a
         >
       </div>
 
       <div class="selects">
         <!-- Barra de pesquisa por nome -->
         <div class="search">
-          <button type="button" class="btn-search">
-            <i class="bx bx-search-alt icon-search"></i>
-          </button>
-          <input type="text" id="buscar-nome" class="input-search" />
+          <input
+            type="text"
+            id="buscar-nome"
+            class="input-search"
+            placeholder="Digite o municipio aqui" />
         </div>
 
         <!-- Icone de reportar -->
@@ -64,12 +66,17 @@
         </label>
 
         <!-- Tabs -->
-        <div class="menu">
-          <i class="bx bx-menu" style="color: #ffffff"></i>
 
+        <button id="menu" class="m-tabs">
+          <i class="bx bxs-arrow-to-right"></i>
+        </button>
+        <div class="menu" id="tabs">
           <div class="tabs">
+            <button id="menu-close" class="open-menu">
+              <i class="bx bxs-arrow-from-right"></i>
+            </button>
             <div class="municipios">
-              <button id="bt-municipios">
+              <button id="bt-municipios" style="border-radius: 10px 10px 0 0xx">
                 <i class="bx bxs-buildings icon"></i> Municipios
                 <i class="bx bx-chevron-down"></i>
               </button>
@@ -162,6 +169,8 @@
       </div>
     </nav>
     <!-- END Navegação -->
+
+    <div id="home"></div>
 
     <!-- Card Prefeituras -->
     <div id="h-prefeituras">

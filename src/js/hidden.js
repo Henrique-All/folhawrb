@@ -13,6 +13,7 @@ const tabJson = document.getElementById("tab-json");
 const tabTcmFiscaliza = document.getElementById("tab-tcmfiscaliza");
 
 // Variaveis para as divs
+const divHome = document.getElementById("home");
 const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
 const divOutros = document.getElementById("h-outros");
@@ -41,6 +42,7 @@ function showTab(tab) {
   divTest.classList.add("hidden");
   divJson.classList.add("hidden");
   divTcmFiscaliza.classList.add("hidden");
+  divHome.classList.add("hidden");
 
   // Função que remove a class
   if (tab === "h-prefeituras") {
@@ -67,6 +69,8 @@ function showTab(tab) {
     divJson.classList.remove("hidden");
   } else if (tab === "h-tcmfiscaliza") {
     divTcmFiscaliza.classList.remove("hidden");
+  } else if (tab === "home") {
+    divHome.classList.remove("hidden");
   }
 }
 
@@ -85,4 +89,17 @@ tabJson.addEventListener("click", () => showTab("h-json"));
 tabTcmFiscaliza.addEventListener("click", () => showTab("h-tcmfiscaliza"));
 
 // Exibe a primeira aba por padrão
-showTab("h-prefeituras");
+showTab("home");
+
+const toggle = document.getElementById("menu");
+const menu = document.getElementById("tabs");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+const closeToggle = document.getElementById("menu-close");
+
+closeToggle.addEventListener("click", () => {
+  menu.classList.remove("active");
+});
