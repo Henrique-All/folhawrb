@@ -96,10 +96,12 @@ const menu = document.getElementById("tabs");
 
 toggle.addEventListener("click", () => {
   menu.classList.toggle("active");
+  toggle.classList.toggle("active");
 });
 
 const closeToggle = document.getElementById("menu-close");
 
 closeToggle.addEventListener("click", () => {
   menu.classList.remove("active");
+  toggle.classList.remove("active");
 });
