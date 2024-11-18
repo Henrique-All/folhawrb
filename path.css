@@ -1,3 +1,17 @@
+/* Navegação Css */
+.navigation-path {
+  background: linear-gradient(to right, #1655c4, #7164d7);
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  box-shadow: 0px 0px 5px 0px #ffffffb6;
+}
+
 .version-path {
   display: flex;
   flex-direction: column;
@@ -28,5 +42,5 @@
   flex-direction: column;
   width: 50%;
   gap: 10px;
-  color: #000000;
+  color: #fff;
 }
