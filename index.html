@@ -39,16 +39,17 @@
           >v1.3.0a</a
         >
       </div>
+              <!-- Barra de pesquisa por nome -->
 
+      <div class="search">
+        <input
+          type="text"
+          id="buscar-nome"
+          class="input-search"
+          placeholder="Digite o municipio aqui" />
+      </div>
       <div class="selects">
-        <!-- Barra de pesquisa por nome -->
-        <div class="search">
-          <input
-            type="text"
-            id="buscar-nome"
-            class="input-search"
-            placeholder="Digite o municipio aqui" />
-        </div>
+
 
         <!-- Icone de reportar -->
         <a
@@ -67,10 +68,17 @@
 
         <!-- Tabs -->
 
-        <button id="menu" class="m-tabs">
-          <i class="bx bxs-arrow-to-right"></i>
-        </button>
-        <div class="menu" id="tabs">
+    </nav>
+
+
+  </div>
+
+    <main>
+      <button id="menu" class="m-tabs active">
+        <i class="bx bxs-arrow-to-right"></i>
+      </button>
+      <div class="left">
+        <div class="menu active" id="tabs">
           <div class="tabs">
             <button id="menu-close" class="open-menu">
               <i class="bx bxs-arrow-from-right"></i>
@@ -167,76 +175,77 @@
           </div>
         </div>
       </div>
-    </nav>
-    <!-- END Navegação -->
 
-    <div id="home"></div>
+      <div class="righ">
+        <div id="home"></div>
 
-    <!-- Card Prefeituras -->
-    <div id="h-prefeituras">
-      <div id="prefeituras" class="main"></div>
-    </div>
+        <!-- Card Prefeituras -->
+        <div id="h-prefeituras">
+          <div id="prefeituras" class="main"></div>
+        </div>
 
-    <!-- Card Camaras -->
-    <div id="h-camaras" class="hidden">
-      <div id="camaras" class="main"></div>
-    </div>
+        <!-- Card Camaras -->
+        <div id="h-camaras" class="hidden">
+          <div id="camaras" class="main"></div>
+        </div>
 
-    <!-- Card Previdencia e outros -->
-    <div id="h-outros">
-      <div id="outros" class="main"></div>
-    </div>
+        <!-- Card Previdencia e outros -->
+        <div id="h-outros">
+          <div id="outros" class="main"></div>
+        </div>
 
-    <!-- Card Contabilidade -->
-    <div id="h-contabil">
-      <div id="contabil" class="main"></div>
-    </div>
+        <!-- Card Contabilidade -->
+        <div id="h-contabil">
+          <div id="contabil" class="main"></div>
+        </div>
 
-    <!-- Card Patrimonio -->
-    <div id="h-patrimonio">
-      <div id="patrimonio" class="main"></div>
-    </div>
+        <!-- Card Patrimonio -->
+        <div id="h-patrimonio">
+          <div id="patrimonio" class="main"></div>
+        </div>
 
-    <!-- Card Saúde -->
-    <div id="h-saude">
-      <div id="saude" class="main"></div>
-    </div>
+        <!-- Card Saúde -->
+        <div id="h-saude">
+          <div id="saude" class="main"></div>
+        </div>
 
-    <!-- Card Dashboard Paciente -->
-    <div id="h-painel">
-      <div id="painel" class="main"></div>
-    </div>
+        <!-- Card Dashboard Paciente -->
+        <div id="h-painel">
+          <div id="painel" class="main"></div>
+        </div>
 
-    <div id="h-test">
-      <div id="test" class="main"></div>
-    </div>
+        <div id="h-test">
+          <div id="test" class="main"></div>
+        </div>
 
-    <!-- Card ferramentas -->
-    <div id="h-ferramentas">
-      <div id="ferramentas" class="main"></div>
-    </div>
+        <!-- Card ferramentas -->
+        <div id="h-ferramentas">
+          <div id="ferramentas" class="main"></div>
+        </div>
 
-    <div id="h-tcm">
-      <div class="tcm-pdf">
-        <iframe
-          src="https://virtual.tcm.go.gov.br/pdfa-web-validator"
-          frameborder="0"></iframe>
+        <div id="h-tcm">
+          <div class="tcm-pdf">
+            <iframe
+              src="https://virtual.tcm.go.gov.br/pdfa-web-validator"
+              frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <div id="h-json">
+          <div class="tcm-pdf">
+            <iframe src="https://jsonviewer.stack.hu/" frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <div id="h-tcmfiscaliza">
+          <div class="tcm-pdf">
+            <iframe
+              src="https://www.tcmgo.tc.br/site/fiscalizacao-e-controle/"
+              frameborder="0"></iframe>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div id="h-json">
-      <div class="tcm-pdf">
-        <iframe src="https://jsonviewer.stack.hu/" frameborder="0"></iframe>
-      </div>
-    </div>
-
-    <div id="h-tcmfiscaliza">
-      <div class="tcm-pdf">
-        <iframe
-          src="https://www.tcmgo.tc.br/site/fiscalizacao-e-controle/"
-          frameborder="0"></iframe>
-      </div>
-    </div>
+    </main>
   </body>
   <!-- END HTML -->
 
