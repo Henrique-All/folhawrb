@@ -47,7 +47,7 @@ const contabil = [
   },
   {
     nome: "Contabil Web Goiandira",
-    url: "https://app03.bsit-br.com.br/contabilidade.goiandira/",
+    url: "https://app01.bsit-br.com.br/contabilidade.goiandira/",
   },
   {
     nome: "Contabil Web Goianira",
