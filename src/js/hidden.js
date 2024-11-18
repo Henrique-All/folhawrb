@@ -30,7 +30,7 @@ const divJson = document.getElementById("h-json");
 const divTcmDoc = document.getElementById("h-tcmdoc");
 const divTcmFiscaliza = document.getElementById("h-tcmfiscaliza");
 const divVoip = document.getElementById("h-voip");
-const divEmail = document.getElementById("h-Email");
+const divEmail = document.getElementById("h-email");
 
 // Função para esconder todas as divs e mostrar apenas a selecionada
 function showTab(tab) {
