@@ -28,25 +28,28 @@
     <!-- Navegação -->
     <nav class="navigation">
       <div class="logo">
-        <img src="./src/images/logo.png" alt="" />
-        <p>PORTAL DE CLIENTES SIGEP</p>
-
+        <a href="/" class="logo" style="color: #ffffff"
+          ><img src="./src/images/logo.png" alt="" />
+          <p>PORTAL DE CLIENTES SIGEP</p>
+        </a>
         <a
-          href="./path.html"
-          title="path notes da versão"
+          href="./src/path/path.html"
+          title="path notes da versão" target="_blank"
           style="color: #ffffff; font-size: 10px"
-          >v1.2.5</a
+          >v1.3.0</a
         >
       </div>
+              <!-- Barra de pesquisa por nome -->
 
+      <div class="search">
+        <input
+          type="text"
+          id="buscar-nome"
+          class="input-search"
+          placeholder="Digite o municipio aqui" />
+      </div>
       <div class="selects">
-        <!-- Barra de pesquisa por nome -->
-        <div class="search">
-          <button type="button" class="btn-search">
-            <i class="bx bx-search-alt icon-search"></i>
-          </button>
-          <input type="text" id="buscar-nome" class="input-search" />
-        </div>
+
 
         <!-- Icone de reportar -->
         <a
@@ -64,12 +67,24 @@
         </label>
 
         <!-- Tabs -->
-        <div class="menu">
-          <i class="bx bx-menu" style="color: #ffffff"></i>
 
+    </nav>
+
+
+  </div>
+
+    <main>
+      <button id="menu" class="m-tabs active">
+        <i class="bx bxs-arrow-to-right"></i>
+      </button>
+      <div class="left">
+        <div class="menu active" id="tabs">
           <div class="tabs">
+            <button id="menu-close" class="open-menu">
+              <i class="bx bxs-arrow-from-right"></i>
+            </button>
             <div class="municipios">
-              <button id="bt-municipios">
+              <button id="bt-municipios" style="border-radius: 10px 10px 0 0xx">
                 <i class="bx bxs-buildings icon"></i> Municipios
                 <i class="bx bx-chevron-down"></i>
               </button>
@@ -134,10 +149,13 @@
                   <i class="bx bxs-dashboard icon-dp"></i>Validador de PDF
                 </button>
                 <button id="tab-json" class="btn">
-                  <i class="bx bxs-dashboard icon-dp"></i>Json Viewer
+                  <i class='bx bxs-file-json icon-dp' ></i>Json Viewer
                 </button>
                 <button id="tab-tcmfiscaliza" class="btn">
-                  <i class="bx bxs-dashboard icon-dp"></i>Colare Fiscalização
+                  <i class='bx bxs-bookmark-alt icon-dp' ></i>Colare Fiscalização
+                </button>
+                <button id="tab-voip" class="btn">
+                  <i class='bx bx-headphone icon-dp'></i>Ramal
                 </button>
               </div>
             </div>
@@ -147,6 +165,13 @@
               target="_blank"
               class="btn"
               ><i class="bx bxs-group icon"></i> Portal Social</a
+            >
+            
+            <a
+              href="https://cidernorte.bsit-br.com.br/login.jsf?redir=/manager/human-resources/register/user.jsf "
+              target="_blank"
+              class="btn"
+              ><i class='bx bxs-door-open icon-dp'></i> Cider Norte</a
             >
 
             <a
@@ -160,74 +185,84 @@
           </div>
         </div>
       </div>
-    </nav>
-    <!-- END Navegação -->
 
-    <!-- Card Prefeituras -->
-    <div id="h-prefeituras">
-      <div id="prefeituras" class="main"></div>
-    </div>
+      <div class="righ">
+        <div id="home"></div>
 
-    <!-- Card Camaras -->
-    <div id="h-camaras" class="hidden">
-      <div id="camaras" class="main"></div>
-    </div>
+        <!-- Card Prefeituras -->
+        <div id="h-prefeituras">
+          <div id="prefeituras" class="main"></div>
+        </div>
 
-    <!-- Card Previdencia e outros -->
-    <div id="h-outros">
-      <div id="outros" class="main"></div>
-    </div>
+        <!-- Card Camaras -->
+        <div id="h-camaras" class="hidden">
+          <div id="camaras" class="main"></div>
+        </div>
 
-    <!-- Card Contabilidade -->
-    <div id="h-contabil">
-      <div id="contabil" class="main"></div>
-    </div>
+        <!-- Card Previdencia e outros -->
+        <div id="h-outros">
+          <div id="outros" class="main"></div>
+        </div>
 
-    <!-- Card Patrimonio -->
-    <div id="h-patrimonio">
-      <div id="patrimonio" class="main"></div>
-    </div>
+        <!-- Card Contabilidade -->
+        <div id="h-contabil">
+          <div id="contabil" class="main"></div>
+        </div>
 
-    <!-- Card Saúde -->
-    <div id="h-saude">
-      <div id="saude" class="main"></div>
-    </div>
+        <!-- Card Patrimonio -->
+        <div id="h-patrimonio">
+          <div id="patrimonio" class="main"></div>
+        </div>
 
-    <!-- Card Dashboard Paciente -->
-    <div id="h-painel">
-      <div id="painel" class="main"></div>
-    </div>
+        <!-- Card Saúde -->
+        <div id="h-saude">
+          <div id="saude" class="main"></div>
+        </div>
 
-    <div id="h-test">
-      <div id="test" class="main"></div>
-    </div>
+        <!-- Card Dashboard Paciente -->
+        <div id="h-painel">
+          <div id="painel" class="main"></div>
+        </div>
 
-    <!-- Card ferramentas -->
-    <div id="h-ferramentas">
-      <div id="ferramentas" class="main"></div>
-    </div>
+        <div id="h-test">
+          <div id="test" class="main"></div>
+        </div>
 
-    <div id="h-tcm">
-      <div class="tcm-pdf">
-        <iframe
-          src="https://virtual.tcm.go.gov.br/pdfa-web-validator"
-          frameborder="0"></iframe>
+        <!-- Card ferramentas -->
+        <div id="h-ferramentas">
+          <div id="ferramentas" class="main"></div>
+        </div>
+
+        <div id="h-tcm">
+          <div class="tcm-pdf">
+            <iframe
+              src="https://virtual.tcm.go.gov.br/pdfa-web-validator"
+              frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <div id="h-json">
+          <div class="tcm-pdf">
+            <iframe src="https://jsonviewer.stack.hu/" frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <div id="h-tcmfiscaliza">
+          <div class="tcm-pdf">
+            <iframe
+              src="https://www.tcmgo.tc.br/site/fiscalizacao-e-controle/"
+              frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <div id="h-voip">
+          <div class="tcm-pdf">
+            <iframe src="https://voip.bsit-br.com.br/operador" frameborder="0"></iframe>
+          </div>
+        </div>
+      
       </div>
-    </div>
-
-    <div id="h-json">
-      <div class="tcm-pdf">
-        <iframe src="https://jsonviewer.stack.hu/" frameborder="0"></iframe>
-      </div>
-    </div>
-
-    <div id="h-tcmfiscaliza">
-      <div class="tcm-pdf">
-        <iframe
-          src="https://www.tcmgo.tc.br/site/fiscalizacao-e-controle/"
-          frameborder="0"></iframe>
-      </div>
-    </div>
+    </main>
   </body>
   <!-- END HTML -->
 

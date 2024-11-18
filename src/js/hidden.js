@@ -11,8 +11,10 @@ const tabTcm = document.getElementById("tab-tcm");
 const tabTest = document.getElementById("tab-test");
 const tabJson = document.getElementById("tab-json");
 const tabTcmFiscaliza = document.getElementById("tab-tcmfiscaliza");
+const tabVoip = document.getElementById("tab-voip");
 
 // Variaveis para as divs
+const divHome = document.getElementById("home");
 const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
 const divOutros = document.getElementById("h-outros");
@@ -26,6 +28,7 @@ const divTest = document.getElementById("h-test");
 const divJson = document.getElementById("h-json");
 const divTcmDoc = document.getElementById("h-tcmdoc");
 const divTcmFiscaliza = document.getElementById("h-tcmfiscaliza");
+const divVoip = document.getElementById("h-voip");
 
 // Função para esconder todas as divs e mostrar apenas a selecionada
 function showTab(tab) {
@@ -41,6 +44,8 @@ function showTab(tab) {
   divTest.classList.add("hidden");
   divJson.classList.add("hidden");
   divTcmFiscaliza.classList.add("hidden");
+  divHome.classList.add("hidden");
+  divVoip.classList.add("hidden");
 
   // Função que remove a class
   if (tab === "h-prefeituras") {
@@ -67,6 +72,10 @@ function showTab(tab) {
     divJson.classList.remove("hidden");
   } else if (tab === "h-tcmfiscaliza") {
     divTcmFiscaliza.classList.remove("hidden");
+  } else if (tab === "home") {
+    divHome.classList.remove("hidden");
+  } else if (tab === "h-voip") {
+    divVoip.classList.remove("hidden");
   }
 }
 
@@ -83,6 +92,22 @@ tabTcm.addEventListener("click", () => showTab("h-tcm"));
 tabTest.addEventListener("click", () => showTab("h-test"));
 tabJson.addEventListener("click", () => showTab("h-json"));
 tabTcmFiscaliza.addEventListener("click", () => showTab("h-tcmfiscaliza"));
+tabVoip.addEventListener("click", () => showTab("h-voip"));
 
 // Exibe a primeira aba por padrão
-showTab("h-prefeituras");
+showTab("home");
+
+const toggle = document.getElementById("menu");
+const menu = document.getElementById("tabs");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  toggle.classList.toggle("active");
+});
+
+const closeToggle = document.getElementById("menu-close");
+
+closeToggle.addEventListener("click", () => {
+  menu.classList.remove("active");
+  toggle.classList.remove("active");
+});

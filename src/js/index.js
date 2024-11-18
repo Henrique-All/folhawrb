@@ -27,6 +27,13 @@ function renderLinks(filtro) {
   const testFiltrados = filtrarPorNome(filtro)(test);
 
   // Renderizar prefeituras
+
+  document.getElementById("home").innerHTML = `
+     <div class="home">
+        <img src="./src/images/logo.png" alt="" />
+        <p>Portal SIGEP</p>
+      </div>`;
+
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
     .map((prefeitura) => {
       return `
