@@ -31,7 +31,7 @@ function renderLinks(filtro) {
   document.getElementById("home").innerHTML = `
      <div class="home">
         <img src="./src/images/logo.png" alt="" />
-        <p>Portal SIGEP</p>
+        <p>Portal SIGEP &#128187</p>
       </div>`;
 
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
@@ -175,43 +175,66 @@ document.getElementById("buscar-nome").addEventListener("input", (e) => {
 });
 
 // menu script
+// Função para esconder todas as divs
+function hideAllDivs() {
+  const allDivs = document.querySelectorAll(
+    ".acess, .tabscontabil, .acess-saude, .acess-ferramentas"
+  );
+  allDivs.forEach(function (div) {
+    div.style.display = "none";
+  });
+}
+
+// Evento do botão "bt-municipios"
 document.getElementById("bt-municipios").addEventListener("click", function () {
   var acessDiv = document.querySelector(".acess");
-  // Alterna a visibilidade do div com a classe 'acess'
-  if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
-    acessDiv.style.display = "block"; // Exibe a div
+
+  // Se a div já estiver visível, esconda-a; caso contrário, exiba-a e esconda as outras
+  if (acessDiv.style.display === "block") {
+    acessDiv.style.display = "none"; // Esconde a div se já estiver visível
   } else {
-    acessDiv.style.display = "none"; // Esconde a div
+    hideAllDivs(); // Esconde todas as outras divs
+    acessDiv.style.display = "block"; // Exibe a div correspondente
   }
 });
 
+// Evento do botão "bt-contabil"
 document.getElementById("bt-contabil").addEventListener("click", function () {
   var acessDiv = document.querySelector(".tabscontabil");
-  // Alterna a visibilidade do div com a classe 'acess'
-  if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
-    acessDiv.style.display = "block"; // Exibe a div
+
+  // Se a div já estiver visível, esconda-a; caso contrário, exiba-a e esconda as outras
+  if (acessDiv.style.display === "block") {
+    acessDiv.style.display = "none"; // Esconde a div se já estiver visível
   } else {
-    acessDiv.style.display = "none"; // Esconde a div
-  }
-});
-document.getElementById("bt-saude").addEventListener("click", function () {
-  var acessDiv = document.querySelector(".acess-saude");
-  // Alterna a visibilidade do div com a classe 'acess'
-  if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
-    acessDiv.style.display = "block"; // Exibe a div
-  } else {
-    acessDiv.style.display = "none"; // Esconde a div
+    hideAllDivs(); // Esconde todas as outras divs
+    acessDiv.style.display = "block"; // Exibe a div correspondente
   }
 });
 
+// Evento do botão "bt-saude"
+document.getElementById("bt-saude").addEventListener("click", function () {
+  var acessDiv = document.querySelector(".acess-saude");
+
+  // Se a div já estiver visível, esconda-a; caso contrário, exiba-a e esconda as outras
+  if (acessDiv.style.display === "block") {
+    acessDiv.style.display = "none"; // Esconde a div se já estiver visível
+  } else {
+    hideAllDivs(); // Esconde todas as outras divs
+    acessDiv.style.display = "block"; // Exibe a div correspondente
+  }
+});
+
+// Evento do botão "bt-ferramentas"
 document
   .getElementById("bt-ferramentas")
   .addEventListener("click", function () {
     var acessDiv = document.querySelector(".acess-ferramentas");
-    // Alterna a visibilidade do div com a classe 'acess'
-    if (acessDiv.style.display === "none" || acessDiv.style.display === "") {
-      acessDiv.style.display = "block"; // Exibe a div
+
+    // Se a div já estiver visível, esconda-a; caso contrário, exiba-a e esconda as outras
+    if (acessDiv.style.display === "block") {
+      acessDiv.style.display = "none"; // Esconde a div se já estiver visível
     } else {
-      acessDiv.style.display = "none"; // Esconde a div
+      hideAllDivs(); // Esconde todas as outras divs
+      acessDiv.style.display = "block"; // Exibe a div correspondente
     }
   });
