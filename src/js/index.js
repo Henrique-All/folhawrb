@@ -135,7 +135,7 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${ferramentas.url}" target="_blank">
           <div class="card-header">
-            <img src="./src/images/logo.png" />
+            <img src="${ferramentas.img}" />
           </div>
           <p class="name">${ferramentas.nome}</p>
         </a>
