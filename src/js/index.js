@@ -40,6 +40,7 @@ function renderLinks(filtro) {
         <a class="card" href="${prefeitura.url}" target="_blank">
           <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${prefeitura.nome}</p>
         </a>`;
@@ -53,6 +54,7 @@ function renderLinks(filtro) {
         <a class="card" href="${camara.url}" target="_blank">
           <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${camara.nome}</p>
         </a>`;
@@ -64,8 +66,9 @@ function renderLinks(filtro) {
     .map((outros) => {
       return `
         <a class="card" href="${outros.url}" target="_blank">
-          <div class="card-header">
+         <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${outros.nome}</p>
         </a>
@@ -80,6 +83,7 @@ function renderLinks(filtro) {
         <a class="card" href="${contabil.url}" target="_blank">
           <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${contabil.nome}</p>
         </a>
@@ -94,6 +98,7 @@ function renderLinks(filtro) {
         <a class="card" href="${patrimonio.url}" target="_blank">
           <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${patrimonio.nome}</p>
         </a>
@@ -106,8 +111,9 @@ function renderLinks(filtro) {
     .map((saude) => {
       return `
         <a class="card" href="${saude.url}" target="_blank">
-          <div class="card-header">
+         <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${saude.nome}</p>
         </a>
@@ -122,6 +128,7 @@ function renderLinks(filtro) {
         <a class="card" href="${painel.url}" target="_blank">
           <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${painel.nome}</p>
         </a>
@@ -135,7 +142,8 @@ function renderLinks(filtro) {
       return `
         <a class="card" href="${ferramentas.url}" target="_blank">
           <div class="card-header">
-            <img src="${ferramentas.img}" />
+            <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name">${ferramentas.nome}</p>
         </a>
@@ -150,9 +158,12 @@ function renderLinks(filtro) {
       const tag2 = test.tag2; // tag2 sempre recebe 'off'
 
       return `
-        <a class="card" href="${test.url}" target="_blank" style="width: 350px">
+        <a class="card" href="${
+          test.url
+        }" target="_blank" style="width: 350px; background: ${test.color}">
           <div class="card-header">
             <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
           </div>
           <p class="name" style="margin: 0 0 0 10px">${test.nome}</p>
           <div class="tags">

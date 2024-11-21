@@ -5,6 +5,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "",
+    color: "green",
   },
   {
     nome: "Santa Tereza",
@@ -12,13 +13,16 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Contabil",
+    color: "green",
   },
   {
     nome: "Cristalina",
     url: "http://192.168.5.17/",
-    tag1: "",
-    tag2: "Off",
+    tag1: "on",
+    tag2: "",
     tag3: "",
+    color: "green",
+    // color: "red",
   },
   {
     nome: "Validação de Catalão",
@@ -26,6 +30,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Scripts",
+    color: "green",
   },
   {
     nome: "Moiporá",
@@ -33,6 +38,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Scripts",
+    color: "green",
   },
   {
     nome: " Goiandira",
@@ -40,6 +46,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Rescisões",
+    color: "green",
   },
   {
     nome: "Jataí",
@@ -47,6 +54,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Scripts",
+    color: "green",
   },
   {
     nome: "São Luiz dos Montes Belos",
@@ -54,12 +62,15 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Simulação Rescisões",
+    color: "green",
   },
   {
     nome: "Palminópolis",
     url: "http://192.168.5.47/",
-    tag1: "",
-    tag2: "Off",
+    tag1: "on",
+    tag2: "",
     tag3: "",
+    color: "green",
+    // color: "red",
   },
 ];
