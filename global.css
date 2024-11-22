@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #3a3a3a;
+  background-color: #242424;
   transition: all ease-in-out 400ms;
   height: 100vh;
   overflow: hidden;
@@ -26,6 +26,7 @@ body {
 .light body {
   animation: dark 400ms;
   background: linear-gradient(to right, #1655c4, #7164d7);
+  backdrop-filter: brightness(80%);
   height: 100%;
   background-position: center center;
 }
