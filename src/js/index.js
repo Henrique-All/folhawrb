@@ -36,6 +36,7 @@ function renderLinks(filtro) {
         </div>
         <h1>Bem Vindo ao Portal Sigep <p>v1.3.3 <i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
         <h3>Tudo em um só lugar, de maneira prática e rápida, feito para facilitar e agilizar.</h3>
+        <h2>Versão em React está sendo desenvolvida em breve será lançanda.</h2>
       </div>`;
 
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
