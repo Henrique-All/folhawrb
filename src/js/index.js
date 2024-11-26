@@ -34,9 +34,9 @@ function renderLinks(filtro) {
           <img src="./src/images/logo.png" alt="" />
           <p>SIGEP</p>
         </div>
-        <h1>Bem Vindo ao Portal Sigep <p>v1.3.2</p></h1>
+        <h1>Bem Vindo ao Portal Sigep <p>v1.3.3 <i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
         <h3>Tudo em um só lugar, de maneira prática e rápida, feito para facilitar e agilizar.</h3>
-      </.div>`;
+      </div>`;
 
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
     .map((prefeitura) => {
