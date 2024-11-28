@@ -157,9 +157,7 @@ function renderLinks(filtro) {
 
   document.getElementById("test").innerHTML = testFiltrados
     .map((test) => {
-      // Define as classes diretamente para tag1 e tag2
-      const tag1 = test.tag1; // tag1 sempre recebe 'on'
-      const tag2 = test.tag2; // tag2 sempre recebe 'off'
+      const tag = test.tag;
 
       return `
         <a class="card" href="${
@@ -171,8 +169,16 @@ function renderLinks(filtro) {
           </div>
           <p class="name" style="margin: 0 0 0 10px">${test.nome}</p>
           <div class="tags">
-            ${tag1 ? `<p class="tags-stts on">${tag1}</p>` : ""}
-            ${tag2 ? `<p class="tags-stts off">${tag2}</p>` : ""}
+            ${
+              tag === tags[0].on
+                ? `<p class="tags-stts on">${tags[0].on}</p>`
+                : ""
+            }
+          ${
+            tag === tags[0].off
+              ? `<p class="tags-stts off">${tags[0].off}</p>`
+              : ""
+          }
             ${test.tag3 ? `<p class="tags-test">${test.tag3}</p>` : ""}
           </div>
         </a>
