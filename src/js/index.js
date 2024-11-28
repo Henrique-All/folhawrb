@@ -180,7 +180,9 @@ function renderLinks(filtro) {
               : ""
           }
             ${test.tag3 ? `<p class="tags-test">${test.tag3}</p>` : ""}
+            
           </div>
+          <p class="card-footer">${test.url}</p>
         </a>
       `;
     })
