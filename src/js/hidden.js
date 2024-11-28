@@ -79,7 +79,7 @@ function showTab(tab) {
   }
 
   // Fecha o menu se ele estiver aberto
-  if (window.innerWidth <= 400) {
+  if (window.innerWidth <= 1200) {
     // Fecha o menu se ele estiver aberto
     const menu = document.getElementById("tabs");
     const toggle = document.getElementById("menu");
