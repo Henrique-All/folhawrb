@@ -160,12 +160,12 @@ function renderLinks(filtro) {
       const tag = test.tag;
 
       return `
-        <a class="card" href="${
-          test.url
-        }" target="_blank" style="width: 350px; background: ${test.color}">
+        <a class="card" href="${tag === tags[0].on ? test.url : "#"}" target="${
+        tag === tags[0].on ? "_blank" : "_self"
+      }" style="width: 350px; background: ${test.color}">
           <div class="card-header">
-            <img src="./src/images/logo.png" />
-            <p>SIGEP</p>
+            <img src="${tag === tags[0].on ? "./src/images/logo.png" : ""}" />
+            <p>${tag === tags[0].on ? "SIGEP" : "Offline"}</p>
           </div>
           <p class="name" style="margin: 0 0 0 10px">${test.nome}</p>
           <div class="tags">
