@@ -1,4 +1,4 @@
-// Variaveis para as tabs
+// Variáveis para as tabs
 const tabPrefeituras = document.getElementById("tab-prefeituras");
 const tabCamaras = document.getElementById("tab-camaras");
 const tabOutros = document.getElementById("tab-outros");
@@ -13,7 +13,7 @@ const tabJson = document.getElementById("tab-json");
 const tabTcmFiscaliza = document.getElementById("tab-tcmfiscaliza");
 const tabVoip = document.getElementById("tab-voip");
 
-// Variaveis para as divs
+// Variáveis para as divs
 const divHome = document.getElementById("home");
 const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
@@ -26,12 +26,12 @@ const divFerramentas = document.getElementById("h-ferramentas");
 const divTcm = document.getElementById("h-tcm");
 const divTest = document.getElementById("h-test");
 const divJson = document.getElementById("h-json");
-const divTcmDoc = document.getElementById("h-tcmdoc");
 const divTcmFiscaliza = document.getElementById("h-tcmfiscaliza");
 const divVoip = document.getElementById("h-voip");
 
 // Função para esconder todas as divs e mostrar apenas a selecionada
 function showTab(tab) {
+  // Esconde todas as divs
   divPrefeituras.classList.add("hidden");
   divCamaras.classList.add("hidden");
   divOutros.classList.add("hidden");
@@ -47,7 +47,7 @@ function showTab(tab) {
   divHome.classList.add("hidden");
   divVoip.classList.add("hidden");
 
-  // Função que remove a class
+  // Exibe a div correspondente à tab
   if (tab === "h-prefeituras") {
     divPrefeituras.classList.remove("hidden");
   } else if (tab === "h-camaras") {
@@ -77,9 +77,20 @@ function showTab(tab) {
   } else if (tab === "h-voip") {
     divVoip.classList.remove("hidden");
   }
+
+  // Fecha o menu se ele estiver aberto
+  if (window.innerWidth <= 400) {
+    // Fecha o menu se ele estiver aberto
+    const menu = document.getElementById("tabs");
+    const toggle = document.getElementById("menu");
+    if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+      toggle.classList.remove("active");
+    }
+  }
 }
 
-// Event listeners para cada botão
+// Event listeners para cada botão de tab
 tabPrefeituras.addEventListener("click", () => showTab("h-prefeituras"));
 tabCamaras.addEventListener("click", () => showTab("h-camaras"));
 tabOutros.addEventListener("click", () => showTab("h-outros"));
@@ -97,6 +108,7 @@ tabVoip.addEventListener("click", () => showTab("h-voip"));
 // Exibe a primeira aba por padrão
 showTab("home");
 
+// Função para alternar o menu (abrir e fechar)
 const toggle = document.getElementById("menu");
 const menu = document.getElementById("tabs");
 
@@ -105,6 +117,7 @@ toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
 });
 
+// Fechar o menu ao clicar no botão de fechar
 const closeToggle = document.getElementById("menu-close");
 
 closeToggle.addEventListener("click", () => {

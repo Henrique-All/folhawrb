@@ -13,6 +13,13 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 400px) {
+  body {
+    overflow: auto;
+  }
+}
+
+
 @keyframes dark {
   0% {
     opacity: 0;
