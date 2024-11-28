@@ -1,11 +1,18 @@
+const color = [
+  {
+    on: "#1c5560",
+    off: "#af162a",
+  },
+];
+
 const test = [
   {
     nome: "catalão",
     url: "http://192.168.5.14/",
     tag1: "",
     tag2: "off",
-    tag3: "",
-    color: "red",
+    tag3: "Desativado Temporariamente",
+    color: color[0].off,
   },
   {
     nome: "Santa Tereza",
@@ -13,7 +20,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Contabil",
-    color: "green",
+    color: color[0].on,
   },
   {
     nome: "Cristalina",
@@ -21,7 +28,7 @@ const test = [
     tag1: "",
     tag2: "off",
     tag3: "",
-    color: "red",
+    color: color[0].off,
     // color: "red",
   },
   {
@@ -30,7 +37,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Simulação Rescisões",
-    color: "green",
+    color: color[0].on,
   },
   {
     nome: "Moiporá",
@@ -38,7 +45,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Scripts",
-    color: "green",
+    color: color[0].on,
   },
   {
     nome: "Acreuna",
@@ -46,7 +53,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Validação Scripts",
-    color: "green",
+    color: color[0].on,
   },
   {
     nome: "Jataí",
@@ -54,7 +61,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "",
-    color: "green",
+    color: color[0].on,
   },
   {
     nome: "São Luiz dos Montes Belos",
@@ -62,7 +69,7 @@ const test = [
     tag1: "On",
     tag2: "",
     tag3: "Simulação Rescisões",
-    color: "green",
+    color: color[0].on,
   },
   {
     nome: "Palminópolis",
@@ -70,7 +77,7 @@ const test = [
     tag1: "on",
     tag2: "",
     tag3: "",
-    color: "green",
+    color: color[0].on,
     // color: "red",
   },
 ];
