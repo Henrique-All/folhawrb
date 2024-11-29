@@ -261,19 +261,16 @@ main {
 /* Cad css */
 
 .main {
-	top: 0;
-	background-color: #3a3a3a;
-	position: absolute;
-	overflow-y: scroll;
+	overflow-y: auto;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
-	margin-top: 70px;
+	margin-top: 100px;
 	margin-bottom: 10px;
-	height: 100vh;
-	padding: 60px 0 80px 0;
+	height: 85vh;
+	padding: 30px 0;
 }
 
 @media (min-height: 1200px) {
@@ -456,22 +453,17 @@ li {
 }
 
 .tcm-pdf {
-	position: absolute;
-	top: 0;
-	background-color: #3a3a3a;
 	overflow-y: scroll;
 	padding: 110px 0;
 	display: flex;
-	flex: 1;
 	width: 100%;
 	height: 100vh;
-	overflow-x: hidden;
+	overflow: hidden;
 	animation: pup 400ms;
 }
 
 .tcm-pdf iframe {
-	display: flex;
-	flex: 1;
+	width: 100%;
 	height: 100vh;
 }
 

@@ -15,6 +15,7 @@ closeAllButton.addEventListener("click", () => {
   const allDivs = [
     divPrefeituras,
     divCamaras,
+    divHome,
     divOutros,
     divContabil,
     divPatrimonio,
@@ -74,6 +75,7 @@ const tabVoip = document.getElementById("tab-voip");
 const abaContainer = document.getElementById("aba-container");
 
 // Variáveis para as divs
+const divHome = document.getElementById("home");
 const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
 const divOutros = document.getElementById("h-outros");
@@ -178,14 +180,15 @@ function showTab(tab) {
     divJson,
     divTcmFiscaliza,
     divVoip,
+    divHome,
   ];
 
   allDivs.forEach((div) => div.classList.add("hidden"));
-
   // Mostra a aba correspondente
   if (tab === "home") {
     divHome.classList.remove("hidden");
   } else {
+    // Exibe a aba correspondente ao tab
     const divToShow = document.getElementById(tab);
     if (divToShow) {
       divToShow.classList.remove("hidden");
@@ -211,5 +214,8 @@ tabPainel.addEventListener("click", () => showTab("h-painel"));
 tabFerramentas.addEventListener("click", () => showTab("h-ferramentas"));
 tabTcm.addEventListener("click", () => showTab("h-tcm"));
 tabTest.addEventListener("click", () => showTab("h-test"));
+tabJson.addEventListener("click", () => showTab("h-json"));
+tabTcmFiscaliza.addEventListener("click", () => showTab("h-tcmfiscaliza"));
+tabVoip.addEventListener("click", () => showTab("h-voip"));
 
 showTab("home");
