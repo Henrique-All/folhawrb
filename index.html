@@ -22,6 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./src/css/tabs.css" />
   </head>
 
   <body>
@@ -36,7 +37,7 @@
           href="./src/path/path.html"
           title="path notes da versão" target="_blank"
           style="color: #ffffff; font-size: 10px"
-          >v1.3.5 <i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></a
+          >v2.0 Aplha <i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></a
         >
       </div>
               <!-- Barra de pesquisa por nome -->
@@ -89,6 +90,7 @@
                 <i class="bx bx-chevron-down"></i>
               </button>
               <div class="acess">
+
                 <button id="tab-prefeituras" class="btn">
                   <i class="bx bxs-building-house icon-dp"></i>Prefeituras
                 </button>
@@ -189,6 +191,7 @@
         <div id="home"></div>
 
         <!-- Card Prefeituras -->
+        <div id="aba-container"></div>
         <div id="h-prefeituras">
           <div id="prefeituras" class="main"></div>
         </div>
@@ -279,6 +282,7 @@
 
   <!-- Scripts de darkmode, hidden e renderização -->
   <script src="./src/js/index.js"></script>
+  <script src="./src/js/menu.js"></script>
   <script src="./src/js/hidden.js"></script>
   <script src="./src/js/darkTheme.js"></script>
   <!-- END Script -->

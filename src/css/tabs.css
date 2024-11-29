@@ -1,0 +1,42 @@
+#aba-container {
+  display: flex;
+  position: absolute;
+  top: 80px;
+  width: 95%;
+  z-index: 20000;
+  gap: 5px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tab-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding: 2px 4px;
+  width: 150px;
+  border-bottom: solid 1px #535353;
+  border-left: solid 1px #535353;
+  border-right: solid 1px #535353;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0 0 5px 5px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.close-button {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #252525;
+  /* Cor de fundo ativa */
+  color: #fff;
+  /* Cor do texto para contraste */
+  border-color: #ffffff;
+}

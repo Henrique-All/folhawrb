@@ -9,8 +9,7 @@
 body {
   background-color: #242424;
   transition: all ease-in-out 400ms;
-  height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (max-width: 400px) {
@@ -18,7 +17,6 @@ body {
     overflow: auto;
   }
 }
-
 
 @keyframes dark {
   0% {
