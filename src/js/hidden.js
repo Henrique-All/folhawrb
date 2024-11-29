@@ -1,3 +1,44 @@
+// Cria o botão "Fechar todas as abas"
+const closeAllButton = document.createElement("button");
+closeAllButton.id = "btn-close-all";
+
+const icon = document.createElement("i");
+icon.classList.add("bx", "bxs-arrow-from-right"); // Classe do ícone de fechar
+closeAllButton.appendChild(icon);
+
+closeAllButton.addEventListener("click", () => {
+  // Remove todos os botões de abas
+  const allButtons = document.querySelectorAll(".tab-button");
+  allButtons.forEach((button) => button.remove());
+
+  // Esconde todas as abas
+  const allDivs = [
+    divPrefeituras,
+    divCamaras,
+    divOutros,
+    divContabil,
+    divPatrimonio,
+    divSaude,
+    divPainel,
+    divFerramentas,
+    divTcm,
+    divTest,
+    divJson,
+    divTcmFiscaliza,
+    divVoip,
+  ];
+  allDivs.forEach((div) => div.classList.add("hidden"));
+
+  // Reseta o estado do alerta
+  alertShown = false;
+
+  // Exibe a aba inicial
+  showTab("home");
+});
+
+// Adiciona o botão "Fechar todas" ao corpo da página
+document.body.appendChild(closeAllButton);
+
 // Função para alternar o menu (abrir e fechar)
 const toggle = document.getElementById("menu");
 const menu = document.getElementById("tabs");
@@ -51,6 +92,7 @@ const divVoip = document.getElementById("h-voip");
 const MAX_TABS = 7;
 let alertShown = false; // Controle para exibir o alert apenas uma vez
 
+// Função para adicionar botão de aba
 function addTabButton(tabName) {
   // Verifica se o botão já existe
   let button = document.getElementById(`btn-${tabName}`);
@@ -98,6 +140,7 @@ function addTabButton(tabName) {
       // Verifica se ainda há abas abertas
       if (remainingTabs === 0) {
         showTab("home");
+        toggleCloseAllButtonVisibility(); // Atualiza a visibilidade do botão "Fechar Todas"
       }
     });
 
@@ -115,6 +158,7 @@ function addTabButton(tabName) {
 
   // Define o botão como ativo
   setActiveButton(button);
+  toggleCloseAllButtonVisibility(); // Atualiza a visibilidade do botão "Fechar Todas"
 }
 
 // Alterna a exibição das abas
@@ -156,13 +200,6 @@ function setActiveButton(button) {
   buttons.forEach((btn) => btn.classList.remove("active"));
   button.classList.add("active");
 }
-
-// Função para fechar o menu
-function closeMenu() {
-  menu.classList.remove("active");
-  toggle.classList.remove("active");
-}
-
 // Event listeners para os botões de navegação
 tabPrefeituras.addEventListener("click", () => showTab("h-prefeituras"));
 tabCamaras.addEventListener("click", () => showTab("h-camaras"));
@@ -175,19 +212,4 @@ tabFerramentas.addEventListener("click", () => showTab("h-ferramentas"));
 tabTcm.addEventListener("click", () => showTab("h-tcm"));
 tabTest.addEventListener("click", () => showTab("h-test"));
 
-// Event listeners com fechamento do menu
-tabJson.addEventListener("click", () => {
-  showTab("h-json");
-  closeMenu();
-});
-tabTcmFiscaliza.addEventListener("click", () => {
-  showTab("h-tcmfiscaliza");
-  closeMenu();
-});
-tabVoip.addEventListener("click", () => {
-  showTab("h-voip");
-  closeMenu();
-});
-
-// Exibe a primeira aba por padrão
 showTab("home");

@@ -57,3 +57,34 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+#btn-close-all {
+  position: absolute;
+  top: 110px;
+  background-color: #3a3a3a;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0 0 1px 1px white;
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  z-index: 200000;
+}
+
+@keyframes delete {
+  0% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#btn-close-all .bx:hover {
+  animation: delete 400ms;
+}
