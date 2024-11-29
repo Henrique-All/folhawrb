@@ -1,15 +1,17 @@
 #aba-container {
   display: flex;
   position: absolute;
-  top: 80px;
-  width: 95%;
+  top: 75px;
+  width: 100%;
   z-index: 20000;
-  gap: 5px;
+  gap: 10px;
   overflow-x: auto;
   white-space: nowrap;
+  padding: 0 5px;
 }
 
 .tab-button {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,9 +23,20 @@
   border-right: solid 1px #535353;
   color: #ffffff;
   cursor: pointer;
-  border-radius: 0 0 5px 5px;
-  transition: background-color 0.3s ease;
-  font-size: 14px;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 15px;
+}
+
+.tab-button.active::before {
+  content: " ";
+  position: absolute;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: -24px;
+  top: 4px;
+  box-shadow: -8px -18px 0 #252525;
 }
 
 .close-button {
@@ -39,4 +52,8 @@
   color: #fff;
   /* Cor do texto para contraste */
   border-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

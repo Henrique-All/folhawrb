@@ -11,7 +11,7 @@ const camaras = [
   },
   {
     nome: "Camara Corrego Do Ouro",
-    url: "https://corregodoouro.bsit-br.com.br/portal/",
+    url: "http://gestaopublica.camara.corregodoouro.bsit-br.com.br/",
   },
   {
     nome: "Camara Caturai",

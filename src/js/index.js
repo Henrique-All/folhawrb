@@ -28,17 +28,6 @@ function renderLinks(filtro) {
 
   // Renderizar prefeituras
 
-  document.getElementById("home").innerHTML = `
-     <div class="home">
-        <div class="content"> 
-          <img src="./src/images/logo.png" alt="" />
-          <p>SIGEP</p>
-        </div>
-        <h1>Bem Vindo ao Portal Sigep <p>2.0 Alpha <i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
-        <h3>Tudo em um só lugar, de maneira prática e rápida, feito para facilitar e agilizar.</h3>
-        <h2>Versão em React está sendo desenvolvida em breve será lançanda.</h2>
-      </div>`;
-
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
     .map((prefeitura) => {
       return `
