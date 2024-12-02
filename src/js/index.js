@@ -32,7 +32,7 @@ function renderLinks(filtro) {
        <img src="./src/images/logo.png" alt="" />
        <p>SIGEP</p>
      </div>
-     <h1>Bem Vindo ao Portal Sigep <p>2.0.3 Alpha <i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
+     <h1>Bem Vindo ao Portal Sigep <p>2.0.4A<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
      <h3>Tudo em um só lugar, de maneira prática e rápida, feito para facilitar e agilizar.</h3>
      <h2>Versão em React está sendo desenvolvida em breve será lançanda.</h2>
    </div>`;
@@ -191,10 +191,18 @@ function renderLinks(filtro) {
 // Chamar renderLinks
 renderLinks("");
 
-// Adicionar evento de input
 document.getElementById("buscar-nome").addEventListener("input", (e) => {
-  renderLinks(e.target.value); // Atualiza a renderização
+  renderLinks(e.target.value); // Atualiza a renderização conforme o valor digitado
 });
+
+function limparInput() {
+  const input = document.getElementById("buscar-nome");
+  input.value = ""; // Limpa o valor do campo
+  renderLinks(""); // Atualiza a renderização com valor vazio
+}
+
+// Adicionar um botão para acionar a função de limpar
+document.getElementById("limpar-busca").addEventListener("click", limparInput);
 
 // menu script
 // Função para esconder todas as divs

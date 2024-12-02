@@ -204,6 +204,7 @@ main {
 }
 
 .search {
+	position: relative;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -238,6 +239,15 @@ main {
 
 .input-search::placeholder {
 	color: #646464;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+#limpar-busca {
+	position: absolute;
+	right: 10px;
+	border: none;
+	background-color: transparent;
 	font-size: 18px;
 	font-weight: 700;
 }
