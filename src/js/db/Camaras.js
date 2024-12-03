@@ -55,7 +55,7 @@ const camaras = [
   },
   {
     nome: "Camara Morzalandia",
-    url: "http://gestaopublica.camara.Damolandia.bsit-br.com.br/login.jsf",
+    url: "http://gestaopublica.camara.mozarlandia.bsit-br.com.br/login.jsf ",
   },
   {
     nome: "Camara Orizona",
