@@ -54,6 +54,10 @@ const camaras = [
     url: "http://gestaopublica.camara.Joviania.bsit-br.com.br/login.jsf",
   },
   {
+    nome: "Camara Morzalandia",
+    url: "http://gestaopublica.camara.Damolandia.bsit-br.com.br/login.jsf",
+  },
+  {
     nome: "Camara Orizona",
     url: "http://gestaopublica.camara.Orizona.bsit-br.com.br/login.jsf",
   },
