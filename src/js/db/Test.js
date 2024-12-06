@@ -17,8 +17,8 @@ const namesMunicipios = [
     municipios: [
       "catalão",
       "Santa Tereza",
-      "Cristalina",
-      "Inhumas",
+      "Jatai",
+      "Planaltina de Goiás",
       "Moiporá",
       "Acreuna",
       "Jataí",
