@@ -62,9 +62,9 @@ const test = [
   {
     nome: namesMunicipios[0].municipios[2],
     url: url[0].server[2],
-    tag: tags[0].on,
+    tag: tags[0].off,
     tag3: "",
-    color: color[0].on,
+    color: color[0].off,
   },
   {
     nome: namesMunicipios[0].municipios[3],
@@ -76,9 +76,9 @@ const test = [
   {
     nome: namesMunicipios[0].municipios[4],
     url: url[0].server[4],
-    tag: tags[0].on,
+    tag: tags[0].off,
     tag3: "",
-    color: color[0].on,
+    color: color[0].off,
   },
   {
     nome: namesMunicipios[0].municipios[5],
