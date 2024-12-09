@@ -875,3 +875,7 @@ h3 {
 .intra:hover {
 	background: linear-gradient(to right, #0e3c8b, #443c83);
 }
+
+.gif {
+	width: 60px;
+}

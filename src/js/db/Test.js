@@ -90,9 +90,9 @@ const test = [
   {
     nome: namesMunicipios[0].municipios[6],
     url: url[0].server[6],
-    tag: tags[0].on,
+    tag: tags[0].off,
     tag3: "",
-    color: color[0].on,
+    color: color[0].off,
   },
   {
     nome: namesMunicipios[0].municipios[7],
