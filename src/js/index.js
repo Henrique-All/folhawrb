@@ -274,3 +274,41 @@ document
       acessDiv.style.display = "block"; // Exibe a div correspondente
     }
   });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    const shouldReload = confirm(
+      "Uma nova versão do site está disponível. Deseja atualizar?"
+    );
+    if (shouldReload) {
+      window.location.reload();
+    }
+  });
+
+  navigator.serviceWorker.register("../../sw.js").then((registration) => {
+    if (registration.waiting) {
+      notifyUpdateAvailable();
+    }
+
+    registration.addEventListener("updatefound", () => {
+      const newWorker = registration.installing;
+      newWorker.addEventListener("statechange", () => {
+        if (
+          newWorker.state === "installed" &&
+          navigator.serviceWorker.controller
+        ) {
+          notifyUpdateAvailable();
+        }
+      });
+    });
+  });
+
+  function notifyUpdateAvailable() {
+    const shouldReload = confirm(
+      "Uma nova versão do site está disponível. Deseja atualizar?"
+    );
+    if (shouldReload) {
+      window.location.reload();
+    }
+  }
+}
