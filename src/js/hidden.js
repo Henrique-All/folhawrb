@@ -218,6 +218,7 @@ tabAcess.addEventListener("click", () => {
 tabSelect.addEventListener("blur", () => {
   tabSelect.style.display = "none";
   tabDiv.classList.remove("active");
+  tabSelect.value = tabSelect.options[0].value;
   // Esconde o select
 });
 
