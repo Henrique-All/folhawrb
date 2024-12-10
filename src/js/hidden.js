@@ -203,6 +203,24 @@ function setActiveButton(button) {
   buttons.forEach((btn) => btn.classList.remove("active"));
   button.classList.add("active");
 }
+
+const tabSelect = document.getElementById("tab-select");
+const tabAcess = document.getElementById("tab-acess-speed");
+
+tabAcess.addEventListener("click", () => {
+  tabSelect.style.display = "block"; // Mostra o select
+  tabSelect.focus(); // Foca no elemento para permitir detectar a perda de foco
+});
+
+// Esconde o select ao clicar fora dele ou ao perder o foco
+tabSelect.addEventListener("blur", () => {
+  tabSelect.style.display = "none"; // Esconde o select
+});
+
+tabSelect.addEventListener("change", (event) => {
+  const selectedTab = event.target.value; // Obtém o valor da aba selecionada
+  showTab(selectedTab); // Chama a função para exibir a aba correspondente
+});
 // Event listeners para os botões de navegação
 tabPrefeituras.addEventListener("click", () => showTab("h-prefeituras"));
 tabCamaras.addEventListener("click", () => showTab("h-camaras"));
