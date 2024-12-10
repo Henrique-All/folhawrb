@@ -96,11 +96,23 @@
   animation: delete 400ms;
 }
 
+
+@keyframes siders {
+  0% {
+    transform: translateX(150px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
 .acess-speed {
   display: none;
   position: absolute;
-  top: 0px;
-  left: -205px;
+  top: 8px;
+  right: 40px;
   background-color: #252525;
   /* Cor de fundo */
   color: #ffffff;
@@ -110,14 +122,15 @@
   font-size: 16px;
   /* Tamanho da fonte */
   border-radius: 5px;
-  border: #ffffff 1px solid;
+  border: none;
   /* Borda arredondada */
-  padding: 5px;
+  padding: 2px;
   /* Espaçamento interno */
-  width: 200px;
+  width: 150px;
   /* Largura do select */
   outline: none;
   /* Remove o contorno padrão */
+  animation: siders 0.5s;
 }
 
 .acess-speed option {
@@ -125,29 +138,44 @@
 }
 
 .opens {
-  background-color: #535353;
+  background-color: #252525;
   border: none;
   font-size: 25px;
-  width: 100%;
+  width: 30px;
+  padding: 2px 0 0 0;
   height: 100%;
   cursor: pointer;
   color: #ffffff;
   border-radius: 10px 0 0 10px;
+
 }
 
 .acess-opens {
+  background-color: #252525;
   display: flex;
+  border: #ffffff solid 1px;
   align-content: center;
-  justify-content: center;
+  justify-content: end;
+  border-right: none;
   position: absolute;
   top: 165px;
   right: 0;
-  width: 30px;
-  height: 30px;
+  border-radius: 10px 0 0 10px;
+  width: 32px;
+  height: 40px;
+  transition: width 0.5s ease;
+}
 
+.acess-opens.active {
+  display: flex;
+  background-color: #252525;
+  justify-content: end;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
 }
 
 .select {
-  width: 100%;
+  width: 30px;
   height: 100%;
 }

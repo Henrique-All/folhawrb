@@ -206,15 +206,19 @@ function setActiveButton(button) {
 
 const tabSelect = document.getElementById("tab-select");
 const tabAcess = document.getElementById("tab-acess-speed");
+const tabDiv = document.getElementById("acess-selects");
 
 tabAcess.addEventListener("click", () => {
+  tabDiv.classList.add("active");
   tabSelect.style.display = "block"; // Mostra o select
   tabSelect.focus(); // Foca no elemento para permitir detectar a perda de foco
 });
 
 // Esconde o select ao clicar fora dele ou ao perder o foco
 tabSelect.addEventListener("blur", () => {
-  tabSelect.style.display = "none"; // Esconde o select
+  tabSelect.style.display = "none";
+  tabDiv.classList.remove("active");
+  // Esconde o select
 });
 
 tabSelect.addEventListener("change", (event) => {
