@@ -84,10 +84,6 @@ const prefeituras = [
     url: "http://gestaopublica.santabarbara.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Santa Rosa",
-    url: "http://gestaopublica.santarosa.bsit-br.com.br/login.jsf",
-  },
-  {
     nome: "Prefeitura Santa Tereza",
     url: "http://gestaopublica.SantaTereza.bsit-br.com.br/login.jsf",
   },

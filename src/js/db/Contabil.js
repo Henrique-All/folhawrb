@@ -93,10 +93,7 @@ const contabil = [
     nome: "Contabil Web Santa Barbara",
     url: "https://app04.bsit-br.com.br/contabilidade.santabarbara/",
   },
-  {
-    nome: "Contabil Web Santa Rosa",
-    url: "https://app02.bsit-br.com.br/contabilidade.santarosa/",
-  },
+
   {
     nome: "Contabil Web Santa Tereza",
     url: "https://app02.bsit-br.com.br/contabilidade.santatereza/",

@@ -82,10 +82,6 @@ const camaras = [
     url: "http://gestaopublica.camara.SantaBarbara.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Santa Rosa",
-    url: "http://gestaopublica.camara.SantaRosa.bsit-br.com.br/login.jsf",
-  },
-  {
     nome: "Camara São Francisco",
     url: "http://gestaopublica.camara.SaoFrancisco.bsit-br.com.br/login.jsf",
   },
