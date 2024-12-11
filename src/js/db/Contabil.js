@@ -6,6 +6,10 @@ const contabil = [
     url: "https://app03.bsit-br.com.br/contabilidade.arenopolis/",
   },
   {
+    nome: "Contabil Web Buriti de Goiás",
+    url: "https://app02.bsit-br.com.br/contabilidade.buritidegoias/ ",
+  },
+  {
     nome: "Contabil Web Bom Jesus",
     url: "https://app02.bsit-br.com.br/contabilidade.bomjesus/",
   },
