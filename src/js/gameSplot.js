@@ -10,7 +10,7 @@ button.addEventListener("click", () => {
   clickCount++; // Incrementa o contador
   if (clickCount === 5) {
     div.classList.add("active"); // Remove a classe 'hidden' da div
-    alert("Div revelada!"); // Mensagem opcional
+    alert("Parabens :D! Agora se diverta-se!"); // Mensagem opcional
   }
 });
 
