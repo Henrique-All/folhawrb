@@ -18,26 +18,30 @@ const winningCombinations = [
 const winModal = document.getElementById("winModal");
 const resultMessage = document.getElementById("resultMessage");
 
+// Placar
+let playerWins = 0; // Vitórias do jogador
+let machineWins = 0; // Vitórias da máquina
+let ties = 0; // Empates
+
+const playerWinsDisplay = document.getElementById("playerWins");
+const machineWinsDisplay = document.getElementById("machineWins");
+const tiesDisplay = document.getElementById("ties");
+
 // Função para lidar com os cliques do jogador
 function handleCellClick(index) {
-  // Se a célula já foi marcada ou o jogo já acabou, não faz nada
   if (gameState[index] !== "" || !gameActive) {
     return;
   }
 
-  // Marca a célula com o jogador atual
   gameState[index] = currentPlayer;
   cells[index].innerText = currentPlayer;
 
-  // Verifica se há um vencedor ou empate
   checkWinner();
 
-  // Alterna para o próximo jogador
   switchPlayer();
 
-  // Se for a vez da máquina, ela faz uma jogada após um pequeno intervalo
   if (gameActive && currentPlayer === "O") {
-    setTimeout(machineMove, 500);
+    setTimeout(machineMove, 200);
   }
 }
 
@@ -55,13 +59,12 @@ function checkWinner() {
       gameState[a] === gameState[b] &&
       gameState[a] === gameState[c]
     ) {
-      gameActive = false; // Finaliza o jogo
-      showWinner(gameState[a]); // Exibe a vitória
+      gameActive = false;
+      showWinner(gameState[a]);
       return;
     }
   }
 
-  // Verifica empate (se não houverem mais células vazias)
   if (!gameState.includes("")) {
     gameActive = false;
     showTie();
@@ -72,12 +75,23 @@ function checkWinner() {
 function showWinner(player) {
   resultMessage.innerText = `${player} venceu!`;
   winModal.style.display = "flex";
+
+  if (player === "X") {
+    playerWins++;
+    playerWinsDisplay.innerText = playerWins;
+  } else if (player === "O") {
+    machineWins++;
+    machineWinsDisplay.innerText = machineWins;
+  }
 }
 
 // Função para exibir empate
 function showTie() {
   resultMessage.innerText = "Empate!";
   winModal.style.display = "flex";
+
+  ties++;
+  tiesDisplay.innerText = ties;
 }
 
 // Função que faz a jogada da máquina
@@ -93,30 +107,27 @@ function machineMove() {
   }
 }
 
-// Função que encontra o melhor movimento para a máquina (bloqueio e ataque)
 function findBestMove(player) {
   let opponent = player === "X" ? "O" : "X";
 
-  // Tenta bloquear o jogador ou ganhar
   for (let i = 0; i < 9; i++) {
     if (gameState[i] === "") {
       gameState[i] = player;
       if (checkWinFor(player)) {
         gameState[i] = "";
-        return i; // Retorna o índice para ganhar
+        return i;
       }
       gameState[i] = "";
 
       gameState[i] = opponent;
       if (checkWinFor(opponent)) {
         gameState[i] = "";
-        return i; // Retorna o índice para bloquear o oponente
+        return i;
       }
       gameState[i] = "";
     }
   }
 
-  // Se não houver jogadas críticas, joga aleatoriamente
   let availableMoves = gameState
     .map((value, index) => (value === "" ? index : null))
     .filter((value) => value !== null);
@@ -124,7 +135,6 @@ function findBestMove(player) {
   return availableMoves[Math.floor(Math.random() * availableMoves.length)];
 }
 
-// Função que verifica se um jogador ganhou (para a máquina ou o oponente)
 function checkWinFor(player) {
   for (let combination of winningCombinations) {
     const [a, b, c] = combination;
@@ -143,9 +153,9 @@ function checkWinFor(player) {
 function resetGame() {
   gameState = ["", "", "", "", "", "", "", "", ""];
   currentPlayer = "X";
-  gameActive = true; // Jogo ativado novamente
-  cells.forEach((cell) => (cell.innerText = "")); // Limpa o tabuleiro
-  winModal.style.display = "none"; // Fecha o modal de vitória
+  gameActive = true;
+  cells.forEach((cell) => (cell.innerText = ""));
+  winModal.style.display = "none";
 }
 
 // Adiciona o evento de clique para as células

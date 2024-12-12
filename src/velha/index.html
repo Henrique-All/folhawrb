@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
   </head>
   <body>
     <div class="game-container">
@@ -27,6 +30,33 @@
         <h2 id="resultMessage"></h2>
         <button onclick="resetGame()">Jogar Novamente</button>
       </div>
+    </div>
+
+    <div id="scoreboard" class="scoreboard">
+      <h3 style="display: flex; align-items: center; color: #ffffff; margin: 0">
+        Placar
+      </h3>
+      <p style="display: flex; align-items: center; color: #ffffff; margin: 0">
+        <i
+          class="bx bx-check"
+          style="font-size: 30px; color: rgb(2, 255, 2)"></i>
+        Vitórias:
+        <span id="playerWins">0</span>
+      </p>
+      <p style="display: flex; align-items: center; color: #ffffff; margin: 0">
+        <i
+          class="bx bxs-checkbox-minus"
+          style="font-size: 30px; color: rgb(251, 24, 24)"></i
+        >Derrotas:
+        <span id="machineWins">0</span>
+      </p>
+      <p style="display: flex; align-items: center; color: #ffffff; margin: 0">
+        <i
+          class="bx bx-checkbox-square"
+          style="font-size: 30px; color: yellow"></i
+        >Empates:
+        <span id="ties">0</span>
+      </p>
     </div>
 
     <script src="script.js"></script>
