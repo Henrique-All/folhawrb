@@ -94,11 +94,24 @@
       </div>
     </nav>
 
-    <div class="modal hidden" id="modal">
-      <button id="close-modal">X</button>
-      <iframe
-        src="https://www.google.com/logos/fnbx/solitaire/standalone.html?&hl=pt-BR"
-        frameborder="0"></iframe>
+    <div class="modal" id="modal">
+      <button id="close-modal"><i class="bx bxs-down-arrow"></i> Fechar</button>
+      <button id="bt-paciencia" class="btP">
+        <img src="./src/images/pacienciabt.jpg" alt="" />
+      </button>
+      <button id="bt-velha" class="btP">
+        <img src="./src/images/velha.jpg" alt="" />
+      </button>
+      <div class="hidden game" id="paciencia">
+        <button id="close-gameP" class="bt-close">X</button>
+        <iframe
+          src="https://www.google.com/logos/fnbx/solitaire/standalone.html?&hl=pt-BR"
+          frameborder="0"></iframe>
+      </div>
+      <div class="hidden game" id="velha">
+        <button id="close-gameV" class="bt-close">X</button>
+        <iframe src="./src/velha/index.html" frameborder="0"></iframe>
+      </div>
     </div>
 
     <main>
