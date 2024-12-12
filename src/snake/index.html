@@ -56,6 +56,15 @@
       #startButton {
         margin-top: 20px;
       }
+
+      #countdown {
+        font-size: 30px;
+        color: yellow;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
@@ -77,7 +86,8 @@
     </div>
 
     <div id="score">Score: 0 | High Score: 0</div>
-    <!-- Score visível no jogo -->
+    <div id="countdown"></div>
+    <!-- Elemento para mostrar o countdown -->
 
     <script>
       const canvas = document.getElementById("game");
@@ -88,6 +98,7 @@
       const speedSelect = document.getElementById("speed");
       const menu = document.getElementById("menu");
       const controls = document.getElementById("controls");
+      const countdownElement = document.getElementById("countdown");
       const box = 20;
       const canvasSize = canvas.width / box;
 
@@ -207,9 +218,30 @@
         menu.classList.remove("active");
         controls.classList.remove("active");
 
+        // Esconder o canvas e a pontuação durante o atraso
+        canvas.style.display = "none";
+        scoreElement.style.display = "none";
+
+        // Mostrar a contagem regressiva
+        let countdown = 5;
+        countdownElement.textContent = `Game starts in ${countdown}...`;
+
+        let countdownInterval = setInterval(function () {
+          countdown--;
+          countdownElement.textContent = `Game starts in ${countdown}...`;
+
+          if (countdown === 0) {
+            clearInterval(countdownInterval);
+            startActualGame(); // Começar o jogo após a contagem regressiva
+          }
+        }, 1000); // Atualizar a cada 1 segundo
+      }
+
+      function startActualGame() {
+        countdownElement.style.display = "none"; // Esconder o countdown
         canvas.style.display = "block"; // Exibir o canvas
         scoreElement.style.display = "block"; // Exibir o score
-        clearInterval(gameInterval);
+
         snake = [{ x: 10, y: 10 }];
         direction = "RIGHT";
         food = {
