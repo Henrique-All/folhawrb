@@ -17,7 +17,7 @@ const btSnaker = document.getElementById("bt-snake");
 // Adiciona o evento de clique ao botão
 button.addEventListener("click", () => {
   clickCount++; // Incrementa o contador
-  if (clickCount === 1) {
+  if (clickCount === 5) {
     div.classList.add("active"); // Remove a classe 'hidden' da div
   }
 });
