@@ -162,3 +162,18 @@ function resetGame() {
 cells.forEach((cell, index) => {
   cell.addEventListener("click", () => handleCellClick(index));
 });
+
+const resetButton = document.getElementById("resetButton");
+
+resetButton.addEventListener("click", () => {
+  resetGame();
+
+  // Reseta os valores do placar
+  playerWins = 0;
+  machineWins = 0;
+  ties = 0;
+
+  playerWinsDisplay.innerText = playerWins;
+  machineWinsDisplay.innerText = machineWins;
+  tiesDisplay.innerText = ties;
+});
