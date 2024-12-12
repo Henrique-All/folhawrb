@@ -24,6 +24,7 @@ const namesMunicipios = [
       "Jataí",
       "Jataí",
       "Palminópolis",
+      "Cristalina Contabil",
     ],
   },
 ];
@@ -40,6 +41,7 @@ const url = [
       "http://192.168.5.45/",
       "http://192.168.5.46/",
       "http://192.168.5.47/",
+      "http://10.32.32.152/manager/accountant/initial.jsf",
     ],
   },
 ];
@@ -106,6 +108,13 @@ const test = [
     url: url[0].server[8],
     tag: tags[0].on,
     tag3: "",
+    color: color[0].on,
+  },
+  {
+    nome: namesMunicipios[0].municipios[9],
+    url: url[0].server[9],
+    tag: tags[0].on,
+    tag3: "Contabil Web",
     color: color[0].on,
   },
 ];
