@@ -22,7 +22,7 @@ const namesMunicipios = [
       "Moiporá",
       "Acreuna",
       "Jataí",
-      "São Luiz dos Montes Belos",
+      "Jataí",
       "Palminópolis",
     ],
   },
