@@ -24,7 +24,7 @@ const namesMunicipios = [
       "Jataí",
       "Jataí",
       "Palminópolis",
-      "Cristalina Contabil",
+      "Planatina Contabil",
     ],
   },
 ];

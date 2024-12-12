@@ -20,9 +20,10 @@
       rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css?v=2.3" />
-    <link rel="stylesheet" href="global.css?v=2.3" />
-    <link rel="stylesheet" href="./src/css/tabs.css?v=2.3" />
+    <link rel="stylesheet" href="styles.css?v=3.0" />
+    <link rel="stylesheet" href="global.css?v=3.0" />
+    <link rel="stylesheet" href="./src/css/tabs.css?v=3.0" />
+    <link rel="stylesheet" href="./src/css/modal.css?v-1.0" />
   </head>
 
   <body>
@@ -35,12 +36,16 @@
         </a>
         <a
           href="./src/path/path.html"
-          title="path notes da versão" target="_blank"
+          title="path notes da versão"
+          target="_blank"
           style="color: #ffffff; font-size: 10px"
-          >v3.1 <i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></a
-        >
+          >v4.0
+          <i
+            class="bx bx-check-double"
+            style="color: rgb(0, 255, 0); font-size: 15px"></i
+        ></a>
       </div>
-              <!-- Barra de pesquisa por nome -->
+      <!-- Barra de pesquisa por nome -->
 
       <div class="search">
         <input
@@ -48,53 +53,57 @@
           id="buscar-nome"
           class="input-search"
           placeholder="Digite o municipio aqui" />
-          <button id="limpar-busca">X</button>
+        <button id="limpar-busca">X</button>
       </div>
       <div class="selects">
-        
         <a
           href="https://wa.link/ev3vrh"
           class="report"
           target="_blank"
           title="WhatsApp Report"
           style="color: #ffffff"
-          ><i class='bx bxl-whatsapp'></i></a>
-          <img src="./src/images/Stop.gif" class="gif">
+          ><i class="bx bxl-whatsapp"></i>
+        </a>
+        <button id="open-modal">
+          <img src="./src/images/Stop.gif" class="gif" />
+        </button>
 
-          <div class="acess-opens" id="acess-selects">
-            <div class="select">
-              <button id="tab-acess-speed" class="opens"><i class='bx bx-menu-alt-right'></i></button>
-              <select id="tab-select" class="acess-speed">
-                <option value="Selecione">Selecione</option>
-                <option value="h-prefeituras">Prefeituras</option>
-                <option value="h-camaras">Câmaras</option>
-                <option value="h-outros">Previdencias</option>
-                <option value="h-contabil">Contábil</option>
-                <option value="h-patrimonio">Patrimônio</option>
-                <option value="h-saude">Saúde</option>
-                <option value="h-painel">Painel</option>
-                <option value="h-ferramentas">Ferramentas</option>
-                <option value="h-tcm">TCM</option>
-                <option value="h-test">Ambientes de Teste</option>
-                <option value="h-json">JSON</option>
-                <option value="h-tcmfiscaliza">TCM Fiscaliza</option>
-                <option value="h-voip">Ramal </option>
-              </select>
-            </div>
+        <div class="acess-opens" id="acess-selects">
+          <div class="select">
+            <button id="tab-acess-speed" class="opens">
+              <i class="bx bx-menu-alt-right"></i>
+            </button>
+            <select id="tab-select" class="acess-speed">
+              <option value="Selecione">Selecione</option>
+              <option value="h-prefeituras">Prefeituras</option>
+              <option value="h-camaras">Câmaras</option>
+              <option value="h-outros">Previdencias</option>
+              <option value="h-contabil">Contábil</option>
+              <option value="h-patrimonio">Patrimônio</option>
+              <option value="h-saude">Saúde</option>
+              <option value="h-painel">Painel</option>
+              <option value="h-ferramentas">Ferramentas</option>
+              <option value="h-tcm">TCM</option>
+              <option value="h-test">Ambientes de Teste</option>
+              <option value="h-json">JSON</option>
+              <option value="h-tcmfiscaliza">TCM Fiscaliza</option>
+              <option value="h-voip">Ramal</option>
+            </select>
           </div>
+        </div>
       </div>
-
     </nav>
 
-
-  </div>
+    <div class="modal hidden" id="modal">
+      <button id="close-modal">X</button>
+      <iframe src="https://paciência.eu/" frameborder="0"></iframe>
+    </div>
 
     <main>
       <button id="menu" class="m-tabs">
         <i class="bx bxs-arrow-to-right"></i>
-        <p class="info"><i class='bx bx-arrow-back' ></i>  Abra o menu aqui</p>
+        <p class="info"><i class="bx bx-arrow-back"></i> Abra o menu aqui</p>
       </button>
-      
 
       <div class="left">
         <div class="menu" id="tabs">
@@ -108,7 +117,6 @@
                 <i class="bx bx-chevron-down"></i>
               </button>
               <div class="acess">
-
                 <button id="tab-prefeituras" class="btn">
                   <i class="bx bxs-building-house icon-dp"></i>Prefeituras
                 </button>
@@ -169,13 +177,13 @@
                   <i class="bx bxs-dashboard icon-dp"></i>Validador de PDF
                 </button>
                 <button id="tab-json" class="btn">
-                  <i class='bx bxs-file-json icon-dp' ></i>Json Viewer
+                  <i class="bx bxs-file-json icon-dp"></i>Json Viewer
                 </button>
                 <button id="tab-tcmfiscaliza" class="btn">
-                  <i class='bx bxs-bookmark-alt icon-dp' ></i>Colare Fiscalização
+                  <i class="bx bxs-bookmark-alt icon-dp"></i>Colare Fiscalização
                 </button>
                 <button id="tab-voip" class="btn">
-                  <i class='bx bx-headphone icon-dp'></i>Ramal
+                  <i class="bx bx-headphone icon-dp"></i>Ramal
                 </button>
               </div>
             </div>
@@ -186,27 +194,27 @@
               class="btn"
               ><i class="bx bxs-group icon"></i> Portal Social</a
             >
-            
+
             <a
               href="https://cidernorte.bsit-br.com.br/login.jsf?redir=/manager/human-resources/register/user.jsf "
               target="_blank"
               class="btn"
-              ><i class='bx bxs-door-open icon'></i> Cider Norte</a
+              ><i class="bx bxs-door-open icon"></i> Cider Norte</a
             >
 
             <a
               href="https://sigep.swgp.com.br/"
               target="_blank"
               class="btn intra"
-              ><img src="./src/images/favicon.ico" class="icon" />
-              SIGEP IntraService</a
+              ><img src="./src/images/favicon.ico" class="icon" /> SIGEP
+              IntraService</a
             >
           </div>
         </div>
       </div>
 
       <div class="righ">
-        <div id="home"> </div>
+        <div id="home"></div>
 
         <!-- Card Prefeituras -->
         <div id="aba-container"></div>
@@ -280,28 +288,28 @@
             <iframe src="https://voip.bsit-br.com.br/operador"></iframe>
           </div>
         </div>
-      
       </div>
     </main>
   </body>
   <!-- END HTML -->
 
   <!-- Dados  -->
-  <script src="./src/js/db/Prefeituras.js?v=2.3" defer></script>
-  <script src="./src/js/db/Camaras.js?v=2.3" defer></script>
-  <script src="./src/js/db/Outros.js?v=2.3" defer></script>
-  <script src="./src/js/db/Contabil.js?v=2.3" defer></script>
-  <script src="./src/js/db/Patrimonio.js?v=2.2" defer></script>
-  <script src="./src/js/db/Saude.js?v=2.2" defer></script>
-  <script src="./src/js/db/SaudePainel.js?v=2.3" defer></script>
-  <script src="./src/js/db/Ferramentas.js?v=2.3" defer></script>
-  <script src="./src/js/db/Test.js?v=2.3" defer></script>
+  <script src="./src/js/db/Prefeituras.js?v=3.0" defer></script>
+  <script src="./src/js/db/Camaras.js?v=3.0" defer></script>
+  <script src="./src/js/db/Outros.js?v=3.0" defer></script>
+  <script src="./src/js/db/Contabil.js?v=3.0" defer></script>
+  <script src="./src/js/db/Patrimonio.js?v=3.0" defer></script>
+  <script src="./src/js/db/Saude.js?v=3.0" defer></script>
+  <script src="./src/js/db/SaudePainel.js?v=3.0" defer></script>
+  <script src="./src/js/db/Ferramentas.js?v=3.0" defer></script>
+  <script src="./src/js/db/Test.js?v=3.0" defer></script>
   <!-- END Dados Script -->
 
   <!-- Scripts de darkmode, hidden e renderização -->
-  <script src="./src/js/index.js?v=2.3" defer></script>
-  <script src="./src/js/hidden.js?v=2.3" defer></script>
-  <script src="./src/js/darkTheme.js?v=2.3" defer></script>
+  <script src="./src/js/index.js?v=3.0" defer></script>
+  <script src="./src/js/hidden.js?v=3.0" defer></script>
+  <script src="./src/js/darkTheme.js?v=3.0" defer></script>
+  <script src="./src/js/gameSplot.js?v=1.0" defer></script>
   <!-- END Script -->
 </html>
 <!-- END Code -->
