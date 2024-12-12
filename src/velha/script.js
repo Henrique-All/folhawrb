@@ -110,24 +110,31 @@ function machineMove() {
 function findBestMove(player) {
   let opponent = player === "X" ? "O" : "X";
 
+  // 1. Prioriza ganhar
   for (let i = 0; i < 9; i++) {
     if (gameState[i] === "") {
       gameState[i] = player;
       if (checkWinFor(player)) {
         gameState[i] = "";
-        return i;
-      }
-      gameState[i] = "";
-
-      gameState[i] = opponent;
-      if (checkWinFor(opponent)) {
-        gameState[i] = "";
-        return i;
+        return i; // Retorna a jogada vencedora
       }
       gameState[i] = "";
     }
   }
 
+  // 2. Bloqueia o jogador se necessário
+  for (let i = 0; i < 9; i++) {
+    if (gameState[i] === "") {
+      gameState[i] = opponent;
+      if (checkWinFor(opponent)) {
+        gameState[i] = "";
+        return i; // Retorna a jogada para bloquear
+      }
+      gameState[i] = "";
+    }
+  }
+
+  // 3. Faz um movimento aleatório se não houver vitória ou bloqueio
   let availableMoves = gameState
     .map((value, index) => (value === "" ? index : null))
     .filter((value) => value !== null);
