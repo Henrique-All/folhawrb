@@ -18,7 +18,7 @@ const btSnaker = document.getElementById("bt-snake");
 button.addEventListener("click", () => {
   clickCount++; // Incrementa o contador
   if (clickCount === 5) {
-    div.classList.add("active"); // Remove a classe 'hidden' da div
+    alert("Trabalhar que e bom nada em"); // Remove a classe 'hidden' da div
   }
 });
 
