@@ -54,7 +54,7 @@
   background-color: #7164d7;
 }
 
-.light, .acess-ferramentas {
+.light .acess-ferramentas {
   display: none;
   background-color: #453c88;
   animation: open 400ms;
