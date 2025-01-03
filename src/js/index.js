@@ -32,7 +32,7 @@ function renderLinks(filtro) {
        <img src="./src/images/logo.png" alt="" />
        <p>SIGEP</p>
      </div>
-     <h1>Bem Vindo ao Portal Sigep <p>5.0Folha<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
+     <h1>Bem Vindo ao Portal Sigep <p>6.0<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
      <h3>Tudo em um só lugar, de maneira prática e rápida, feito para facilitar e agilizar.</h3>
    </div>`;
 
@@ -274,3 +274,17 @@ document
       acessDiv.style.display = "block"; // Exibe a div correspondente
     }
   });
+
+const buttons = document.querySelectorAll(
+  "#bt-municipios, #bt-ferramentas, #bt-saude, #bt-contabil"
+);
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove a classe 'sel' de todos os botões
+    buttons.forEach((btn) => btn.classList.remove("sel"));
+
+    // Adiciona a classe 'sel' ao botão clicado
+    button.classList.add("sel");
+  });
+});

@@ -29,6 +29,8 @@
   cursor: pointer;
   border-radius: 5px 5px 5px 5px;
   font-size: 15px;
+  transition: all ease-in-out 400ms;
+
 }
 
 .close-button {
@@ -50,6 +52,8 @@
   color: #fff;
   /* Cor do texto para contraste */
   border-color: #ffffff;
+  border-radius: 25px;
+  transition: all ease 400ms;
 }
 
 ::-webkit-scrollbar {
@@ -71,7 +75,7 @@
   color: #ffffff;
   cursor: pointer;
   z-index: 1000;
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px 0 0 10px;
 }
 
 
