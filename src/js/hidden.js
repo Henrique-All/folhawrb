@@ -16,7 +16,7 @@ closeAllButton.addEventListener("click", () => {
     divPrefeituras,
     divCamaras,
     divHome,
-    divOutros,
+    divPrevidencias,
     divContabil,
     divPatrimonio,
     divSaude,
@@ -78,7 +78,7 @@ const abaContainer = document.getElementById("aba-container");
 const divHome = document.getElementById("home");
 const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
-const divOutros = document.getElementById("h-outros");
+const divPrevidencias = document.getElementById("h-previdencias");
 const divContabil = document.getElementById("h-contabil");
 const divPatrimonio = document.getElementById("h-patrimonio");
 const divSaude = document.getElementById("h-saude");
@@ -169,7 +169,7 @@ function showTab(tab) {
   const allDivs = [
     divPrefeituras,
     divCamaras,
-    divOutros,
+    divPrevidencias,
     divContabil,
     divPatrimonio,
     divSaude,
@@ -229,7 +229,7 @@ tabSelect.addEventListener("change", (event) => {
 // Event listeners para os botões de navegação
 tabPrefeituras.addEventListener("click", () => showTab("h-prefeituras"));
 tabCamaras.addEventListener("click", () => showTab("h-camaras"));
-tabOutros.addEventListener("click", () => showTab("h-outros"));
+tabOutros.addEventListener("click", () => showTab("h-previdencias"));
 tabContabil.addEventListener("click", () => showTab("h-contabil"));
 tabPatrimonio.addEventListener("click", () => showTab("h-patrimonio"));
 tabSaude.addEventListener("click", () => showTab("h-saude"));

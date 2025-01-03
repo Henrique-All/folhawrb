@@ -1,6 +1,6 @@
 //Dados como Nome e URl do sites.
 
-const outros = [
+const previdencias = [
   {
     nome: "Previdencia de Aparecida",
     url: "http://gestaopublica.previdencia.Aparecida.bsit-br.com.br/login.jsf",

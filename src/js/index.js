@@ -18,7 +18,7 @@ function renderLinks(filtro) {
   // Filtrar os dados
   const prefeiturasFiltradas = filtrarPorNome(filtro)(prefeituras);
   const camarasFiltradas = filtrarPorNome(filtro)(camaras);
-  const outrosFiltrados = filtrarPorNome(filtro)(outros);
+  const previdenciasFiltrados = filtrarPorNome(filtro)(previdencias);
   const contabilFiltrados = filtrarPorNome(filtro)(contabil);
   const patrimonioFiltrados = filtrarPorNome(filtro)(patrimonio);
   const saudeFiltrados = filtrarPorNome(filtro)(saude);
@@ -40,7 +40,7 @@ function renderLinks(filtro) {
   document.getElementById("prefeituras").innerHTML = prefeiturasFiltradas
     .map((prefeitura) => {
       return `
-        <a class="card" href="${prefeitura.url}" target="_blank">
+        <a class="card" href="${prefeitura.url}" title="${prefeitura.url}" target="_blank">
           <div class="card-header">
             <img src="./src/images/logo.png" />
             <p>SIGEP</p>
@@ -65,15 +65,15 @@ function renderLinks(filtro) {
     .join("");
 
   // Renderizar outros
-  document.getElementById("outros").innerHTML = outrosFiltrados
-    .map((outros) => {
+  document.getElementById("previdencias").innerHTML = previdenciasFiltrados
+    .map((previdencias) => {
       return `
-        <a class="card" href="${outros.url}" target="_blank">
+        <a class="card" href="${previdencias.url}" target="_blank">
          <div class="card-header">
             <img src="./src/images/logo.png" />
             <p>SIGEP</p>
           </div>
-          <p class="name">${outros.nome}</p>
+          <p class="name">${previdencias.nome}</p>
         </a>
       `;
     })
