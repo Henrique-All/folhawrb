@@ -346,3 +346,91 @@
   background-color: rgb(160, 0, 0);
   animation: open 400ms;
 }
+
+.pink {
+  background-color: #f76ca8;
+}
+
+
+.pink .navigation {
+  background-color: #ffa3cb;
+}
+
+.pink .menu.active {
+  background-color: #ffa3cb;
+}
+
+.pink .tab-button {
+  background-color: #ffa3cb;
+  border: solid 2px #ffffff;
+
+}
+
+.pink .tab-button.active {
+  background-color: #ffa3cb;
+  /* Cor de fundo ativa */
+  color: #fff;
+  /* Cor do texto para contraste */
+  border-color: #ffffff;
+  border-radius: 15px;
+  transition: all ease 400ms;
+}
+
+.pink .card {
+  background-color: #ff2784;
+}
+
+.pink .tabs {
+  background-color: #ffa3cb;
+}
+
+.pink .btn:hover {
+  background-color: #ffa3cb;
+}
+
+.pink #bt-municipios:hover {
+  transition: all ease 400ms;
+  background-color: #f73f8e;
+}
+
+.pink .municipios .acess {
+  display: none;
+  background-color: #f73f8e;
+  animation: open 400ms;
+}
+
+.pink #bt-contabil:hover {
+  transition: all ease 400ms;
+  background-color: #f73f8e;
+}
+
+.pink .tabscontabil {
+  display: none;
+  background-color: #f73f8e;
+  animation: open 400ms;
+}
+
+
+.pink #bt-saude:hover {
+  transition: all ease 400ms;
+  background-color: #f73f8e;
+}
+
+
+.pink .acess-saude {
+  display: none;
+  background-color: #f73f8e;
+  animation: open 400ms;
+}
+
+
+.pink #bt-ferramentas:hover {
+  transition: all ease 400ms;
+  background-color: #f73f8e;
+}
+
+.pink .acess-ferramentas {
+  display: none;
+  background-color: #f73f8e;
+  animation: open 400ms;
+}
