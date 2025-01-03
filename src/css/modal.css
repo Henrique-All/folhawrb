@@ -16,12 +16,11 @@
   right: 30px;
   width: auto;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
+  align-items: start;
+  gap: 10px;
   z-index: 1000000;
-  height: 80%;
   background-color: #3a3a3a;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #ffffff;
 }
 
@@ -35,8 +34,7 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  position: absolute;
-  left: 10px;
+
   width: 50px;
   top: 0;
   background: transparent;

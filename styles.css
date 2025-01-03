@@ -897,3 +897,23 @@ h3 {
 .gif {
 	width: 60px;
 }
+
+#selectImagens {
+	background-color: #252525;
+	/* Cor de fundo */
+	color: #ffffff;
+	/* Cor do texto */
+	font-family: 'Arial', sans-serif;
+	/* Fonte */
+	font-size: 16px;
+	/* Tamanho da fonte */
+	border-radius: 5px;
+	border: none;
+	/* Borda arredondada */
+	padding: 2px;
+	/* Espaçamento interno */
+	width: 150px;
+	/* Largura do select */
+	outline: none;
+	/* Remove o contorno padrão */
+}

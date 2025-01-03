@@ -65,7 +65,11 @@
           ><i class="bx bxl-whatsapp"></i>
         </a>
         <button id="open-modal">
-          <img src="./src/images/Stop.gif" class="gif" />
+          <img
+            id="imagemSelecionada"
+            src="./src/images/eevee-pokemon.gif"
+            alt="Imagem selecionada"
+            class="gif" />
         </button>
 
         <div class="acess-opens" id="acess-selects">
@@ -96,29 +100,15 @@
 
     <div class="modal" id="modal">
       <button id="close-modal"><i class="bx bxs-down-arrow"></i> Fechar</button>
-      <button id="bt-paciencia" class="btP">
-        <img src="./src/images/pacienciabt.jpg" alt="" />
-      </button>
-      <button id="bt-velha" class="btP">
-        <img src="./src/images/velha.jpg" alt="" />
-      </button>
-      <button id="bt-snake" class="btP">
-        <img src="./src/images/Snake.jpg" alt="" />
-      </button>
-      <div class="hidden game" id="paciencia">
-        <button id="close-gameP" class="bt-close">X</button>
-        <iframe
-          src="https://www.google.com/logos/fnbx/solitaire/standalone.html?&hl=pt-BR"
-          frameborder="0"></iframe>
-      </div>
-      <div class="hidden game" id="velha">
-        <button id="close-gameV" class="bt-close">X</button>
-        <iframe src="./src/velha/index.html" frameborder="0"></iframe>
-      </div>
-      <div class="hidden game" id="snake">
-        <button id="close-gameS" class="bt-close">X</button>
-        <iframe src="./src/snake/index.html" frameborder="0"></iframe>
-      </div>
+      <select id="selectImagens">
+        <option value="./src/images/eevee-pokemon.gif">Eevee</option>
+        <option value="./src/images/pokemon.gif">Mesprit</option>
+        <option value="./src/images/Stop.gif">Pikachu</option>
+        <option value="./src/images/standing.gif">Espeon</option>
+        <option value="./src/images/torchic.gif">Torchic</option>
+        <option value="./src/images/blastoise.gif">Blastoise</option>
+        <option value="./src/images/joia.gif">Bulbizarre</option>
+      </select>
     </div>
 
     <main>
@@ -342,6 +332,8 @@
   <script src="./src/js/hidden.js?v=v=3.1" defer></script>
   <script src="./src/js/darkTheme.js?v=v=3.1" defer></script>
   <script src="./src/js/gameSplot.js?v=v=3.1" defer></script>
+  <script src="./src/js/pokemon.js?v=3.1"></script>
+
   <!-- END Script -->
 </html>
 <!-- END Code -->
