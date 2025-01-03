@@ -281,10 +281,14 @@ const buttons = document.querySelectorAll(
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    // Remove a classe 'sel' de todos os botões
-    buttons.forEach((btn) => btn.classList.remove("sel"));
-
-    // Adiciona a classe 'sel' ao botão clicado
-    button.classList.add("sel");
+    // Verifica se o botão já tem a classe 'sel'
+    if (button.classList.contains("sel")) {
+      // Se já tiver a classe, remove a classe 'sel'
+      button.classList.remove("sel");
+    } else {
+      // Se não tiver a classe, adiciona a classe 'sel'
+      buttons.forEach((btn) => btn.classList.remove("sel"));
+      button.classList.add("sel");
+    }
   });
 });

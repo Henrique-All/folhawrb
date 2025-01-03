@@ -606,7 +606,7 @@ li {
 }
 
 #bt-municipios.sel {
-	background-color: rgb(37, 37, 37);
+	background-color: rgb(27, 27, 27);
 	transition: all ease-in-out 400ms;
 }
 
@@ -655,7 +655,7 @@ li {
 }
 
 #bt-contabil.sel {
-	background-color: rgb(37, 37, 37);
+	background-color: rgb(27, 27, 27);
 	transition: all ease-in-out 400ms;
 }
 
@@ -698,7 +698,7 @@ li {
 }
 
 #bt-saude.sel {
-	background-color: rgb(37, 37, 37);
+	background-color: rgb(27, 27, 27);
 	transition: all ease-in-out 400ms;
 }
 
@@ -741,9 +741,10 @@ li {
 }
 
 #bt-ferramentas.sel {
-	background-color: rgb(37, 37, 37);
-	transition: all ease-in-out 400ms;
+	background-color: rgb(27, 27, 27);
+	transition: all ease 400ms;
 }
+
 
 .light #bt-ferramentas:hover {
 	transition: all ease 400ms;
