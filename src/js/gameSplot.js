@@ -24,52 +24,5 @@ button.addEventListener("click", () => {
 
 closeModal.addEventListener("click", () => {
   div.classList.remove("active");
-  paciencia.classList.add("hidden");
-  snaker.classList.add("hidden");
-  velha.classList.add("hidden");
-  btVelha.classList.remove("hidden");
-  btPaciencia.classList.remove("hidden");
   clickCount = 0;
-});
-
-btPaciencia.addEventListener("click", () => {
-  paciencia.classList.remove("hidden");
-  btVelha.classList.add("hidden");
-  btPaciencia.classList.add("hidden");
-  btSnaker.classList.add("hidden");
-});
-
-btVelha.addEventListener("click", () => {
-  velha.classList.remove("hidden");
-  btVelha.classList.add("hidden");
-  btPaciencia.classList.add("hidden");
-  btSnaker.classList.add("hidden");
-});
-
-btSnaker.addEventListener("click", () => {
-  snaker.classList.remove("hidden");
-  btVelha.classList.add("hidden");
-  btSnaker.classList.add("hidden");
-  btPaciencia.classList.add("hidden");
-});
-
-closeP.addEventListener("click", () => {
-  paciencia.classList.add("hidden");
-  btVelha.classList.remove("hidden");
-  btPaciencia.classList.remove("hidden");
-  btSnaker.classList.remove("hidden");
-});
-
-closeV.addEventListener("click", () => {
-  velha.classList.add("hidden");
-  btVelha.classList.remove("hidden");
-  btPaciencia.classList.remove("hidden");
-  btSnaker.classList.remove("hidden");
-});
-
-closeS.addEventListener("click", () => {
-  snaker.classList.add("hidden");
-  btVelha.classList.remove("hidden");
-  btPaciencia.classList.remove("hidden");
-  btSnaker.classList.remove("hidden");
 });

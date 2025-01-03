@@ -1,0 +1,348 @@
+.light {
+  background: linear-gradient(to right, #0e3c8b, #443c83);
+}
+
+.light .navigation {
+  background: linear-gradient(to right, #0e3c8b, #443c83);
+}
+
+.light .menu.active {
+  background: linear-gradient(to right, #0e3c8b, );
+}
+
+.light .card {
+  background-color: #0e3c8b;
+}
+
+.light .tab-button {
+  background-color: #0e3c8b;
+  border: solid 2px #ffffff;
+
+}
+
+.light .tab-button.active {
+  background-color: #252525;
+  /* Cor de fundo ativa */
+  color: #fff;
+  /* Cor do texto para contraste */
+  border-color: #ffffff;
+  border-radius: 15px;
+  transition: all ease 400ms;
+}
+
+.light .tabs {
+  background: linear-gradient(to right, #0e3c8b, #443c83);
+}
+
+.light .btn:hover {
+  background-color: #7164d7;
+}
+
+.light #bt-municipios:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+.light .municipios .acess {
+  display: none;
+  background-color: #453c88;
+  animation: open 400ms;
+}
+
+.light #bt-contabil:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+.light, .acess-ferramentas {
+  display: none;
+  background-color: #453c88;
+  animation: open 400ms;
+}
+
+
+.light .tabscontabil {
+  display: none;
+  background-color: #453c88;
+  animation: open 400ms;
+}
+
+
+.light #bt-saude:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+
+.light .acess-saude {
+  display: none;
+  background-color: #453c88;
+  animation: open 400ms;
+}
+
+
+.light #bt-ferramentas:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+.blue {
+  background-color: #0c306e;
+}
+
+.blue .navigation {
+  background-color: #0e3c8b;
+}
+
+.blue .menu.active {
+  background-color: #0e3c8b;
+}
+
+.blue .card {
+  background-color: #0e3c8b;
+}
+
+.blue .tab-button {
+  background-color: #0e3c8b;
+  border: solid 2px #ffffff;
+
+}
+
+.blue .tab-button.active {
+  background-color: #071e46;
+  /* Cor de fundo ativa */
+  color: #fff;
+  /* Cor do texto para contraste */
+  border-color: #ffffff;
+  border-radius: 15px;
+  transition: all ease 400ms;
+}
+
+.blue .tabs {
+  background-color: #0e3c8b;
+}
+
+.blue .btn:hover {
+  background-color: #7164d7;
+}
+
+.blue #bt-municipios:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+.blue .municipios .acess {
+  display: none;
+  background-color: #071e46;
+  animation: open 400ms;
+}
+
+.blue #bt-contabil:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+.blue .tabscontabil {
+  display: none;
+  background-color: #071e46;
+  animation: open 400ms;
+}
+
+
+.blue #bt-saude:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+
+.blue .acess-saude {
+  display: none;
+  background-color: #071e46;
+  animation: open 400ms;
+}
+
+
+.blue #bt-ferramentas:hover {
+  transition: all ease 400ms;
+  background-color: #7164d7;
+}
+
+.blue .acess-ferramentas {
+  display: none;
+  background-color: #071e46;
+  animation: open 400ms;
+}
+
+.roxo {
+  background-color: rgb(63, 2, 63);
+}
+
+.roxo .navigation {
+  background-color: purple;
+}
+
+.roxo .menu.active {
+  background-color: purple;
+}
+
+.roxo .card {
+  background-color: rgb(180, 0, 180);
+}
+
+.roxo .tab-button {
+  background-color: purple;
+  border: solid 2px #ffffff;
+
+}
+
+.roxo .tab-button.active {
+  background-color: rgb(63, 6, 63);
+  /* Cor de fundo ativa */
+  color: #fff;
+  /* Cor do texto para contraste */
+  border-color: #ffffff;
+  border-radius: 15px;
+  transition: all ease 400ms;
+}
+
+.roxo .tabs {
+  background-color: purple;
+}
+
+.roxo .btn:hover {
+  background-color: rgb(167, 1, 167);
+}
+
+.roxo #bt-municipios:hover {
+  transition: all ease 400ms;
+  background-color: rgb(63, 6, 63);
+}
+
+.roxo .municipios .acess {
+  display: none;
+  background-color: rgb(63, 6, 63);
+  animation: open 400ms;
+}
+
+.roxo #bt-contabil:hover {
+  transition: all ease 400ms;
+  background-color: rgb(63, 6, 63);
+}
+
+.roxo .tabscontabil {
+  display: none;
+  background-color: rgb(63, 6, 63);
+  animation: open 400ms;
+}
+
+
+.roxo #bt-saude:hover {
+  transition: all ease 400ms;
+  background-color: rgb(63, 6, 63);
+}
+
+
+.roxo .acess-saude {
+  display: none;
+  background-color: rgb(63, 6, 63);
+  animation: open 400ms;
+}
+
+
+.roxo #bt-ferramentas:hover {
+  transition: all ease 400ms;
+  background-color: rgb(63, 6, 63);
+}
+
+.roxo .acess-ferramentas {
+  display: none;
+  background-color: rgb(63, 6, 63);
+  animation: open 400ms;
+}
+
+.red {
+  background-color: rgb(145, 22, 22);
+}
+
+.red .navigation {
+  background-color: rgb(199, 0, 0);
+}
+
+.red .menu.active {
+  background-color: rgb(199, 0, 0);
+}
+
+.red .card {
+  background-color: rgb(199, 0, 0);
+}
+
+.red .tab-button {
+  background-color: rgb(199, 0, 0);
+  border: solid 2px #ffffff;
+
+}
+
+.red .tab-button.active {
+  background-color: rgb(160, 0, 0);
+  /* Cor de fundo ativa */
+  color: #fff;
+  /* Cor do texto para contraste */
+  border-color: #ffffff;
+  border-radius: 15px;
+  transition: all ease 400ms;
+}
+
+.red .tabs {
+  background-color: rgb(199, 0, 0);
+}
+
+.red .btn:hover {
+  background-color: rgb(199, 0, 0);
+}
+
+.red #bt-municipios:hover {
+  transition: all ease 400ms;
+  background-color: rgb(160, 0, 0);
+}
+
+.red .municipios .acess {
+  display: none;
+  background-color: rgb(160, 0, 0);
+  animation: open 400ms;
+}
+
+.red #bt-contabil:hover {
+  transition: all ease 400ms;
+  background-color: rgb(160, 0, 0);
+}
+
+.red .tabscontabil {
+  display: none;
+  background-color: rgb(160, 0, 0);
+  animation: open 400ms;
+}
+
+
+.red #bt-saude:hover {
+  transition: all ease 400ms;
+  background-color: rgb(160, 0, 0);
+}
+
+
+.red .acess-saude {
+  display: none;
+  background-color: rgb(160, 0, 0);
+  animation: open 400ms;
+}
+
+
+.red #bt-ferramentas:hover {
+  transition: all ease 400ms;
+  background-color: rgb(160, 0, 0);
+}
+
+.red .acess-ferramentas {
+  display: none;
+  background-color: rgb(160, 0, 0);
+  animation: open 400ms;
+}

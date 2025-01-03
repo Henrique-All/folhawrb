@@ -230,10 +230,6 @@ main {
 	height: 40px;
 }
 
-.light .btn:hover {
-	background-color: #7164d7;
-}
-
 .selects {
 	display: flex;
 	gap: 20px;
@@ -618,20 +614,9 @@ li {
 	font-size: 24px;
 }
 
-.light #bt-municipios:hover {
-	transition: all ease 400ms;
-	background-color: #7164d7;
-}
-
 .municipios .acess {
 	display: none;
 	background-color: #525252;
-	animation: open 400ms;
-}
-
-.light .municipios .acess {
-	display: none;
-	background-color: #453c88;
 	animation: open 400ms;
 }
 
@@ -661,20 +646,10 @@ li {
 	transition: all ease-in-out 400ms;
 }
 
-.light #bt-contabil:hover {
-	transition: all ease 400ms;
-	background-color: #7164d7;
-}
 
 .tabscontabil {
 	display: none;
 	background-color: #525252;
-	animation: open 400ms;
-}
-
-.light .tabscontabil {
-	display: none;
-	background-color: #453c88;
 	animation: open 400ms;
 }
 
@@ -704,20 +679,10 @@ li {
 	transition: all ease-in-out 400ms;
 }
 
-.light #bt-saude:hover {
-	transition: all ease 400ms;
-	background-color: #7164d7;
-}
 
 .acess-saude {
 	display: none;
 	background-color: #525252;
-	animation: open 400ms;
-}
-
-.light .acess-saude {
-	display: none;
-	background-color: #453c88;
 	animation: open 400ms;
 }
 
@@ -747,21 +712,9 @@ li {
 	transition: all ease 400ms;
 }
 
-
-.light #bt-ferramentas:hover {
-	transition: all ease 400ms;
-	background-color: #7164d7;
-}
-
 .acess-ferramentas {
 	display: none;
 	background-color: #525252;
-	animation: open 400ms;
-}
-
-.light .acess-ferramentas {
-	display: none;
-	background-color: #453c88;
 	animation: open 400ms;
 }
 
@@ -780,13 +733,15 @@ li {
 	position: relative;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+
 }
 
 .home h1 p {
 	color: #ffffff;
 	font-size: 12px;
 	position: absolute;
-	right: 0;
+	bottom: 0;
 }
 
 .home h1,
@@ -817,9 +772,7 @@ h3 {
 }
 
 .home h2 {
-	position: absolute;
 	color: #ffffff;
-	bottom: 20px;
 	font-size: 20px;
 }
 
@@ -901,6 +854,26 @@ h3 {
 }
 
 #selectImagens {
+	background-color: #252525;
+	/* Cor de fundo */
+	color: #ffffff;
+	/* Cor do texto */
+	font-family: 'Arial', sans-serif;
+	/* Fonte */
+	font-size: 16px;
+	/* Tamanho da fonte */
+	border-radius: 5px;
+	border: none;
+	/* Borda arredondada */
+	padding: 2px;
+	/* Espaçamento interno */
+	width: 150px;
+	/* Largura do select */
+	outline: none;
+	/* Remove o contorno padrão */
+}
+
+#tema-selector {
 	background-color: #252525;
 	/* Cor de fundo */
 	color: #ffffff;
