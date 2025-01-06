@@ -33,8 +33,8 @@ function renderLinks(filtro) {
        <p>SIGEP</p>
      </div>
      <h1>Portal SIGEP <p>Version 7 - by. SystemSU<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
-     <h3>Facilidade, agilidade e flexibilidade, todos clientes e ferramentas em um só lugar.</h3>
-     <h2>Site feito para você, deixe-o do seu jeito</h2>
+     <h3>Facilidade, agilidade e flexibilidade, todos clientes e ferramentas em um só lugar. <h2>Site feito para você, deixe-o do seu jeito</h2></h3>
+     
    </div>`;
 
   // Renderizar prefeituras
