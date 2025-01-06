@@ -150,6 +150,31 @@
 	animation-iteration-count: 4;
 }
 
+@keyframes menuinfo-wp {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.info-wp {
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	top: 80px;
+	cursor: auto;
+	position: absolute;
+	right: 0px;
+	font-size: 12px;
+	width: 150px;
+	animation: menuinfo-wp 1000ms;
+	animation-iteration-count: 4;
+}
+
+
 .menu {
 	display: none;
 }
@@ -865,9 +890,10 @@ h3 {
 	border-radius: 5px;
 	border: none;
 	/* Borda arredondada */
-	padding: 2px;
+	padding: 5px;
 	/* Espaçamento interno */
-	width: 150px;
+	width: 100%;
+	height: 30px;
 	/* Largura do select */
 	outline: none;
 	/* Remove o contorno padrão */
@@ -885,9 +911,10 @@ h3 {
 	border-radius: 5px;
 	border: none;
 	/* Borda arredondada */
-	padding: 2px;
+	padding: 5px;
 	/* Espaçamento interno */
-	width: 150px;
+	width: 100%;
+	height: 30px;
 	/* Largura do select */
 	outline: none;
 	/* Remove o contorno padrão */
