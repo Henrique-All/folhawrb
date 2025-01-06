@@ -269,23 +269,18 @@ tabFerramentas.addEventListener("click", () => {
   showTab("h-ferramentas");
 });
 tabTcm.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-tcm");
 });
 tabTest.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-test");
 });
 tabJson.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-json");
 });
 tabTcmFiscaliza.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-tcmfiscaliza");
 });
 tabVoip.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-voip");
 });
 

@@ -275,21 +275,3 @@ document
       acessDiv.style.display = "block"; // Exibe a div correspondente
     }
   });
-
-const buttons = document.querySelectorAll(
-  "#bt-municipios, #bt-ferramentas, #bt-saude, #bt-contabil"
-);
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    // Verifica se o botão já tem a classe 'sel'
-    if (button.classList.contains("sel")) {
-      // Se já tiver a classe, remove a classe 'sel'
-      button.classList.remove("sel");
-    } else {
-      // Se não tiver a classe, adiciona a classe 'sel'
-      buttons.forEach((btn) => btn.classList.remove("sel"));
-      button.classList.add("sel");
-    }
-  });
-});
