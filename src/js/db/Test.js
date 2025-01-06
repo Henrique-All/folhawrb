@@ -15,16 +15,16 @@ const tags = [
 const namesMunicipios = [
   {
     municipios: [
-      "catalão",
-      "Santa Tereza",
-      "Jatai",
-      "Jatai",
-      "Moiporá",
-      "Acreuna",
-      "Jataí",
-      "Jataí",
-      "Santa Tereza",
-      "Planatina Contabil",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
+      "SIGEP Test Ambient",
     ],
   },
 ];

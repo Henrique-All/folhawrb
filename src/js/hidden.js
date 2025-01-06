@@ -226,19 +226,67 @@ tabSelect.addEventListener("change", (event) => {
   const selectedTab = event.target.value; // Obtém o valor da aba selecionada
   showTab(selectedTab); // Chama a função para exibir a aba correspondente
 });
-// Event listeners para os botões de navegação
-tabPrefeituras.addEventListener("click", () => showTab("h-prefeituras"));
-tabCamaras.addEventListener("click", () => showTab("h-camaras"));
-tabOutros.addEventListener("click", () => showTab("h-previdencias"));
-tabContabil.addEventListener("click", () => showTab("h-contabil"));
-tabPatrimonio.addEventListener("click", () => showTab("h-patrimonio"));
-tabSaude.addEventListener("click", () => showTab("h-saude"));
-tabPainel.addEventListener("click", () => showTab("h-painel"));
-tabFerramentas.addEventListener("click", () => showTab("h-ferramentas"));
-tabTcm.addEventListener("click", () => showTab("h-tcm"));
-tabTest.addEventListener("click", () => showTab("h-test"));
-tabJson.addEventListener("click", () => showTab("h-json"));
-tabTcmFiscaliza.addEventListener("click", () => showTab("h-tcmfiscaliza"));
-tabVoip.addEventListener("click", () => showTab("h-voip"));
+
+function hideAllDivs() {
+  const allDivs = document.querySelectorAll(
+    ".acess, .tabscontabil, .acess-saude, .acess-ferramentas"
+  );
+  allDivs.forEach(function (div) {
+    div.style.display = "none";
+  });
+}
+tabPrefeituras.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-prefeituras");
+});
+
+tabCamaras.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-camaras");
+});
+tabOutros.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-previdencias");
+});
+tabContabil.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-contabil");
+});
+tabPatrimonio.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-patrimonio");
+});
+tabSaude.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-saude");
+});
+tabPainel.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-painel");
+});
+tabFerramentas.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-ferramentas");
+});
+tabTcm.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-tcm");
+});
+tabTest.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-test");
+});
+tabJson.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-json");
+});
+tabTcmFiscaliza.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-tcmfiscaliza");
+});
+tabVoip.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-voip");
+});
 
 showTab("home");
