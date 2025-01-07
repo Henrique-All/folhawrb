@@ -56,7 +56,6 @@ const closeToggle = document.getElementById("menu-close");
 closeToggle.addEventListener("click", () => {
   menu.classList.remove("active");
   toggle.classList.remove("active");
-  hideAllDivs();
 });
 
 // Variáveis para as tabs
@@ -245,49 +244,32 @@ tabSelect.addEventListener("change", (event) => {
   showTab(selectedTab); // Chama a função para exibir a aba correspondente
 });
 
-function hideAllDivs() {
-  const allDivs = document.querySelectorAll(
-    ".acess, .tabscontabil, .acess-saude, .acess-ferramentas"
-  );
-  allDivs.forEach(function (div) {
-    div.style.display = "none";
-  });
-}
 tabPrefeituras.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-prefeituras");
 });
 
 tabCamaras.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-camaras");
 });
 tabOutros.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-previdencias");
 });
 tabContabil.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-contabil");
 });
 tabContabilCamaras.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-contabil-camaras");
 });
 tabPatrimonio.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-patrimonio");
 });
 tabSaude.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-saude");
 });
 tabPainel.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-painel");
 });
 tabFerramentas.addEventListener("click", () => {
-  hideAllDivs();
   showTab("h-ferramentas");
 });
 tabTcm.addEventListener("click", () => {

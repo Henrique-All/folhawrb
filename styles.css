@@ -668,6 +668,11 @@ li {
 	border-left: none;
 }
 
+.municipios:hover>.acess {
+	display: flex;
+	flex-direction: column;
+}
+
 .contabil {
 	width: 100%;
 }
@@ -707,6 +712,11 @@ li {
 	border-left: none;
 }
 
+.contabil:hover>.tabscontabil {
+	display: flex;
+	flex-direction: column;
+}
+
 .saude {
 	width: 100%;
 }
@@ -734,8 +744,6 @@ li {
 	animation: identifier 500ms;
 }
 
-
-
 .acess-saude {
 	display: none;
 	background-color: #525252;
@@ -746,6 +754,11 @@ li {
 	top: 184px;
 	border: 1px solid #ffffff;
 	border-left: none;
+}
+
+.saude:hover>.acess-saude {
+	display: flex;
+	flex-direction: column;
 }
 
 .ferramentas {
@@ -786,6 +799,11 @@ li {
 	top: 148px;
 	border: 1px solid #ffffff;
 	border-left: none;
+}
+
+.ferramentas:hover>.acess-ferramentas {
+	display: flex;
+	flex-direction: column;
 }
 
 .home {
