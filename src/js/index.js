@@ -20,6 +20,7 @@ function renderLinks(filtro) {
   const camarasFiltradas = filtrarPorNome(filtro)(camaras);
   const previdenciasFiltrados = filtrarPorNome(filtro)(previdencias);
   const contabilFiltrados = filtrarPorNome(filtro)(contabil);
+  const contabilCamarasFiltrados = filtrarPorNome(filtro)(contabilCamaras);
   const patrimonioFiltrados = filtrarPorNome(filtro)(patrimonio);
   const saudeFiltrados = filtrarPorNome(filtro)(saude);
   const painelFiltrados = filtrarPorNome(filtro)(painel);
@@ -120,6 +121,20 @@ function renderLinks(filtro) {
             <p>SIGEP</p>
           </div>
           <p class="name">${saude.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("contabilC").innerHTML = contabilCamarasFiltrados
+    .map((contabilCamaras) => {
+      return `
+        <a class="card" href="${contabilCamaras.url}" target="_blank">
+         <div class="card-header">
+            <img src="./src/images/logo.png" />
+            <p>SIGEP</p>
+          </div>
+          <p class="name">${contabilCamaras.nome}</p>
         </a>
       `;
     })

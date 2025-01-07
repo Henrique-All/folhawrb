@@ -27,6 +27,7 @@ closeAllButton.addEventListener("click", () => {
     divJson,
     divTcmFiscaliza,
     divVoip,
+    divContabilCamaras,
   ];
   allDivs.forEach((div) => div.classList.add("hidden"));
 
@@ -63,6 +64,7 @@ const tabPrefeituras = document.getElementById("tab-prefeituras");
 const tabCamaras = document.getElementById("tab-camaras");
 const tabOutros = document.getElementById("tab-outros");
 const tabContabil = document.getElementById("tab-contabil");
+const tabContabilCamaras = document.getElementById("tab-contabil-camaras");
 const tabPatrimonio = document.getElementById("tab-patrimonio");
 const tabSaude = document.getElementById("tab-saude");
 const tabPainel = document.getElementById("tab-painel");
@@ -81,6 +83,7 @@ const divPrefeituras = document.getElementById("h-prefeituras");
 const divCamaras = document.getElementById("h-camaras");
 const divPrevidencias = document.getElementById("h-previdencias");
 const divContabil = document.getElementById("h-contabil");
+const divContabilCamaras = document.getElementById("h-contabil-camaras");
 const divPatrimonio = document.getElementById("h-patrimonio");
 const divSaude = document.getElementById("h-saude");
 const divPainel = document.getElementById("h-painel");
@@ -95,30 +98,42 @@ const divVoip = document.getElementById("h-voip");
 const MAX_TABS = 7;
 let alertShown = false; // Controle para exibir o alert apenas uma vez
 
-// Função para adicionar botão de aba
 function addTabButton(tabName) {
+  // Remove caracteres especiais e substitui "-" por espaço
+  const sanitizedTabName = tabName
+    .replace(/[.,]/g, "")
+    .replace(/-/g, " ")
+    .trim();
+
   // Verifica se o botão já existe
-  let button = document.getElementById(`btn-${tabName}`);
+  let button = document.getElementById(`btn-${sanitizedTabName}`);
   if (!button) {
     // Verifica o número de abas abertas
     const currentTabs = document.querySelectorAll(".tab-button").length;
     if (currentTabs >= MAX_TABS) {
-      // Mostra o alert apenas uma vez
       if (!alertShown) {
-        alert(
-          "Você atingiu o limite máximo de abas abertas! O conteúdo será mostrado mais não ficará aberto, feche uma guia e abra novamente."
-        );
+        alert("Você atingiu o limite máximo de abas abertas!");
         alertShown = true; // Define que o alert já foi mostrado
       }
       return;
     }
 
+    if (!abaContainer) {
+      console.error("Erro: 'abaContainer' não está definido!");
+      return;
+    }
+
     // Cria o botão principal
     button = document.createElement("div");
-    button.id = `btn-${tabName}`;
-    button.className = "tab-button"; // Classe para estilização
-    button.textContent =
-      tabName.charAt(0).toUpperCase() + tabName.slice(1).toLowerCase();
+    button.id = `btn-${sanitizedTabName}`;
+    button.className = "tab-button";
+
+    // Ajusta o texto do botão
+    button.textContent = sanitizedTabName
+      .toLowerCase()
+      .split(" ") // Divide o texto em palavras
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitaliza cada palavra
+      .join(" "); // Junta as palavras com espaço
 
     // Cria o botão de fechar
     const closeButton = document.createElement("button");
@@ -131,37 +146,38 @@ function addTabButton(tabName) {
       e.preventDefault();
       e.stopPropagation();
       button.remove();
-      const relatedDiv = document.getElementById(`h-${tabName.toLowerCase()}`);
+      const relatedDiv = document.getElementById(
+        `h-${sanitizedTabName.toLowerCase()}`
+      );
       if (relatedDiv) relatedDiv.classList.add("hidden");
 
-      // Reseta o alertShown caso o número de abas fique abaixo do limite
       const remainingTabs = document.querySelectorAll(".tab-button").length;
-      if (remainingTabs < MAX_TABS) {
-        alertShown = false;
-      }
+      if (remainingTabs < MAX_TABS) alertShown = false;
 
-      // Verifica se ainda há abas abertas
       if (remainingTabs === 0) {
         showTab("home");
-        toggleCloseAllButtonVisibility(); // Atualiza a visibilidade do botão "Fechar Todas"
+        toggleCloseAllButtonVisibility();
       }
     });
 
-    // Adiciona o botão de fechar ao botão principal
     button.appendChild(closeButton);
 
-    // Alterna para a aba correspondente ao clicar no botão
+    // Alterna para a aba correspondente
     button.addEventListener("click", () => {
-      showTab(`h-${tabName.toLowerCase()}`);
+      const tabId = `h-${sanitizedTabName.toLowerCase()}`;
+      const targetTab = document.getElementById(tabId);
+      if (!targetTab) {
+        console.error(`Erro: Tab correspondente (${tabId}) não encontrada!`);
+        return;
+      }
+      showTab(tabId);
     });
 
-    // Adiciona o botão ao contêiner
     abaContainer.appendChild(button);
   }
 
-  // Define o botão como ativo
   setActiveButton(button);
-  toggleCloseAllButtonVisibility(); // Atualiza a visibilidade do botão "Fechar Todas"
+  toggleCloseAllButtonVisibility();
 }
 
 // Alterna a exibição das abas
@@ -182,6 +198,7 @@ function showTab(tab) {
     divTcmFiscaliza,
     divVoip,
     divHome,
+    divContabilCamaras,
   ];
 
   allDivs.forEach((div) => div.classList.add("hidden"));
@@ -252,6 +269,10 @@ tabOutros.addEventListener("click", () => {
 tabContabil.addEventListener("click", () => {
   hideAllDivs();
   showTab("h-contabil");
+});
+tabContabilCamaras.addEventListener("click", () => {
+  hideAllDivs();
+  showTab("h-contabil-camaras");
 });
 tabPatrimonio.addEventListener("click", () => {
   hideAllDivs();
