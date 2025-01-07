@@ -634,7 +634,7 @@ li {
 	transition: all ease-in-out 400ms;
 }
 
-.bx-chevron-down {
+.bx-chevron-right {
 	position: absolute;
 	right: 20px;
 	font-size: 24px;
