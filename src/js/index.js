@@ -32,10 +32,10 @@ function renderLinks(filtro) {
      <div class="content"> 
        <img src="./src/images/logo.png" alt="" />
        <p>SIGEP</p>
+       <h2>Power By. SystemSU - Security</h2>
      </div>
-     <h1>Portal SIGEP <p>Version 8 - by. SystemSU<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;"></i></p></h1>
+     <h1>Portal SIGEP <p>v8 - Lolipop<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;">Stable</i></p></h1>
      <h3>Facilidade, agilidade e flexibilidade, todos clientes e ferramentas em um só lugar. <span style="font-size: 20px">Site feito para você, deixe-o do seu jeito</span></h3>
-     
    </div>`;
 
   // Renderizar prefeituras
