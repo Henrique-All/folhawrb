@@ -55,6 +55,7 @@ const closeToggle = document.getElementById("menu-close");
 closeToggle.addEventListener("click", () => {
   menu.classList.remove("active");
   toggle.classList.remove("active");
+  hideAllDivs();
 });
 
 // Variáveis para as tabs
