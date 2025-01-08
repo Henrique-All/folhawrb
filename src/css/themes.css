@@ -44,7 +44,6 @@
 }
 
 .light .municipios .acess {
-  display: none;
   background-color: #453c88;
   animation: open 400ms;
 }
@@ -55,14 +54,12 @@
 }
 
 .light .acess-ferramentas {
-  display: none;
   background-color: #453c88;
   animation: open 400ms;
 }
 
 
 .light .tabscontabil {
-  display: none;
   background-color: #453c88;
   animation: open 400ms;
 }
@@ -75,7 +72,6 @@
 
 
 .light .acess-saude {
-  display: none;
   background-color: #453c88;
   animation: open 400ms;
 }
@@ -132,7 +128,6 @@
 }
 
 .blue .municipios .acess {
-  display: none;
   background-color: #071e46;
   animation: open 400ms;
 }
@@ -143,7 +138,6 @@
 }
 
 .blue .tabscontabil {
-  display: none;
   background-color: #071e46;
   animation: open 400ms;
 }
@@ -156,7 +150,6 @@
 
 
 .blue .acess-saude {
-  display: none;
   background-color: #071e46;
   animation: open 400ms;
 }
@@ -168,7 +161,6 @@
 }
 
 .blue .acess-ferramentas {
-  display: none;
   background-color: #071e46;
   animation: open 400ms;
 }
@@ -219,7 +211,6 @@
 }
 
 .roxo .municipios .acess {
-  display: none;
   background-color: rgb(63, 6, 63);
   animation: open 400ms;
 }
@@ -230,7 +221,6 @@
 }
 
 .roxo .tabscontabil {
-  display: none;
   background-color: rgb(63, 6, 63);
   animation: open 400ms;
 }
@@ -243,7 +233,6 @@
 
 
 .roxo .acess-saude {
-  display: none;
   background-color: rgb(63, 6, 63);
   animation: open 400ms;
 }
@@ -255,13 +244,12 @@
 }
 
 .roxo .acess-ferramentas {
-  display: none;
   background-color: rgb(63, 6, 63);
   animation: open 400ms;
 }
 
 .red {
-  background-color: rgb(145, 22, 22);
+  background-color: rgb(110, 17, 17);
 }
 
 .red .navigation {
@@ -306,7 +294,6 @@
 }
 
 .red .municipios .acess {
-  display: none;
   background-color: rgb(160, 0, 0);
   animation: open 400ms;
 }
@@ -317,7 +304,6 @@
 }
 
 .red .tabscontabil {
-  display: none;
   background-color: rgb(160, 0, 0);
   animation: open 400ms;
 }
@@ -330,7 +316,6 @@
 
 
 .red .acess-saude {
-  display: none;
   background-color: rgb(160, 0, 0);
   animation: open 400ms;
 }
@@ -342,7 +327,6 @@
 }
 
 .red .acess-ferramentas {
-  display: none;
   background-color: rgb(160, 0, 0);
   animation: open 400ms;
 }
@@ -394,7 +378,6 @@
 }
 
 .pink .municipios .acess {
-  display: none;
   background-color: #f73f8e;
   animation: open 400ms;
 }
@@ -418,7 +401,6 @@
 
 
 .pink .acess-saude {
-  display: none;
   background-color: #f73f8e;
   animation: open 400ms;
 }
@@ -430,7 +412,92 @@
 }
 
 .pink .acess-ferramentas {
-  display: none;
   background-color: #f73f8e;
+  animation: open 400ms;
+}
+
+
+.green {
+  background-color: #0d3507;
+}
+
+
+.green .navigation {
+  background-color: #0c5900;
+}
+
+.green .menu.active {
+  background-color: #0c5900;
+}
+
+.green .tab-button {
+  background-color: #0c5900;
+  border: solid 2px #ffffff;
+
+}
+
+.green .tab-button.active {
+  background-color: #0c5900;
+  /* Cor de fundo ativa */
+  color: #fff;
+  /* Cor do texto para contraste */
+  border-color: #ffffff;
+  border-radius: 15px;
+  transition: all ease 400ms;
+}
+
+.green .card {
+  background-color: #0c5900;
+}
+
+.green .tabs {
+  background-color: #0c5900;
+}
+
+.green .btn:hover {
+  background-color: #0c5900;
+}
+
+.green #bt-municipios:hover {
+  transition: all ease 400ms;
+  background-color: #16a400;
+}
+
+.green .municipios .acess {
+  background-color: #16a400;
+  animation: open 400ms;
+}
+
+.green #bt-contabil:hover {
+  transition: all ease 400ms;
+  background-color: #16a400;
+}
+
+.green .tabscontabil {
+  display: none;
+  background-color: #16a400;
+  animation: open 400ms;
+}
+
+
+.green #bt-saude:hover {
+  transition: all ease 400ms;
+  background-color: #16a400;
+}
+
+
+.green .acess-saude {
+  background-color: #16a400;
+  animation: open 400ms;
+}
+
+
+.green #bt-ferramentas:hover {
+  transition: all ease 400ms;
+  background-color: #16a400;
+}
+
+.green .acess-ferramentas {
+  background-color: #16a400;
   animation: open 400ms;
 }
