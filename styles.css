@@ -664,7 +664,8 @@ li {
 	position: absolute;
 	left: 240px;
 	width: 240px;
-	top: 105px;
+	top: 80px;
+	border-radius: 0 25px 25px 0;
 	border: 1px solid #ffffff;
 	border-left: none;
 }
@@ -708,9 +709,10 @@ li {
 	position: absolute;
 	left: 240px;
 	width: 240px;
-	top: 144px;
+	top: 105px;
 	border: 1px solid #ffffff;
 	border-left: none;
+	border-radius: 0 25px 25px 0;
 }
 
 .contabil:hover>.tabscontabil {
@@ -752,9 +754,10 @@ li {
 	position: absolute;
 	left: 240px;
 	width: 240px;
-	top: 184px;
+	top: 165px;
 	border: 1px solid #ffffff;
 	border-left: none;
+	border-radius: 0 25px 25px 0;
 }
 
 .saude:hover>.acess-saude {
@@ -797,9 +800,10 @@ li {
 	position: absolute;
 	left: 240px;
 	width: 240px;
-	top: 148px;
+	top: 144px;
 	border: 1px solid #ffffff;
 	border-left: none;
+	border-radius: 0 25px 25px 0;
 }
 
 .ferramentas:hover>.acess-ferramentas {
