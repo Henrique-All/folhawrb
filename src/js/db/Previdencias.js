@@ -18,6 +18,10 @@ const previdencias = [
     url: "http://gestaopublica.previdencia.cristalina.bsit-br.com.br/login.jsf",
   },
   {
+    nome: "Previdencia de Hidrolandia ",
+    url: "https://gestaopublica.previdencia.hidrolandia.bsit-br.com.br",
+  },
+  {
     nome: "Previdencia de Ipameri ",
     url: "http://gestaopublica.previdencia.ipameri.bsit-br.com.br/login.jsf",
   },
