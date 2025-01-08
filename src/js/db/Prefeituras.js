@@ -6,24 +6,12 @@ const prefeituras = [
     url: "http://gestaopublica.arenopolis.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Bom Jesus de Goiás",
-    url: "http://bomjesusdegoias.bsit-br.com.br/login.jsf",
-  },
-  {
-    nome: "Prefeitura Buriti",
-    url: "http://buritidegoias.bsit-br.com.br/login.jsf",
-  },
-  {
     nome: "Prefeitura Cachoeira Dourada",
     url: "http://gestaopublica.CachoeiraDourada.bsit-br.com.br/login.jsf",
   },
   {
     nome: "Prefeitura Caturaí",
     url: "http://gestaopublica.caturai.bsit-br.com.br/login.jsf",
-  },
-  {
-    nome: "Prefeitura Córrego do Ouro",
-    url: "http://corregodoouro.bsit-br.com.br/login.jsf",
   },
   {
     nome: "Prefeitura Cristalina",
@@ -34,7 +22,6 @@ const prefeituras = [
     nome: "Prefeitura Damolândia",
     url: "http://damolandia.bsit-br.com.br/login.jsf",
   },
-  { nome: "Prefeitura Faina", url: "http://Faina.bsit-br.com.br/login.jsf" },
   {
     nome: "Prefeitura Goiandira",
     url: "http://Goiandira.bsit-br.com.br/login.jsf",
@@ -62,10 +49,6 @@ const prefeituras = [
   {
     nome: "Prefeitura Jataí",
     url: "http://gestaopublica.jatai.bsit-br.com.br/login.jsf",
-  },
-  {
-    nome: "Prefeitura Mozarlândia",
-    url: "http://Mozarlandia.bsit-br.com.br/login.jsf",
   },
   {
     nome: "Prefeitura Orizona",
@@ -99,9 +82,4 @@ const prefeituras = [
     nome: "Prefeitura São Patrício",
     url: "http://GestaoPublica.saoPatricio.bsit-br.com.br/login.jsf",
   },
-  {
-    nome: "Prefeitura Uruana",
-    url: "http://gestaopublica.uruana.bsit-br.com.br/login.jsf",
-  },
-  { nome: "Prefeitura Varjão", url: "http://Varjao.bsit-br.com.br/login.jsf" },
 ];
