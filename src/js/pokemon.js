@@ -1,9 +1,16 @@
 // Carregar a imagem salva no localStorage, se houver
 window.onload = function () {
   const imagemSalva = localStorage.getItem("imagemSelecionada");
+  const select = document.getElementById("selectImagens");
+  const imagemElement = document.getElementById("imagemSelecionada");
+
   if (imagemSalva) {
-    document.getElementById("imagemSelecionada").src = imagemSalva;
-    const select = document.getElementById("selectImagens");
+    if (imagemSalva === "remover") {
+      imagemElement.style.display = "none"; // Oculta a imagem se a última seleção foi "remover"
+    } else {
+      imagemElement.src = imagemSalva;
+      imagemElement.style.display = "block"; // Garante que a imagem esteja visível
+    }
     select.value = imagemSalva; // Atualiza o valor do select para refletir a imagem salva
   }
 };
@@ -12,36 +19,43 @@ window.onload = function () {
 document
   .getElementById("selectImagens")
   .addEventListener("change", function () {
-    const imagemSelecionada = this.value;
-    document.getElementById("imagemSelecionada").src = imagemSelecionada;
+    const select = this;
+    const imagemSelecionada = select.value;
+    const imagemElement = document.getElementById("imagemSelecionada");
+
+    imagemElement.src = imagemSelecionada; // Atualiza o src da imagem
+
+    // Exibe o texto da opção selecionada no select (já automático no HTML)
+    const selectedOptionText = select.options[select.selectedIndex].text;
 
     // Salvar a escolha no localStorage
     localStorage.setItem("imagemSelecionada", imagemSelecionada);
+
+    console.log("Texto selecionado:", selectedOptionText); // Apenas para depuração, se necessário
   });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const body = document.body; // Seleciona o elemento body
-  const temaSelector = document.getElementById("tema-selector"); // Seleciona o select
+  const body = document.body;
+  const temaSelector = document.getElementById("tema-selector");
 
   // Verifica o tema salvo no localStorage e aplica no body
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) {
-    body.classList.add(savedTheme); // Adiciona a classe salva
-    temaSelector.value = savedTheme; // Seleciona o valor correspondente no select
+    body.classList.add(savedTheme);
+    temaSelector.value = savedTheme;
   }
 
   // Adiciona um listener para mudanças no select
   temaSelector.addEventListener("change", function () {
     const selectedClass = this.value;
 
-    // Remove qualquer classe atual do body
-    body.className = "";
+    body.className = ""; // Remove qualquer classe atual do body
 
     if (selectedClass === "padrao") {
-      localStorage.removeItem("theme"); // Remove o tema do localStorage se for o padrão
+      localStorage.removeItem("theme");
     } else if (selectedClass) {
-      body.classList.add(selectedClass); // Adiciona a classe do tema selecionado
-      localStorage.setItem("theme", selectedClass); // Salva a classe no localStorage
+      body.classList.add(selectedClass);
+      localStorage.setItem("theme", selectedClass);
     }
   });
 });
