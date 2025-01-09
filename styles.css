@@ -598,7 +598,7 @@ li {
 
 @keyframes open {
 	0% {
-		transform: translateX(-100px);
+		transform: translateX(-20px);
 		opacity: 0;
 	}
 
@@ -662,9 +662,10 @@ li {
 	background-color: #525252;
 	animation: open 400ms;
 	position: absolute;
+	border-radius: 0 25px 25px 0;
 	left: 240px;
-	width: 240px;
-	top: 105px;
+	width: 200px;
+	top: 80px;
 	border: 1px solid #ffffff;
 	border-left: none;
 }
@@ -706,9 +707,10 @@ li {
 	background-color: #525252;
 	animation: open 400ms;
 	position: absolute;
+	border-radius: 0 25px 25px 0;
 	left: 240px;
-	width: 240px;
-	top: 144px;
+	width: 200px;
+	top: 106px;
 	border: 1px solid #ffffff;
 	border-left: none;
 }
@@ -750,9 +752,10 @@ li {
 	background-color: #525252;
 	animation: open 400ms;
 	position: absolute;
+	border-radius: 0 25px 25px 0;
 	left: 240px;
-	width: 240px;
-	top: 184px;
+	width: 200px;
+	top: 164px;
 	border: 1px solid #ffffff;
 	border-left: none;
 }
@@ -795,9 +798,10 @@ li {
 	background-color: #525252;
 	animation: open 400ms;
 	position: absolute;
+	border-radius: 0 25px 25px 0;
 	left: 240px;
-	width: 240px;
-	top: 148px;
+	width: 200px;
+	top: 144px;
 	border: 1px solid #ffffff;
 	border-left: none;
 }
