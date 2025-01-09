@@ -28,6 +28,7 @@ closeAllButton.addEventListener("click", () => {
     divTcmFiscaliza,
     divVoip,
     divContabilCamaras,
+    divAditivo,
   ];
   allDivs.forEach((div) => div.classList.add("hidden"));
 
@@ -73,6 +74,7 @@ const tabTest = document.getElementById("tab-test");
 const tabJson = document.getElementById("tab-json");
 const tabTcmFiscaliza = document.getElementById("tab-tcmfiscaliza");
 const tabVoip = document.getElementById("tab-voip");
+const tabAditivo = document.getElementById("tab-aditivo");
 
 const abaContainer = document.getElementById("aba-container");
 
@@ -92,6 +94,7 @@ const divTest = document.getElementById("h-test");
 const divJson = document.getElementById("h-json");
 const divTcmFiscaliza = document.getElementById("h-tcmfiscaliza");
 const divVoip = document.getElementById("h-voip");
+const divAditivo = document.getElementById("h-aditivo");
 
 // Define o limite máximo de abas abertas
 const MAX_TABS = 7;
@@ -198,6 +201,7 @@ function showTab(tab) {
     divVoip,
     divHome,
     divContabilCamaras,
+    divAditivo,
   ];
 
   allDivs.forEach((div) => div.classList.add("hidden"));
@@ -286,6 +290,9 @@ tabTcmFiscaliza.addEventListener("click", () => {
 });
 tabVoip.addEventListener("click", () => {
   showTab("h-voip");
+});
+tabAditivo.addEventListener("click", () => {
+  showTab("h-aditivo");
 });
 
 showTab("home");
