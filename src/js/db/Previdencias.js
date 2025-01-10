@@ -19,7 +19,7 @@ const previdencias = [
   },
   {
     nome: "Previdencia de Hidrolandia ",
-    url: "https://gestaopublica.previdencia.hidrolandia.bsit-br.com.br",
+    url: "http://gestaopublica.previdencia.hidrolandia.bsit-br.com.br",
   },
   {
     nome: "Previdencia de Ipameri ",
