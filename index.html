@@ -36,7 +36,7 @@
           <p>PORTAL SIGEP</p>
         </a>
         <p style="color: #ffffff; font-size: 10px">
-          SystemSU v8.1
+          SystemSU v9.1
           <i
             class="bx bx-check-double"
             style="color: rgb(0, 255, 0); font-size: 15px"></i>
@@ -79,6 +79,7 @@
               <option value="Selecione">Selecione</option>
               <option value="h-prefeituras">Prefeituras</option>
               <option value="h-camaras">Câmaras</option>
+              <option value="h-aditivo">Aditivos</option>
               <option value="h-previdencias">Previdencias</option>
               <option value="h-contabil">Contábil</option>
               <option value="h-contabil-camaras">Contábil Camara</option>
@@ -168,6 +169,12 @@
                   class="btn"
                   style="border-radius: 0 0 25px 0">
                   <i class="bx bxs-institution icon-dp"></i>Previdências
+                </button>
+                <button
+                  id="tab-aditivo"
+                  class="btn"
+                  style="border-radius: 0 0 25px 0">
+                  <i class="bx bxs-institution icon-dp"></i>Aditivos
                 </button>
               </div>
             </div>
@@ -323,6 +330,10 @@
           <div id="test" class="main"></div>
         </div>
 
+        <div id="h-aditivo">
+          <div id="aditivo" class="main"></div>
+        </div>
+
         <!-- Card ferramentas -->
         <div id="h-ferramentas">
           <div id="ferramentas" class="main"></div>
@@ -371,6 +382,7 @@
   <script src="./src/js/db/SaudePainel.js?v=v=3.1" defer></script>
   <script src="./src/js/db/Ferramentas.js?v=v=3.1" defer></script>
   <script src="./src/js/db/Test.js?v=v=3.1" defer></script>
+  <script src="./src/js/db/aditivo.js"></script>
   <!-- END Dados Script -->
 
   <!-- Scripts de darkmode, hidden e renderização -->

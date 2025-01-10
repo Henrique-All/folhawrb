@@ -23,6 +23,7 @@ function renderLinks(filtro) {
   const contabilCamarasFiltrados = filtrarPorNome(filtro)(contabilCamaras);
   const patrimonioFiltrados = filtrarPorNome(filtro)(patrimonio);
   const saudeFiltrados = filtrarPorNome(filtro)(saude);
+  const aditivoFiltrados = filtrarPorNome(filtro)(aditivo);
   const painelFiltrados = filtrarPorNome(filtro)(painel);
   const ferramentasFiltrados = filtrarPorNome(filtro)(ferramentas);
   const testFiltrados = filtrarPorNome(filtro)(test);
@@ -34,7 +35,7 @@ function renderLinks(filtro) {
        <p>SIGEP</p>
        <h2>Power By. SystemSU - Security</h2>
      </div>
-     <h1>Portal SIGEP <p>v8.1 - Lolipop<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;">Stable</i></p></h1>
+     <h1>Portal SIGEP <p>v9.1 - Ice Cream<i class='bx bx-check-double' style="color: rgb(0, 255, 0); font-size: 15px;">Stable</i></p></h1>
      <h3>Facilidade, agilidade e flexibilidade, todos clientes e ferramentas em um só lugar. <span style="font-size: 20px">Site feito para você, deixe-o do seu jeito</span></h3>
    </div>`;
 
@@ -164,6 +165,19 @@ function renderLinks(filtro) {
             <img src="${ferramentas.img}" />
           </div>
           <p class="name">${ferramentas.nome}</p>
+        </a>
+      `;
+    })
+    .join("");
+
+  document.getElementById("aditivo").innerHTML = aditivoFiltrados
+    .map((aditivo) => {
+      return `
+        <a class="card" href="${aditivo.url}" target="_blank">
+          <div class="card-header">
+            <img src="./src/images/logo.png" />
+          </div>
+          <p class="name">${aditivo.nome}</p>
         </a>
       `;
     })
