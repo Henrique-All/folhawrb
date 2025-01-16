@@ -2,84 +2,88 @@
 
 const prefeituras = [
   {
-    nome: "Prefeitura Arenópolis",
+    nome: "Arenópolis",
     url: "http://gestaopublica.arenopolis.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Cachoeira Dourada",
+    nome: "Cachoeira Dourada",
     url: "http://gestaopublica.CachoeiraDourada.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Caturaí",
+    nome: "Caturaí",
     url: "http://gestaopublica.caturai.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Cristalina",
+    nome: "Cristalina",
     url: "http://cristalina.bsit-br.com.br/login.jsf",
   },
-  { nome: "Prefeitura Cumari", url: "http://Cumari.bsit-br.com.br/login.jsf" },
+  { nome: "Cumari", url: "http://Cumari.bsit-br.com.br/login.jsf" },
   {
-    nome: "Prefeitura Damolândia",
+    nome: "Damolândia",
     url: "http://damolandia.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Goiandira",
+    nome: "Goiandira",
     url: "http://Goiandira.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Goiânia",
+    nome: "Goiânia",
     url: "http://Goiania.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Goianira",
+    nome: "Goianira",
     url: "http://Goianira.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Hidrolândia",
+    nome: "Hidrolândia",
     url: "http://Hidrolandia.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Indiara",
+    nome: "Indiara",
     url: "http://gestaopublica.Indiara.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Inhumas",
+    nome: "Inhumas",
     url: "http://Inhumas.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Jataí",
+    nome: "Neropolis",
+    url: "http://gestaopublica.neropolis.bsit-br.com.br/login.jsf",
+  },
+  {
+    nome: "Jataí",
     url: "http://gestaopublica.jatai.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Orizona",
+    nome: "Orizona",
     url: "http://GestaoPublica.Orizona.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Palminópolis",
+    nome: "Palminópolis",
     url: "http://GestaoPublica.Palminopolis.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Planaltina",
+    nome: "Planaltina",
     url: "http://Planaltina.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Santa Bárbara",
+    nome: "Santa Bárbara",
     url: "http://gestaopublica.santabarbara.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura Santa Tereza",
+    nome: "Santa Tereza",
     url: "http://gestaopublica.SantaTereza.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura São Francisco",
+    nome: "São Francisco",
     url: "http://SaoFrancisco.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura São Luís",
+    nome: "São Luís",
     url: "http://gestaopublica.slmb.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Prefeitura São Patrício",
+    nome: "São Patrício",
     url: "http://GestaoPublica.saoPatricio.bsit-br.com.br/login.jsf",
   },
 ];

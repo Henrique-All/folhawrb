@@ -2,23 +2,23 @@
 
 const painel = [
   {
-    nome: "Painel de Chamado São Simão",
+    nome: "São Simão",
     url: "http://saude.saosimao.bsit-br.com.br/public/dashboard-patient.jsf",
   },
   {
-    nome: "Painel de Chamado Bom Jesus de Goiás",
+    nome: "Bom Jesus de Goiás",
     url: "http://saude.bomjesusdegoias.bsit-br.com.br/public/dashboard-patient.jsf",
   },
   {
-    nome: "Painel de Chamado Goianira",
+    nome: "Chamado Goianira",
     url: "http://saude.goianira.bsit-br.com.br/public/dashboard-patient.jsf",
   },
   {
-    nome: "Painel de Chamado Jatai",
+    nome: "Chamado Jatai",
     url: "http://saude.jatai.bsit-br.com.br/public/dashboard-patient.jsf",
   },
   {
-    nome: "Painel de Chamado Neropolis",
+    nome: "Chamado Neropolis",
     url: "http://saude.neropolis.bsit-br.com.br/public/dashboard-patient.jsf",
   },
 ];

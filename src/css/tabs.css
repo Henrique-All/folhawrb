@@ -64,9 +64,10 @@
   background-color: #252525;
   /* Cor de fundo ativa */
   color: #fff;
-  /* Cor do texto para contraste */
+  border: 1px solid;
+  border-top: none;
   border-color: #ffffff;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
   transition: all ease 400ms;
 }
 

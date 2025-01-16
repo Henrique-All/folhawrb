@@ -2,91 +2,91 @@
 
 const camaras = [
   {
-    nome: "Camara Buriti Alegre",
+    nome: "Buriti Alegre",
     url: "http://gestaopublica.camara.BuritiAlegre.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Buriti de Goiás",
+    nome: "Buriti de Goiás",
     url: "http://gestaopublica.camara.buritidegoias.bsit-br.com.br/login.jsf ",
   },
   {
-    nome: "Camara Campos Verdes",
+    nome: "Campos Verdes",
     url: "http://gestaopublica.camara.camposverdes.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Corrego Do Ouro",
+    nome: "Corrego Do Ouro",
     url: "http://gestaopublica.camara.corregodoouro.bsit-br.com.br/",
   },
   {
-    nome: "Camara Caturai",
+    nome: "Caturai",
     url: "http://gestaopublica.camara.caturai.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Cumari",
+    nome: "Cumari",
     url: "http://gestaopublica.camara.Cumari.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Damolandia",
+    nome: "Damolandia",
     url: "http://gestaopublica.camara.Damolandia.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Faina",
+    nome: "Faina",
     url: "http://gestaopublica.camara.Faina.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Formosa",
+    nome: "Formosa",
     url: "http://gestaopublica.camara.Formosa.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Indiara",
+    nome: "Indiara",
     url: "http://gestaopublica.camara.indiara.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Inhumas",
+    nome: "Inhumas",
     url: "http://gestaopublica.camaraInhumas.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Ipameri",
+    nome: "Ipameri",
     url: "http://gestaopublica.camara.ipameri.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Jatai",
+    nome: "Jatai",
     url: "http://gestaopublica.camara.Jatai.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Joviania",
+    nome: "Joviania",
     url: "http://gestaopublica.camara.Joviania.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Mozalandia",
+    nome: "Mozalandia",
     url: "http://gestaopublica.camara.mozarlandia.bsit-br.com.br/login.jsf ",
   },
   {
-    nome: "Camara Orizona",
+    nome: "Orizona",
     url: "http://gestaopublica.camara.Orizona.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Palminopolis",
+    nome: "Palminopolis",
     url: "http://gestaopublica.camara.Palminopolis.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Planaltina",
+    nome: "Planaltina",
     url: "http://gestaopublica.camara.Planaltina.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Santa Barbara",
+    nome: "Santa Barbara",
     url: "http://gestaopublica.camara.SantaBarbara.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara São Francisco",
+    nome: "São Francisco",
     url: "http://gestaopublica.camara.SaoFrancisco.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara São Luis",
+    nome: "São Luis",
     url: "http://gestaopublica.Camara.Slmb.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Camara Varjão",
+    nome: "Varjão",
     url: "http://gestaopublica.camara.varjao.bsit-br.com.br/login.jsf",
   },
 ];

@@ -2,115 +2,115 @@
 
 const patrimonio = [
   {
-    nome: "Patrimonio de Arenópolis		",
+    nome: "Arenópolis		",
     url: "https://app03.bsit-br.com.br/patrimonio.arenopolis/",
   },
   {
-    nome: "Patrimonio de Buriti Alegre		",
+    nome: "Buriti Alegre		",
     url: "https://app02.bsit-br.com.br/patrimonio.buritidegoias/",
   },
   {
-    nome: "Patrimonio de Cachoeira Dourada		",
+    nome: "Cachoeira Dourada		",
     url: "https://app01.bsit-br.com.br/patrimonio.cachoeiradourada/",
   },
   {
-    nome: "Patrimonio de Campos Verdes		",
+    nome: "Campos Verdes		",
     url: "https://app02.bsit-br.com.br/patrimonio.camposverdes/",
   },
   {
-    nome: "Patrimonio de Caturai		",
+    nome: "Caturai		",
     url: "https://app01.bsit-br.com.br/patrimonio.caturai/",
   },
   {
-    nome: "Patrimonio de Córrego do Ouro		",
+    nome: "Córrego do Ouro		",
     url: "https://app02.bsit-br.com.br/patrimonio.corregodoouro/",
   },
   {
-    nome: "Patrimonio de Cristalina		",
+    nome: "Cristalina		",
     url: "https://app03.bsit-br.com.br/patrimonio.cristalina/",
   },
   {
-    nome: "Patrimonio de Cumari		",
+    nome: "Cumari		",
     url: "https://app04.bsit-br.com.br/patrimonio.cumari/",
   },
   {
-    nome: "Patrimonio de Damolândia		",
+    nome: "Damolândia		",
     url: "https://app04.bsit-br.com.br/patrimonio.damolandia/",
   },
   {
-    nome: "Patrimonio de Faina		",
+    nome: "Faina		",
     url: "https://app03.bsit-br.com.br/patrimonio.faina/",
   },
   {
-    nome: "Patrimonio de Goiandira		",
+    nome: "Goiandira		",
     url: "https://app03.bsit-br.com.br/patrimonio.goiandira/",
   },
   {
-    nome: "Patrimonio de Goianira		",
+    nome: "Goianira		",
     url: "https://app01.bsit-br.com.br/patrimonio.goianira/",
   },
   {
-    nome: "Patrimonio de Hidrolândia		",
+    nome: "Hidrolândia		",
     url: "https://app02.bsit-br.com.br/patrimonio.hidrolandia/",
   },
   {
-    nome: "Patrimonio de Indiara		",
+    nome: "Indiara		",
     url: "https://app02.bsit-br.com.br/patrimonio.indiara/",
   },
   {
-    nome: "Patrimonio de Inhumas		",
+    nome: "Inhumas		",
     url: "https://app04.bsit-br.com.br/patrimonio.inhumas/",
   },
   {
-    nome: "Patrimonio de Jatai		",
+    nome: "Jatai		",
     url: "https://app04.bsit-br.com.br/patrimonio.jatai/",
   },
   {
-    nome: "Patrimonio de Joviânia		",
+    nome: "Joviânia		",
     url: "https://app03.bsit-br.com.br/patrimonio.joviania/",
   },
   {
-    nome: "Patrimonio de Mozarlândia		",
+    nome: "Mozarlândia		",
     url: "https://app02.bsit-br.com.br/patrimonio.mozarlandia/",
   },
   {
-    nome: "Patrimonio de Orizona		",
+    nome: "Orizona		",
     url: "https://app03.bsit-br.com.br/patrimonio.orizona/",
   },
   {
-    nome: "Patrimonio de Palminópolis		",
+    nome: "Palminópolis		",
     url: "https://app01.bsit-br.com.br/patrimonio.palminopolis/",
   },
   {
-    nome: "Patrimonio de Planaltina		",
+    nome: "Planaltina		",
     url: "https://app03.bsit-br.com.br/patrimonio.planaltina/",
   },
   {
-    nome: "Patrimonio de Santa Barbara		",
+    nome: "Santa Barbara		",
     url: "https://app04.bsit-br.com.br/patrimonio.santabarbara/",
   },
   {
-    nome: "Patrimonio de Santa Rosa		",
+    nome: "Santa Rosa		",
     url: "https://app02.bsit-br.com.br/patrimonio.santarosa/",
   },
   {
-    nome: "Patrimonio de Santa Tereza		",
+    nome: "Santa Tereza		",
     url: "https://app01.bsit-br.com.br/patrimonio.santatereza/",
   },
   {
-    nome: "Patrimonio de São Francisco		",
+    nome: "São Francisco		",
     url: "https://app02.bsit-br.com.br/patrimonio.saofrancisco/",
   },
   {
-    nome: "Patrimonio de São Patrício		",
+    nome: "São Patrício		",
     url: "https://app03.bsit-br.com.br/patrimonio.saopatricio/",
   },
   {
-    nome: "Patrimonio de Uruana		",
+    nome: "Uruana		",
     url: "https://app01.bsit-br.com.br/contabilidade.uruana/",
   },
   {
-    nome: "Patrimonio de Varjão		",
+    nome: "Varjão		",
     url: "https://app01.bsit-br.com.br/patrimonio.varjao/",
   },
 ];

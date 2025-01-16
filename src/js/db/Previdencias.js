@@ -2,31 +2,31 @@
 
 const previdencias = [
   {
-    nome: "Previdencia de Aparecida",
+    nome: "Aparecida",
     url: "http://gestaopublica.previdencia.Aparecida.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Previdencia Bom Jesus de Goiás",
+    nome: "Bom Jesus de Goiás",
     url: "http://gestaopublica.previdencia.bomjesusdeGoias.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Previdencia de Cachoeira Dourada",
+    nome: "Cachoeira Dourada",
     url: "http://gestaopublica.previdencia.CachoeiraDourada.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Previdencia de Cristalina",
+    nome: "Cristalina",
     url: "http://gestaopublica.previdencia.cristalina.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Previdencia de Hidrolandia ",
+    nome: "Hidrolandia ",
     url: "http://gestaopublica.previdencia.hidrolandia.bsit-br.com.br",
   },
   {
-    nome: "Previdencia de Ipameri ",
+    nome: "Ipameri ",
     url: "http://gestaopublica.previdencia.ipameri.bsit-br.com.br/login.jsf",
   },
   {
-    nome: "Previdencia de Jatai",
+    nome: "Jatai",
     url: "http://gestaopublica.previdencia.jatai.bsit-br.com.br/login.jsf",
   },
   {
