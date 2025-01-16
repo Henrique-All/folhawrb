@@ -55,6 +55,10 @@ const prefeituras = [
     url: "http://gestaopublica.jatai.bsit-br.com.br/login.jsf",
   },
   {
+    nome: "Jataí Prestador",
+    url: "http://gestaopublica.prestador.jatai.bsit-br.com.br/login.jsf",
+  },
+  {
     nome: "Orizona",
     url: "http://GestaoPublica.Orizona.bsit-br.com.br/login.jsf",
   },
